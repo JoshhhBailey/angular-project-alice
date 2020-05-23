@@ -1,12 +1,7 @@
+
 .container {
   position: relative;
-  width: 50%;
-}
-
-.image {
-  display: block;
   width: 100%;
-  height: auto;
 }
 
 .overlay {
@@ -28,7 +23,8 @@
 
 .text {
   color: black;
-  font-size: 30px;
+  font-size: 1.8vw;
+  line-height: 1.2;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -42,4 +38,44 @@
 .container:hover .text {
   transition: .5s ease;
   opacity: 1;
+}
+
+#photos {
+  line-height: 0;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 0px;
+  -moz-column-count: 2;
+  -moz-column-gap: 0px;
+  column-count: 2;
+  column-gap: 5;
+}
+
+#photos img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 768px) {
+  #photos {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+  .text {
+    font-size: 4vw;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: white;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 10px solid rgba(255, 255, 255, 0.8);
+  padding: 0px;
+  font-size: 30px;
+  text-align: center;
 }

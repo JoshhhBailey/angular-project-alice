@@ -1,12 +1,59 @@
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
 <h3>Top Projects</h3>
 
-<a *ngFor="let project of projects">
+<div class="grid-container">
+
+<section id = "photos">
   
+  <div class="grid-item">
+
   <div class = "container">
-    <a routerLink ="/work/{{hyphenateURL(project.name)}}">
-      <img src = "{{project.imageDir}}" class = "image">
+    <a routerLink ="/work/freeriderco">
+      <img src = "../../assets/featured-projects/freeriderco.jpg" class = "image">
         <div class = "overlay"> </div>
-        <div class = "text"> {{project.name}} </div>
+        <div class = "text"> FREERIDERCO </div>
     </a>
   </div>
-</a>
+
+  </div>
+
+  <div class="grid-item">
+
+  <div class = "container">
+    <a routerLink ="/work/all-different-all-normal">
+      <img src = "../../assets/featured-projects/freeriderco.jpg" class = "image">
+        <div class = "overlay"> </div>
+        <div class = "text"> ALL DIFFERENT. <br> ALL NORMAL. </div>
+    </a>
+  </div>
+
+  </div>
+
+  <div class="grid-item">
+
+  <div class = "container">
+    <a routerLink ="/work/its-your-time">
+      <img src = "../../assets/featured-projects/freeriderco.jpg" class = "image">
+        <div class = "overlay"> </div>
+        <div class = "text"> IT'S YOUR TIME </div>
+    </a>
+  </div>
+
+</div>
+
+  <div class="grid-item">
+
+  <div class = "container">
+    <a routerLink ="/work/bbc-radio-1">
+      <img src = "../../assets/featured-projects/freeriderco.jpg" class = "image">
+        <div class = "overlay"> </div>
+        <div class = "text"> BBC RADIO 1 </div>
+    </a>
+  </div>
+
+</div>
+
+</section>
+
+</div>
