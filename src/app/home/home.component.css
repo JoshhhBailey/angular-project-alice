@@ -1,0 +1,47 @@
+.marquee {
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    position: center;
+    width: 100%;
+    border: 2px solid red;
+    }
+   
+.marquee span {
+    display: inline-block;
+    font-size: 5vw;
+
+    /* Apply animation to this element */  
+    -moz-animation: scroll 5s linear infinite;
+    -webkit-animation: scroll 5s linear infinite;
+    animation: scroll 5s linear infinite;
+
+    -moz-animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    }
+
+.marquee:hover .text {
+    -moz-animation-play-state: running;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    }
+
+.marquee1 span {
+    -moz-animation-delay: -2.5s;
+    -webkit-animation-delay: -2.5s;
+    animation-delay: -2.5s;
+    }
+
+@keyframes scroll {
+0%   { 
+    -moz-transform: translate(0, 0); /* Firefox bug fix */
+    -webkit-transform: translate(0, 0); /* Firefox bug fix */
+    transform: translate(0, 0);
+    }
+100% { 
+    -moz-transform: translate(-100%, 0); /* Firefox bug fix */
+    -webkit-transform: translate(-100%, 0); /* Firefox bug fix */
+    transform: translate(-100%, 0); 
+    }
+}
