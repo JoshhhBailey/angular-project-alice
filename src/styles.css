@@ -29,8 +29,8 @@ h1 {
   }
 
   @font-face {
-    font-family: Acumin Pro;
-    src: url(assets/fonts/acumin_pro/Acumin-BdPro.otf) format("opentype");
+    font-family: GT Walsheim;
+    src: url(assets/fonts/gt-walshiem/GT-Walsheim-Bold-Oblique.otf) format("opentype");
   }
 
   @font-face {

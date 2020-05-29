@@ -1,4 +1,5 @@
-.test {
+/*** INTRO ***/
+.container {
     position: absolute;
     margin: 0;
     top: 0;
@@ -18,7 +19,7 @@
 
 .welcome {
     font-size: 7vw;
-    font-family: "Acumin Pro";
+    font-family: "GT Walshiem", sans-serif;
     color: #ea4a6a;
     line-height: 200px;
     margin-top: -100px;
@@ -27,7 +28,6 @@
     text-align: center;
     top: 55%;
     width: 100%;
-    /*border: 2px solid green;*/
 }
 
 .marquee {
@@ -36,7 +36,6 @@
     overflow: hidden;
     width: 100%;
     color: #f2d2d7;
-    /*border: 2px solid red;*/
     line-height: 3.5vw;
     }
     
@@ -49,7 +48,6 @@
     }
 
 .left span {
-    /* Apply animation to this element */  
     -moz-animation: scroll_left 12.5s linear infinite;
     -webkit-animation: scroll_left 12.5s linear infinite;
     animation: scroll_left 12.5s linear infinite;
@@ -60,7 +58,6 @@
     }
 
 .right span {
-    /* Apply animation to this element */  
     -moz-animation: scroll_right 12.5s linear infinite;
     -webkit-animation: scroll_right 12.5s linear infinite;
     animation: scroll_right 12.5s linear infinite;
@@ -78,26 +75,148 @@
 
 @keyframes scroll_left {
 0%   { 
-    -moz-transform: translate(0, 0); /* Firefox bug fix */
-    -webkit-transform: translate(0, 0); /* Firefox bug fix */
+    -moz-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
     }
 100% { 
-    -moz-transform: translate(-100%, 0); /* Firefox bug fix */
-    -webkit-transform: translate(-100%, 0); /* Firefox bug fix */
+    -moz-transform: translate(-100%, 0);
+    -webkit-transform: translate(-100%, 0);
     transform: translate(-100%, 0); 
     }
 }
 
 @keyframes scroll_right {
 0%   { 
-    -moz-transform: translate(-100%, 0); /* Firefox bug fix */
-    -webkit-transform: translate(-100%, 0); /* Firefox bug fix */
+    -moz-transform: translate(-100%, 0);
+    -webkit-transform: translate(-100%, 0);
     transform: translate(-100%, 0);
     }
 100% { 
-    -moz-transform: translate(0, 0); /* Firefox bug fix */
-    -webkit-transform: translate(0, 0); /* Firefox bug fix */
+    -moz-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
     transform: translate(0, 0); 
     }
 }
+
+.arrow {
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    object-fit: cover;
+    left: calc(50% - 2vw);
+    top: 140%;
+
+    -moz-animation: arrow 2s linear infinite;
+    -webkit-animation: arrow 2s linear infinite;
+    animation: arrow 2s linear infinite;
+
+    -moz-animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+}
+
+@keyframes arrow {
+0%   { 
+    -moz-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    }
+50% {
+    -moz-transform: translate(0, 40%);
+    -webkit-transform: translate(0, 40%);
+    transform: translate(0, 40%); 
+    }
+
+100% { 
+    -moz-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    }
+}
+
+/*** FEATURED PROJECTS ***/
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: white;
+    padding: 10px;
+    position: relative;
+    top: 100vh;
+  }
+  
+  #photos {
+    line-height: 0;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 0px;
+    -moz-column-count: 2;
+    -moz-column-gap: 0px;
+    column-count: 2;
+    column-gap: 5;
+  }
+  
+  #photos img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 10px solid rgba(255, 255, 255, 0.8);
+    padding: 0px;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .container2 {
+    position: relative;
+    width: 100%;
+  }
+  
+  .container2:hover .text {
+    transition: .5s ease;
+    opacity: 1;
+  }
+  
+  .container2:hover .overlay {
+    opacity: 0.5;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .text {
+    color: black;
+    font-size: 1.8vw;
+    line-height: 1.2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+  }
+  
+  /* MOBILE */
+  @media (max-width: 768px) {
+    #photos {
+      -moz-column-count: 1;
+      -webkit-column-count: 1;
+      column-count: 1;
+    }
+    .text {
+      font-size: 4vw;
+    }
+  }
