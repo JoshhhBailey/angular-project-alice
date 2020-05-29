@@ -10,13 +10,30 @@ h1 {
     font-weight: lighter;
   }
   body {
-    margin: 2em;
+    
+    margin: 0;
+    padding: 0;
   }
   body, input[type="text"], button {
     color: #333;
     font-family: Cambria, Georgia;
   }
+
+  html {
+    background-color: white;
+  }
+
   /* everywhere else */
   * {
     font-family: Arial, Helvetica, sans-serif;
+  }
+
+  @font-face {
+    font-family: Acumin Pro;
+    src: url(assets/fonts/acumin_pro/Acumin-BdPro.otf) format("opentype");
+  }
+
+  @font-face {
+    font-family: Gastromond;
+    src: url(assets/fonts/gastromond/Gastromond.ttf) format("truetype");
   }

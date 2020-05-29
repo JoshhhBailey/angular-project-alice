@@ -1,8 +1,9 @@
-<h1> {{title}} </h1>
-<nav>
-  <a routerLink = "/home"> Home </a>
-  <a routerLink = "/work"> Work </a>
-  <a routerLink = "/play"> Play </a>
-  <a routerLink = "/me"> Me </a>
-</nav>
+<div *ngIf="router.url != '/home'">
+  <nav>
+    <a routerLink = "/home"> Home </a>
+    <a routerLink = "/work"> Work </a>
+    <a routerLink = "/play"> Play </a>
+    <a routerLink = "/me"> Me </a>
+  </nav>
+</div>
 <router-outlet> </router-outlet>
