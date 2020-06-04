@@ -1,5 +1,5 @@
 <!-- INTRO -->
-<div class = "container"></div>
+<div class = "container">
 <div class = "group">
     <p class = "marquee left">
         <span>view work view work view work view work view work&nbsp;</span>
@@ -18,15 +18,35 @@
         <span>work view work view work view work view work view&nbsp;</span>
     </p>
     <p class = "welcome">Hello, I'm Alice</p>
-    <div class = "crop">
-        <a routerLink ="/work">
-            <img class = "arrow" src = "../../assets/home/down_arrow.svg">
-        </a>
+    <img class = "arrow" src = "../../assets/navigation/down_arrow.svg" (click) = "toWork(work)">
+</div>
+
+<!-- BURGER MENU -->
+<div id = "burger_menu">
+  <input type = "checkbox"/>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <ul id = "menu">
+    <li><a routerLink = "/home"> intro </a></li>
+    <li><a routerLink = "/work"> work </a></li>
+    <li><a routerLink = "/play"> play </a></li>
+    <li><a routerLink = "/me"> me </a></li>
+    <li><a href = "mailto: alicelhodge@icloud.com"> <span class = "email">alicelhodge@icloud.com</span></a></li>
+    <div class = "socials">
+      <a href = "https://www.instagram.com/alicehodgedesign/"><img src = "../../assets/social-icons/instagram.svg" class = "instagram"></a>
+      <a href = "https://www.linkedin.com/in/alice-hodge-a88995151/"><img src = "../../assets/social-icons/linkedin.svg" class = "linkedin"></a>
+      <a href = "https://vimeo.com/user80054186"><img src = "../../assets/social-icons/vimeo.svg" class = "vimeo"></a>
+      <a href = "https://giphy.com/Alicehodgedesign"><img src = "../../assets/social-icons/giphy.svg" class = "giphy"></a>
     </div>
+  </ul>
 </div>
 
 <!-- FEATURED PROJECTS -->
 <div class="grid-container">
+  <div #work></div>
     <section id = "photos">
       <div class="grid-item">
       <div class = "container2">
@@ -66,3 +86,4 @@
     </div>
     </section>
     </div>
+  </div>
