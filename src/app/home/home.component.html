@@ -23,23 +23,25 @@
 
 <!-- BURGER MENU -->
 <div id = "burger_menu">
-  <input type = "checkbox"/>
+  <input type = "checkbox" id = "check"/>
   <span></span>
   <span></span>
   <span></span>
   <span></span>
 
   <ul id = "menu">
-    <li><a routerLink = "/home"> intro </a></li>
-    <li><a routerLink = "/work"> work </a></li>
-    <li><a routerLink = "/play"> play </a></li>
-    <li><a routerLink = "/me"> me </a></li>
-    <li><a href = "mailto: alicelhodge@icloud.com"> <span class = "email">alicelhodge@icloud.com</span></a></li>
+    <div class = "scribbles">
+      <li><label for = "check"> intro </label><img src = "../../assets/burger-menu-scribbles/intro-scribble.svg" id = "intro-scribble"></li>
+      <li><a routerLink = "/work"> work </a><img src = "../../assets/burger-menu-scribbles/work-scribble.svg" id = "work-scribble"></li>
+      <li><a routerLink = "/play"> play </a><img src = "../../assets/burger-menu-scribbles/play-scribble.svg" id = "play-scribble"></li>
+      <li><a routerLink = "/me"> me </a><img src = "../../assets/burger-menu-scribbles/me-scribble.svg" id = "me-scribble"></li>
+    </div>
+      <li><a href = "mailto: alicelhodge@icloud.com"> <span>alicelhodge@icloud.com</span></a></li>
     <div class = "socials">
-      <a href = "https://www.instagram.com/alicehodgedesign/"><img src = "../../assets/social-icons/instagram.svg" class = "instagram"></a>
-      <a href = "https://www.linkedin.com/in/alice-hodge-a88995151/"><img src = "../../assets/social-icons/linkedin.svg" class = "linkedin"></a>
-      <a href = "https://vimeo.com/user80054186"><img src = "../../assets/social-icons/vimeo.svg" class = "vimeo"></a>
-      <a href = "https://giphy.com/Alicehodgedesign"><img src = "../../assets/social-icons/giphy.svg" class = "giphy"></a>
+      <a href = "https://www.instagram.com/alicehodgedesign/"><img src = "../../assets/home-social-icons/instagram.svg" id = "instagram"></a>
+      <a href = "https://www.linkedin.com/in/alice-hodge-a88995151/"><img src = "../../assets/home-social-icons/linkedin.svg" id = "linkedin"></a>
+      <a href = "https://vimeo.com/user80054186"><img src = "../../assets/home-social-icons/vimeo.svg" id = "vimeo"></a>
+      <a href = "https://giphy.com/Alicehodgedesign"><img src = "../../assets/home-social-icons/giphy.svg" id = "giphy"></a>
     </div>
   </ul>
 </div>
@@ -60,7 +62,7 @@
       <div class="grid-item">
       <div class = "container2">
         <a routerLink ="/work/all-different-all-normal">
-          <img src = "../../assets/featured-projects/freeriderco.jpg">
+          <img src = "../../assets/featured-projects/all-different-all-normal.jpg">
             <div class = "overlay"> </div>
             <div class = "text"> ALL DIFFERENT. <br> ALL NORMAL. </div>
         </a>
@@ -69,7 +71,7 @@
       <div class="grid-item">
       <div class = "container2">
         <a routerLink ="/work/its-your-time">
-          <img src = "../../assets/featured-projects/freeriderco.jpg">
+          <img src = "../../assets/featured-projects/its-your-time.jpg">
             <div class = "overlay"> </div>
             <div class = "text"> IT'S YOUR TIME </div>
         </a>
@@ -78,7 +80,7 @@
       <div class="grid-item">
       <div class = "container2">
         <a routerLink ="/work/bbc-radio-1">
-          <img src = "../../assets/featured-projects/freeriderco.jpg">
+          <img src = "../../assets/featured-projects/bbc-radio-1.jpg">
             <div class = "overlay"> </div>
             <div class = "text"> BBC RADIO 1 </div>
         </a>
