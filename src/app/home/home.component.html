@@ -24,27 +24,49 @@
 <!-- BURGER MENU -->
 <div id = "burger_menu">
   <input type = "checkbox" id = "check"/>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
+  <div id = "burger_content">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <ul id = "canvas">
+    <div class = "content">
+      <div class = "titles">
 
-  <ul id = "menu">
-    <div class = "scribbles">
-      <li><label for = "check"> intro </label><img src = "../../assets/burger-menu-scribbles/intro-scribble.svg" id = "intro-scribble"></li>
-      <li><a routerLink = "/work"> work </a><img src = "../../assets/burger-menu-scribbles/work-scribble.svg" id = "work-scribble"></li>
-      <li><a routerLink = "/play"> play </a><img src = "../../assets/burger-menu-scribbles/play-scribble.svg" id = "play-scribble"></li>
-      <li><a routerLink = "/me"> me </a><img src = "../../assets/burger-menu-scribbles/me-scribble.svg" id = "me-scribble"></li>
-    </div>
-      <li><a href = "mailto: alicelhodge@icloud.com"> <span>alicelhodge@icloud.com</span></a></li>
-    <div class = "socials">
-      <a href = "https://www.instagram.com/alicehodgedesign/"><img src = "../../assets/home-social-icons/instagram.svg" id = "instagram"></a>
-      <a href = "https://www.linkedin.com/in/alice-hodge-a88995151/"><img src = "../../assets/home-social-icons/linkedin.svg" id = "linkedin"></a>
-      <a href = "https://vimeo.com/user80054186"><img src = "../../assets/home-social-icons/vimeo.svg" id = "vimeo"></a>
-      <a href = "https://giphy.com/Alicehodgedesign"><img src = "../../assets/home-social-icons/giphy.svg" id = "giphy"></a>
+        <div id = "intro-div">
+          <label for = "check" id = "intro-text"> intro </label>
+          <img src = "../../assets/burger-menu-scribbles/intro-scribble.svg" id = "intro-scribble">
+        </div>
+
+        <div id = "work-div">
+          <a routerLink = "/work" id = "work-text"> work </a>
+          <img src = "../../assets/burger-menu-scribbles/work-scribble.svg" id = "work-scribble">
+        </div>
+
+        <div id = "play-div">
+          <a routerLink = "/play" id = "play-text"> play </a>
+          <img src = "../../assets/burger-menu-scribbles/play-scribble.svg" id = "play-scribble">
+        </div>
+
+        <div id = "me-div">
+          <a routerLink = "/me" id = "me-text"> me </a>
+          <img src = "../../assets/burger-menu-scribbles/me-scribble.svg" id = "me-scribble">
+        </div>
+        <a href = "mailto: alicelhodge@icloud.com" id = "email"> alicelhodge@icloud.com</a>
+      </div>
+
+      <div class = "socials">
+        <a href = "https://www.instagram.com/alicehodgedesign/"><img src = "../../assets/home-social-icons/instagram.svg" id = "instagram"></a>
+        <a href = "https://www.linkedin.com/in/alice-hodge-a88995151/"><img src = "../../assets/home-social-icons/linkedin.svg" id = "linkedin"></a>
+        <a href = "https://vimeo.com/user80054186"><img src = "../../assets/home-social-icons/vimeo.svg" id = "vimeo"></a>
+        <a href = "https://giphy.com/Alicehodgedesign"><img src = "../../assets/home-social-icons/giphy.svg" id = "giphy"></a>
+      </div>
     </div>
   </ul>
 </div>
+
+  
 
 <!-- FEATURED PROJECTS -->
 <div class="grid-container">
