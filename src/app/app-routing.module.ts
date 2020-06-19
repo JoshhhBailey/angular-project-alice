@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import { IntroComponent } from './intro/intro.component';
 import { WorkComponent } from './work/work.component';
 import { PlayComponent } from './play/play.component';
 import { MeComponent } from './me/me.component';
@@ -10,8 +10,8 @@ import { Project3Component } from './featured-projects/project3/project3.compone
 import { Project4Component } from './featured-projects/project4/project4.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full'},
-  { path: 'home', component: HomeComponent },
+  { path: '', redirectTo: '/intro', pathMatch: 'full'},
+  { path: 'intro', component: IntroComponent },
   { path: 'work', component: WorkComponent },
   { path: 'work/freeriderco', component: Project1Component },
   { path: 'work/all-different-all-normal', component: Project2Component },

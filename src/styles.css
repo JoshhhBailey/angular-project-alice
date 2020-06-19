@@ -35,6 +35,11 @@ h1 {
   }
 
   @font-face {
+    font-family: GT Walsheim Light;
+    src: url(assets/fonts/gt-walsheim/GT-Walsheim-Light.otf) format("opentype");
+  }
+
+  @font-face {
     font-family: Gastromond;
     src: url(assets/fonts/gastromond/Gastromond.ttf) format("truetype");
   }
