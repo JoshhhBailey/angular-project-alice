@@ -1,0 +1,285 @@
+#container {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* HEADER */
+#header-container {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 5vw;
+  /*outline: red solid 2px;*/
+}
+
+#header-container a {
+  text-decoration: none;
+  font-family: "GT Walsheim", sans-serif;
+  font-size: 1vw;
+  color: grey;
+  width: max-content;
+}
+
+#header-container a:hover {
+  color: black;
+}
+
+/* Text and Scribble Properties */
+#header-text {
+  position: absolute;
+  top: 50%;
+  left: 82.5%;
+  width: 15%;
+  height: 5vw;
+  transform: translate(0%, -50%);
+}
+
+#header-text img {
+  max-width: 100%;
+  width: 3.75vw;
+  height: 2.5vw;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+#header-intro, #intro-scribble {
+  left: 0%;
+  cursor: pointer;
+}
+#header-work, #work-scribble {
+  left: 25%;
+}
+#header-play, #play-scribble {
+  left: 50%;
+}
+#header-me, #me-scribble {
+  left: 75%;
+}
+#header-me {
+  color: black !important;
+}
+#me-scribble {
+  opacity: 1 !important;
+}
+
+#intro-scribble {
+  left: 1%;
+}
+#work-scribble {
+  left: 27%;
+  top: 51% !important;
+}
+#play-scribble {
+  left: 50.5%;
+}
+#me-scribble {
+  left: 74%;
+  width: 3vw !important;
+  height: 2vw !important;
+}
+
+#header-text a:hover ~ img {
+  opacity: 1;
+}
+#header-text label:hover ~ img {
+  opacity: 1;
+}
+
+
+
+/* CONTENT */
+#content-grid {
+  position: relative;
+  top: 5vw;
+  display: grid;
+  width: 100%;
+  
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 0;
+
+  outline: purple solid 2px;
+}
+
+#left {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  margin: 0;
+}
+
+#right {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  margin: 0;
+}
+
+#filmframe {
+  position: relative;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, 0%);
+  width: 90%;
+  object-fit: cover;
+}
+
+.bold {
+  font-family: "GT Walsheim", sans-serif;
+  font-size: 1.5vw;
+  color: #474747;
+}
+
+.light {
+  font-family: "GT Walsheim Light", sans-serif;
+  font-size: 1.1vw;
+  color: #474747;
+}
+
+p {
+  margin: 0;
+}
+
+#heading {
+  position: relative;
+  top: 8%;
+  left: 5%;
+  width: max-content;
+  margin-right: 0;
+
+  /*outline: red solid 2px;*/
+}
+
+#heading p {
+  font-family: Gastromond, sans-serif;
+  font-size: 3.5vw;
+  color: white !important;
+  text-shadow: -1px -1px 0 #474747, 1px -1px 0 #474747, -1px 1px 0 #474747, 1px 1px 0 #474747;
+}
+
+#profile {
+  position: relative;
+  top: 12%;
+  left: 5%;
+
+  /*outline: red solid 2px;*/
+}
+
+#profile p {
+  font-size: 2vw !important;
+}
+
+#list-grid {
+  position: relative;
+  top: 18%;
+  left: 5%;
+
+  display: grid;
+  width: 90%;
+  height: max-content;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 0;
+
+  outline: green solid 2px;
+}
+
+#experience {
+  position: relative;
+  top: 0%;
+  left: 0%;
+  width: max-content;
+  height: max-content;
+
+  outline: red solid 2px;
+}
+
+#education {
+  position: relative;
+  top: 0%;
+  left: 0%;
+  height: max-content;
+  justify-self: start;
+  
+
+  outline: red solid 2px;
+}
+
+#brands {
+  position: relative;
+  top: 25%;
+  left: 5%;
+  width: max-content;
+
+  /*outline: red solid 2px;*/
+}
+
+#carousel {
+  position: relative;
+  top: 27.5%;
+  left: 5%;
+  width: 82.5%;
+  height: 10%;
+  outline: red solid 2px;
+}
+
+
+
+@media screen and (max-width: 1024px) { /*1024*/
+  #content-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    display: inline;
+  }
+  #left, #right {
+    grid-row: auto;
+    grid-column: auto;
+  }
+  #left {
+    height: max-content;
+  }
+  #right {
+    height: 100%;
+  }
+  #list-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    left: 10%;
+    width: max-content;
+    height: max-content;
+  }
+  #heading, #profile, #brands, #carousel {
+    left: 10%;
+  }
+  #brands {
+    top: 20%;
+  }
+  #heading p {
+    font-size: 6vw;
+  }
+  #profile p {
+    font-size: 3.5vw !important;
+  }
+  .bold {
+    font-size: 3vw;
+  }
+  .light {
+    font-size: 2.5vw;
+  }
+}

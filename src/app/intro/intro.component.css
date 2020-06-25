@@ -2,11 +2,10 @@
   position: absolute;
   height: 100vh;
   width: 100vw;
-  outline: blue solid 2px;
   overflow-x: hidden;
 }
 
-/* Intro */
+/* INTRO */
 #intro-container {
   position: absolute;
   width: 100%;
@@ -18,11 +17,11 @@
 }
 
 #text-container {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 100%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
 }
 
 #welcome {
@@ -43,31 +42,31 @@
 }
 
 .marquee {
-    margin: 0 auto;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 100%;
-    color: #f2d2d7;
-    line-height: 3.5vw;
-    }
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  color: #f2d2d7;
+  line-height: 3.5vw;
+}
     
 .marquee span {
-    display: inline-block;
-    font-size: 4vw;
-    font-family: Gastromond, sans-serif;
-    opacity: 0.5;
-    text-shadow: -1px -1px 0 #ea4a6a, 1px -1px 0 #ea4a6a, -1px 1px 0 #ea4a6a, 1px 1px 0 #ea4a6a;
-    }
+  display: inline-block;
+  font-size: 4vw;
+  font-family: Gastromond, sans-serif;
+  opacity: 0.5;
+  text-shadow: -1px -1px 0 #ea4a6a, 1px -1px 0 #ea4a6a, -1px 1px 0 #ea4a6a, 1px 1px 0 #ea4a6a;
+}
 
 .left span {
-    -moz-animation: scroll_left 12.5s linear infinite;
-    -webkit-animation: scroll_left 12.5s linear infinite;
-    animation: scroll_left 12.5s linear infinite;
+  -moz-animation: scroll_left 12.5s linear infinite;
+  -webkit-animation: scroll_left 12.5s linear infinite;
+  animation: scroll_left 12.5s linear infinite;
 
-    -moz-animation-play-state: paused;
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
-    }
+  -moz-animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
 
 .right span {
     -moz-animation: scroll_right 12.5s linear infinite;
@@ -80,12 +79,12 @@
     }
 
 #text-container:hover span {
-    -moz-animation-play-state: running;
-    -webkit-animation-play-state: running;
-    animation-play-state: running;
+  -moz-animation-play-state: running;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
 
-    cursor: default;
-    }
+  cursor: default;
+}
 
 @keyframes scroll_left {
 0%   { 
@@ -114,19 +113,19 @@
 }
 
 #arrow {
-    width: 3vw;
-    height: 3vw;
-    position: absolute;
-    left: calc(50% - 1.5vw);
-    top: 80%;
+  width: 3vw;
+  height: 3vw;
+  position: absolute;
+  left: calc(50% - 1.5vw);
+  top: 80%;
 
-    -moz-animation: arrow 2s linear infinite;
-    -webkit-animation: arrow 2s linear infinite;
-    animation: arrow 2s linear infinite;
+  -moz-animation: arrow 2s linear infinite;
+  -webkit-animation: arrow 2s linear infinite;
+  animation: arrow 2s linear infinite;
 
-    -moz-animation-timing-function: ease;
-    -webkit-animation-timing-function: ease;
-    animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
 }
 
 #arrow:hover {
@@ -154,22 +153,12 @@
 
 
 
-
-/* Featured Projects */
-#grid-header-container {
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  height: auto;
-}
-
-/* Header */
+/* HEADER */
 #header-container {
   position: absolute;
   top: 100%;
   width: 100%;
   height: 5vw;
-  /*outline: blue solid 2px;*/
 }
 
 #header-container a {
@@ -179,10 +168,12 @@
   color: grey;
   width: max-content;
 }
+
 #header-container a:hover {
   color: black;
 }
 
+/* Text and Scribble Properties */
 #header-text {
   position: absolute;
   top: 50%;
@@ -191,12 +182,30 @@
   height: 5vw;
   transform: translate(0%, -50%);
 }
+
+#header-text img {
+  max-width: 100%;
+  width: 3.75vw;
+  height: 2.5vw;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
 .text {
   position: absolute;
   top: 50%;
   transform: translate(50%, -50%);
 }
 
+#header-intro {
+  color: black !important;
+}
+#intro-scribble {
+  opacity: 1 !important;
+}
 #header-intro, #intro-scribble {
   left: 0%;
   cursor: pointer;
@@ -209,18 +218,6 @@
 }
 #header-me, #me-scribble {
   left: 75%;
-}
-
-/* Scribble Properties */
-#header-text img {
-  max-width: 100%;
-  width: 3.75vw;
-  height: 2.5vw;
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-  top: 50%;
-  transform: translate(0%, -50%);
 }
 
 #intro-scribble {
@@ -239,7 +236,6 @@
   height: 2vw !important;
 }
 
-/* Scribble Hover */
 #header-text a:hover ~ img {
   opacity: 1;
 }
@@ -249,85 +245,20 @@
 
 
 
-
-
-
-
-#grid-container {
+/* CONTENT */
+#content {
   position: absolute;
   top: calc(100% + 5vw);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 30vw);
-  gap: 1vw;
-}
-
-/* Image Properties */
-.grid-image {
+  left: 0%;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: calc(100% - 10vw);
+  outline: red solid 2px;
 }
 
-/* Image Grid Positions */
-#freeriderco {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
 
-  margin-left: 4vw;
-  margin-right: 0.5vw;
-  margin-top: 2vw;
-  margin-bottom: 1vw;
-}
-#alldifferent {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
 
-  margin-left: 0.5vw;
-  margin-right: 4vw;
-  margin-top: 2vw;
-  margin-bottom: 1vw;
-}
-#itsyourtime {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-
-  margin-left: 4vw;
-  margin-right: 0.5vw;
-  margin-top: 0;
-  margin-bottom: 2vw;
-}
-#bbcradio1 {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-
-  margin-left: 0.5vw;
-  margin-right: 4vw;
-  margin-top: 0;
-  margin-bottom: 2vw;
-}
-/* Mobile Adjustments */
-@media screen and (max-width: 768px) {
-  #grid-container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-  }
-  #freeriderco, #alldifferent, #itsyourtime, #bbcradio1 {
-    grid-row: auto;
-    grid-column: auto;
-    margin-left: 4vw;
-    margin-right: 4vw;
-  }
-
-  #alldifferent, #itsyourtime {
-    margin-bottom: 3vw;
-  }
+/* FOOTER */
+#footer-container {
+  position: relative;
+  top: 200%;
 }

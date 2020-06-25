@@ -1,82 +1,188 @@
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: white;
-  padding: 10px;
-}
-
-#photos {
-  line-height: 0;
-  -webkit-column-count: 2;
-  -webkit-column-gap: 0px;
-  -moz-column-count: 2;
-  -moz-column-gap: 0px;
-  column-count: 2;
-  column-gap: 5;
-}
-
-#photos img {
-  width: 100% !important;
-  height: auto !important;
-}
-
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 10px solid rgba(255, 255, 255, 0.8);
-  padding: 0px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.container {
-  position: relative;
-  width: 100%;
-}
-
-.container:hover .text {
-  transition: .5s ease;
-  opacity: 1;
-}
-
-.container:hover .overlay {
-  opacity: 0.5;
-}
-
-.overlay {
+/* HEADER AND PROJECT GRID */
+#container {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
+  top: 0%;
   width: 100%;
+  height: auto;
+}
+
+/* HEADER */
+#header-container {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 5vw;
+}
+  
+#header-container a {
+  text-decoration: none;
+  font-family: "GT Walsheim", sans-serif;
+  font-size: 1vw;
+  color: grey;
+  width: max-content;
+}
+  
+#header-container a:hover {
+  color: black;
+}
+
+/* Text and Scribble Properties */
+#header-text {
+  position: absolute;
+  top: 50%;
+  left: 82.5%;
+  width: 15%;
+  height: 5vw;
+  transform: translate(0%, -50%);
+}
+
+#header-text img {
+  max-width: 100%;
+  width: 3.75vw;
+  height: 2.5vw;
+  position: absolute;
   opacity: 0;
-  transition: .5s ease;
-  background-color: rgb(255, 255, 255);
+  pointer-events: none;
+  top: 50%;
+  transform: translate(0%, -50%);
 }
 
 .text {
-  color: black;
-  font-size: 1.8vw;
-  line-height: 1.2;
   position: absolute;
   top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  opacity: 0;
+  transform: translate(50%, -50%);
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
-  #photos {
-    -moz-column-count: 1;
-    -webkit-column-count: 1;
-    column-count: 1;
+#header-intro, #intro-scribble {
+  left: 0%;
+  cursor: pointer;
+}
+#header-work, #work-scribble {
+  left: 25%;
+}
+#header-work {
+  color: black !important;
+}
+#work-scribble {
+  opacity: 1 !important;
+}
+#header-play, #play-scribble {
+  left: 50%;
+}
+#header-me, #me-scribble {
+  left: 75%;
+}
+
+#intro-scribble {
+  left: 1%;
+}
+#work-scribble {
+  left: 27%;
+  top: 51% !important;
+}
+#play-scribble {
+  left: 50.5%;
+}
+#me-scribble {
+  left: 74%;
+  width: 3vw !important;
+  height: 2vw !important;
+}
+
+#header-text a:hover ~ img {
+  opacity: 1;
+}
+#header-text label:hover ~ img {
+  opacity: 1;
+}
+
+
+
+/* PROJECT GRID */
+#grid-container {
+  position: absolute;
+  top: 5vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 30vw);
+  gap: 1vw;
+}
+
+.grid-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Grid Positions */
+#freeriderco {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  margin-left: 4vw;
+  margin-right: 0.5vw;
+  margin-top: 2vw;
+  margin-bottom: 1vw;
+}
+#alldifferent {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  margin-left: 0.5vw;
+  margin-right: 4vw;
+  margin-top: 2vw;
+  margin-bottom: 1vw;
+}
+#itsyourtime {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  margin-left: 4vw;
+  margin-right: 0.5vw;
+  margin-top: 0;
+  margin-bottom: 2vw;
+}
+#bbcradio1 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  margin-left: 0.5vw;
+  margin-right: 4vw;
+  margin-top: 0;
+  margin-bottom: 2vw;
+}
+
+/* Mobile Adjustments */
+@media screen and (max-width: 768px) {
+  #grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
   }
-  .text {
-    font-size: 4vw;
+  #freeriderco, #alldifferent, #itsyourtime, #bbcradio1 {
+    grid-row: auto;
+    grid-column: auto;
+    margin-left: 4vw;
+    margin-right: 4vw;
   }
+  #alldifferent, #itsyourtime {
+    margin-bottom: 3vw;
+  }
+}
+
+
+
+/* FOOTER */
+#footer-container {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 5vw;
 }
