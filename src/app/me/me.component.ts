@@ -12,4 +12,13 @@ export class MeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  hideOverflow(): void {
+    if ($("#check").is(':checked')) {
+      $('#viewport').css('overflowY', 'hidden');
+    }
+    else {
+      $('#viewport').css('overflowY', 'visible');
+    }
+  }
+
 }

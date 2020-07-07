@@ -9,8 +9,6 @@ import { PROJECTS } from '../project'
 })
 export class WorkComponent implements OnInit {
 
-  projects = PROJECTS;
-
   constructor() { }
 
   ngOnInit(): void { }
@@ -22,5 +20,14 @@ export class WorkComponent implements OnInit {
       return str.slice(0, -1);  // remove trailing hyphen
     }
     return str;
+  }
+
+  hideOverflow(): void {
+    if ($("#check").is(':checked')) {
+      $('#viewport').css('overflowY', 'hidden');
+    }
+    else {
+      $('#viewport').css('overflowY', 'visible');
+    }
   }
 }

@@ -1,9 +1,9 @@
 /* HEADER AND PROJECT GRID */
-#container {
+#viewport {
   position: absolute;
-  top: 0%;
-  width: 100%;
-  height: auto;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 /* HEADER */
@@ -12,6 +12,7 @@
   top: 0%;
   width: 100%;
   height: 5vw;
+  visibility: visible;
 }
   
 #header-container a {
@@ -98,13 +99,223 @@
 
 
 
+/* BURGER MENU */
+#burger-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 100%;
+  visibility: hidden;
+}
+
+#burger-menu {
+  position: absolute;
+  left: -5%;
+  top: 2vw;
+  width: 3vw;
+  height: 3vw;
+}
+
+#check {
+  width: 3vw;
+  height: 2.5vw;
+  position: absolute;
+  top: 2vw;
+  left: -5.1%;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+
+#burger-menu span {
+  position: absolute;
+  height: 0.3vw;
+  width: 3vw;
+  background: #ea4a6a;
+  border-radius: 0.5vw;
+  opacity: 1;
+  left: 0%;
+  z-index: 1;
+
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+/* Burger Bars Positions */
+#burger-menu span:nth-child(1)
+{
+  top: 10%;
+}
+#burger-menu span:nth-child(2), #burger-menu span:nth-child(3)
+{
+  top: 40%;
+}
+#burger-menu span:nth-child(4)
+{
+  top: 70%;
+}
+
+/* Animate Burger Bars */
+#burger-container input:checked + #burger-menu > span:nth-child(1)
+{
+  top: 40%;
+  width: 0%;
+  left: 50%;
+  background: #f2d2d7
+}
+#burger-container input:checked + #burger-menu > span:nth-child(2)
+{
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background: #f2d2d7;
+}
+#burger-container input:checked + #burger-menu > span:nth-child(3)
+{
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background: #f2d2d7
+}
+#burger-container input:checked + #burger-menu > span:nth-child(4)
+{
+  top: 40%;
+  width: 0%;
+  left: 50%;
+  background: #f2d2d7
+}
+
+/* Move canvas */
+#burger-container input:checked ~ #canvas {
+  transform: translate(-100%, 0);
+}
+
+/* Canvas */
+#canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  background: #ea4a6a;
+  -webkit-font-smoothing: antialiased;  /* to stop flickering of text in safari */
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  padding-left: 0;
+}
+
+/* Titles Text */
+.titles a, .titles label {
+  text-decoration: none;
+  color: #f2d2d7;
+  font-family: "GT Walsheim", sans-serif;
+  font-size: 5vw;
+  position: absolute;
+  width: max-content;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.titles label {
+  cursor: pointer;
+}
+
+.content {
+  position: absolute;
+  width: 95%;
+  height: 50vw;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Text / Image Positioning */
+#burger-intro-text, #burger-intro-scribble {
+  top: 18%;
+}
+#burger-work-text, #burger-work-scribble {
+  top: 30%;
+}
+#burger-play-text {
+  top: 42%;
+}
+#burger-play-scribble {
+  top: 43%;
+}
+#burger-me-text {
+  top: 54%;
+}
+#burger-me-scribble {
+  width: 12vw !important;
+  height: 8vw !important;
+  top: 55%;
+}
+#email {
+  top: 69%;
+  font-size: 1.25vw !important;
+}
+
+/* Scribble Properties */
+.titles img {
+  max-width: 100%;
+  width: 15vw;
+  height: 10vw;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Scribble Hover */
+.titles a:hover ~ img {
+  opacity: 1;
+}
+.titles label:hover ~ img {
+  opacity: 1;
+}
+
+/* Social Icon Properties */
+.socials img {
+  width: 1.5vw;
+  height: 1.5vw;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Social Icon Positions */
+#instagram {
+  left: 45.5%;
+}
+#linkedin {
+  left: 48.5%;
+}
+#vimeo {
+  left: 51.5%;
+}
+#giphy {
+  left: 54.5%;
+}
+
+
+
 /* PROJECT GRID */
 #grid-container {
   position: absolute;
   top: 5vw;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 30vw);
+  grid-template-rows: repeat(2, 1fr);
   gap: 1vw;
 }
 
@@ -116,44 +327,24 @@
 
 /* Grid Positions */
 #freeriderco {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-
   margin-left: 4vw;
   margin-right: 0.5vw;
   margin-top: 2vw;
   margin-bottom: 1vw;
 }
 #alldifferent {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-
   margin-left: 0.5vw;
   margin-right: 4vw;
   margin-top: 2vw;
   margin-bottom: 1vw;
 }
 #itsyourtime {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-
   margin-left: 4vw;
   margin-right: 0.5vw;
   margin-top: 0;
   margin-bottom: 2vw;
 }
 #bbcradio1 {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-
   margin-left: 0.5vw;
   margin-right: 4vw;
   margin-top: 0;
@@ -162,13 +353,17 @@
 
 /* Mobile Adjustments */
 @media screen and (max-width: 768px) {
+  #header-container {
+    visibility: hidden;
+  }
+  #burger-container {
+    visibility: visible;
+  }
   #grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
   #freeriderco, #alldifferent, #itsyourtime, #bbcradio1 {
-    grid-row: auto;
-    grid-column: auto;
     margin-left: 4vw;
     margin-right: 4vw;
   }
@@ -182,7 +377,7 @@
 /* FOOTER */
 #footer-container {
   position: absolute;
-  top: 100%;
+  top: calc(100% + 1vw);
   width: 100%;
   height: 5vw;
 }

@@ -1,27 +1,120 @@
-<!-- Header -->
-<div id = "header-container" #work>
-  <div id = "header-text">
-    <div id = "intro-div">
-      <a routerLink = "/intro" class = "text" id = header-intro> intro </a>
-      <img src = "../../assets/header-scribbles/intro-scribble.svg" id = "intro-scribble">
-    </div>
-    <div id = "work-div">
-      <a routerLink = "/work" class = "text" id = header-work> work </a>
-      <img src = "../../assets/header-scribbles/work-scribble.svg" id = "work-scribble">
-    </div>
-    <div id = "play-div">
-      <a routerLink = "/play" class = "text" id = header-play> play </a>
-      <img src = "../../assets/header-scribbles/play-scribble.svg" id = "play-scribble">
-    </div>
-    <div id = "me-div">
-      <a routerLink = "/me" class = "text" id = header-me> me </a>
-      <img src = "../../assets/header-scribbles/me-scribble.svg" id = "me-scribble">
+<div id = "viewport">
+
+  <!-- Header -->
+  <div id = "header-container" #work>
+    <div id = "header-text">
+      <div id = "intro-div">
+        <a routerLink = "/intro" class = "text" id = header-intro> intro </a>
+        <img src = "../../assets/header-scribbles/intro-scribble.svg" id = "intro-scribble">
+      </div>
+      <div id = "work-div">
+        <a routerLink = "/work" class = "text" id = header-work> work </a>
+        <img src = "../../assets/header-scribbles/work-scribble.svg" id = "work-scribble">
+      </div>
+      <div id = "play-div">
+        <a routerLink = "/play" class = "text" id = header-play> play </a>
+        <img src = "../../assets/header-scribbles/play-scribble.svg" id = "play-scribble">
+      </div>
+      <div id = "me-div">
+        <a routerLink = "/me" class = "text" id = header-me> me </a>
+        <img src = "../../assets/header-scribbles/me-scribble.svg" id = "me-scribble">
+      </div>
     </div>
   </div>
+
+  <!-- Gif Grid -->
+  <div id = "grid-container">
+    <figure id = "gif-1">
+      <img src = "../../assets/gifs/Hello.gif" class = "grid-image">
+    </figure>
+    <figure id = "gif-2">
+      <img src = "../../assets/gifs/Leopard.gif" class = "grid-image">
+    </figure>
+    <figure id = "gif-3">
+      <img src = "../../assets/gifs/Pink-Martini.jpg" class = "grid-image">
+    </figure>
+    <figure id = "gif-4">
+      <img src = "../../assets/gifs/Bee.gif" class = "grid-image">
+    </figure>
+    <figure id = "gif-5">
+      <img src = "../../assets/gifs/Donut.gif" class = "grid-image">
+    </figure>
+    <figure id = "gif-6">
+      <img src = "../../assets/gifs/Gecko.gif" class = "grid-image">
+    </figure>
+    <figure id = "gif-7">
+      <img src = "../../assets/gifs/Cocktail-Green.jpg" class = "grid-image">
+    </figure>
+    <figure id = "gif-8">
+      <img src = "../../assets/gifs/Banana.gif" class = "grid-image">
+    </figure>
+    <figure id = "gif-9">
+      <img src = "../../assets/gifs/Fruit-Morph.gif" class = "grid-image">
+    </figure>
+    <figure id = "gif-10">
+      <img src = "../../assets/gifs/Blob-Lilac.gif" class = "grid-image">
+    </figure>
+    <figure id = "gif-11">
+      <img src = "../../assets/gifs/Mug.gif" class = "grid-image">
+    </figure>
+    <figure id = "gif-12">
+      <img src = "../../assets/gifs/Deer.gif" class = "grid-image">
+    </figure>
+    <figure id = "gif-13">
+      <img src = "../../assets/gifs/Bike.gif" class = "grid-image">
+    </figure>
+    <figure id = "gif-14">
+      <img src = "../../assets/gifs/Swoosh.gif" class = "grid-image">
+    </figure>
+    <!-- Footer -->
+    <div id = "footer-container">
+      <app-footer></app-footer>
+    </div>
+  </div>
+
+  <!-- Burger Menu -->
+  <div id = "burger-container">
+    <input type = "checkbox" id = "check" (click) = "hideOverflow()"/>
+    <div id = "burger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div id = "canvas">
+      <div class = "content">
+        <div class = "titles">
+
+          <div id = "burger-intro-div">
+            <a routerLink = "/intro" id = "burger-intro-text"> intro </a>
+            <img src = "../../assets/burger-menu/scribbles/intro-scribble.svg" id = "burger-intro-scribble">
+          </div>
+
+          <div id = "burger-work-div">
+            <a routerLink = "/work" id = "burger-work-text"> work </a>
+            <img src = "../../assets/burger-menu/scribbles/work-scribble.svg" id = "burger-work-scribble">
+          </div>
+
+          <div id = "burger-play-div">
+            <label for = "check" id = "burger-play-text"> play </label>
+            <img src = "../../assets/burger-menu/scribbles/play-scribble.svg" id = "burger-play-scribble">
+          </div>
+
+          <div id = "burger-me-div">
+            <a routerLink = "/me" id = "burger-me-text"> me </a>
+            <img src = "../../assets/burger-menu/scribbles/me-scribble.svg" id = "burger-me-scribble">
+          </div>
+          <a href = "mailto: alicelhodge@icloud.com" id = "email">alicelhodge@icloud.com</a>
+        </div>
+
+        <div class = "socials">
+          <a href = "https://www.instagram.com/alicehodgedesign/"><img src = "../../assets/burger-menu/social-icons/instagram.svg" id = "instagram"></a>
+          <a href = "https://www.linkedin.com/in/alice-hodge-a88995151/"><img src = "../../assets/burger-menu/social-icons/linkedin.svg" id = "linkedin"></a>
+          <a href = "https://vimeo.com/user80054186"><img src = "../../assets/burger-menu/social-icons/vimeo.svg" id = "vimeo"></a>
+          <a href = "https://giphy.com/Alicehodgedesign"><img src = "../../assets/burger-menu/social-icons/giphy.svg" id = "giphy"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
-
-<div id = "content">
-
-</div>
-
-<app-footer></app-footer>

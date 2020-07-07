@@ -1,4 +1,4 @@
-<div id = "container">
+<div id = "viewport">
 
   <!-- Header -->
   <div id = "header-container" #work>
@@ -24,9 +24,9 @@
 
   <div id = "content-grid">
 
-    <div id = "left">
+    <figure id = "left">
         <img src = "../../assets/me-page/film-frames/both.png" id = "filmframe">
-    </div>
+    </figure>
 
     <div id = "right">
       <div id = "heading">
@@ -65,12 +65,63 @@
         <p class = "bold">Brands I've worked for:</p>
       </div>
 
-      <div id = "carousel">
-
+      <div id = "carousel-container">
+        <app-carousel id = "carousel"></app-carousel>
       </div>
+      
 
     </div>
 
+    <!-- Footer -->
+    <div id = "footer-container">
+      <app-footer></app-footer>
+    </div>
+
+  </div>
+
+  <!-- Burger Menu -->
+  <div id = "burger-container">
+    <input type = "checkbox" id = "check" (click) = "hideOverflow()"/>
+    <div id = "burger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div id = "canvas">
+      <div class = "content">
+        <div class = "titles">
+
+          <div id = "burger-intro-div">
+            <a routerLink = "/intro" id = "burger-intro-text"> intro </a>
+            <img src = "../../assets/burger-menu/scribbles/intro-scribble.svg" id = "burger-intro-scribble">
+          </div>
+
+          <div id = "burger-work-div">
+            <a routerLink = "/work" id = "burger-work-text"> work </a>
+            <img src = "../../assets/burger-menu/scribbles/work-scribble.svg" id = "burger-work-scribble">
+          </div>
+
+          <div id = "burger-play-div">
+            <a routerLink = "/play" id = "burger-play-text"> play </a>
+            <img src = "../../assets/burger-menu/scribbles/play-scribble.svg" id = "burger-play-scribble">
+          </div>
+
+          <div id = "burger-me-div">
+            <label for = "check" id = "burger-me-text"> me </label>
+            <img src = "../../assets/burger-menu/scribbles/me-scribble.svg" id = "burger-me-scribble">
+          </div>
+          <a href = "mailto: alicelhodge@icloud.com" id = "email">alicelhodge@icloud.com</a>
+        </div>
+
+        <div class = "socials">
+          <a href = "https://www.instagram.com/alicehodgedesign/"><img src = "../../assets/burger-menu/social-icons/instagram.svg" id = "instagram"></a>
+          <a href = "https://www.linkedin.com/in/alice-hodge-a88995151/"><img src = "../../assets/burger-menu/social-icons/linkedin.svg" id = "linkedin"></a>
+          <a href = "https://vimeo.com/user80054186"><img src = "../../assets/burger-menu/social-icons/vimeo.svg" id = "vimeo"></a>
+          <a href = "https://giphy.com/Alicehodgedesign"><img src = "../../assets/burger-menu/social-icons/giphy.svg" id = "giphy"></a>
+        </div>
+      </div>
+    </div>
   </div>
 
 </div>

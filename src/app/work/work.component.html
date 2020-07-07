@@ -1,4 +1,4 @@
-<div id = "container">
+<div id = "viewport">
 
   <!-- Header -->
   <div id = "header-container" #work>
@@ -27,16 +27,16 @@
     <figure id = "freeriderco">
       <a routerLink = "/work/freeriderco">
         <img src = "../../assets/featured-projects/freeriderco.jpg"
-        
-        
+        onmouseover = "this.src = '../../assets/featured-projects/freeriderco.gif';"
+        onmouseout = "this.src = '../../assets/featured-projects/freeriderco.jpg';"
         class = "grid-image"></a>
     </figure>
 
     <figure id = "alldifferent">
       <a routerLink = "/work/all-different-all-normal">
         <img src = "../../assets/featured-projects/all-different-all-normal.jpg"
-        
-        
+        onmouseover = "this.src = '../../assets/featured-projects/all-different-all-normal.gif';"
+        onmouseout = "this.src = '../../assets/featured-projects/all-different-all-normal.jpg';"
         class = "grid-image"></a>
     </figure>
 
@@ -51,8 +51,8 @@
     <figure id = "bbcradio1">
       <a routerLink = "/work/bbc-radio-1">
         <img src = "../../assets/featured-projects/bbc-radio-1.jpg"
-        
-
+        onmouseover = "this.src = '../../assets/featured-projects/bbc-radio-1.gif';"
+        onmouseout = "this.src = '../../assets/featured-projects/bbc-radio-1.jpg';"
         class = "grid-image">
       </a>
 
@@ -63,8 +63,50 @@
     </div>
 
   </div>
+
+  <!-- Burger Menu -->
+  <div id = "burger-container">
+    <input type = "checkbox" id = "check" (click) = "hideOverflow()"/>
+    <div id = "burger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div id = "canvas">
+      <div class = "content">
+        <div class = "titles">
+
+          <div id = "burger-intro-div">
+            <a routerLink = "/intro" id = "burger-intro-text"> intro </a>
+            <img src = "../../assets/burger-menu/scribbles/intro-scribble.svg" id = "burger-intro-scribble">
+          </div>
+
+          <div id = "burger-work-div">
+            <label for = "check" id = "burger-work-text"> work </label>
+            <img src = "../../assets/burger-menu/scribbles/work-scribble.svg" id = "burger-work-scribble">
+          </div>
+
+          <div id = "burger-play-div">
+            <a routerLink = "/play" id = "burger-play-text"> play </a>
+            <img src = "../../assets/burger-menu/scribbles/play-scribble.svg" id = "burger-play-scribble">
+          </div>
+
+          <div id = "burger-me-div">
+            <a routerLink = "/me" id = "burger-me-text"> me </a>
+            <img src = "../../assets/burger-menu/scribbles/me-scribble.svg" id = "burger-me-scribble">
+          </div>
+          <a href = "mailto: alicelhodge@icloud.com" id = "email">alicelhodge@icloud.com</a>
+        </div>
+
+        <div class = "socials">
+          <a href = "https://www.instagram.com/alicehodgedesign/"><img src = "../../assets/burger-menu/social-icons/instagram.svg" id = "instagram"></a>
+          <a href = "https://www.linkedin.com/in/alice-hodge-a88995151/"><img src = "../../assets/burger-menu/social-icons/linkedin.svg" id = "linkedin"></a>
+          <a href = "https://vimeo.com/user80054186"><img src = "../../assets/burger-menu/social-icons/vimeo.svg" id = "vimeo"></a>
+          <a href = "https://giphy.com/Alicehodgedesign"><img src = "../../assets/burger-menu/social-icons/giphy.svg" id = "giphy"></a>
+        </div>
+      </div>
+    </div>
+  </div>
   
 </div>
-
-<!-- onmouseover = "this.src = '...';"
-      onmouseout = "this.src = '...';" -->

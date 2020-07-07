@@ -1,8 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { AppRoutingModule } from './app-routing.module';
+import { CarouselModule } from 'primeng/carousel';
 
 import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app-routing.module';
 import { IntroComponent } from './intro/intro.component';
 import { WorkComponent } from './work/work.component';
 import { PlayComponent } from './play/play.component';
@@ -12,8 +14,7 @@ import { Project2Component } from './featured-projects/project2/project2.compone
 import { Project3Component } from './featured-projects/project3/project3.component';
 import { Project4Component } from './featured-projects/project4/project4.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { BurgerMenuComponent } from './components/burger-menu/burger-menu.component';
-import { HeaderComponent } from './components/header/header.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -27,14 +28,15 @@ import { HeaderComponent } from './components/header/header.component';
     Project3Component,
     Project4Component,
     FooterComponent,
-    BurgerMenuComponent,
-    HeaderComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    CarouselModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
