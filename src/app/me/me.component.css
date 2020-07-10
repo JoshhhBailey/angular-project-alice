@@ -116,6 +116,11 @@
   object-fit: cover;
 }
 
+#right {
+  position: relative;
+  outline: green solid 2px;
+}
+
 .bold {
   font-family: "GT Walsheim", sans-serif;
   font-size: 1.5vw;
@@ -133,91 +138,79 @@
 }
 
 #heading {
-  position: relative;
-  top: 8%;
-  left: 5%;
-  width: max-content;
-  margin-right: 0;
+  position: absolute;
+  top: 12.5%;
+  left: 0%;
+  width: 100%;
 
-  /*outline: red solid 2px;*/
-}
-
-#heading p {
   font-family: Gastromond, sans-serif;
   font-size: 3.5vw;
   color: white !important;
   text-shadow: -1px -1px 0 #474747, 1px -1px 0 #474747, -1px 1px 0 #474747, 1px 1px 0 #474747;
-}
-
-#profile {
-  position: relative;
-  top: 12%;
-  left: 5%;
 
   /*outline: red solid 2px;*/
 }
 
-#profile p {
-  font-size: 2vw !important;
-}
-
-#list-grid {
-  position: relative;
-  top: 18%;
-  left: 5%;
-
-  display: grid;
-  width: 90%;
-  height: max-content;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  gap: 0;
-
-  outline: green solid 2px;
-}
-
-#experience {
-  position: relative;
-  top: 0%;
+#profile {
+  position: absolute;
+  top: 22.5%;
   left: 0%;
-  width: max-content;
-  height: max-content;
+  width: 100%;
+
+  font-size: 2vw !important;
+
+  /*outline: red solid 2px;*/
+}
+
+#experience-title {
+  position: absolute;
+  top: 32.5%;
+  left: 0%;
+  width: 50%;
+
+  outline: red solid 2px;
+}
+#experience {
+  position: absolute;
+  top: 37.5%;
+  left: 0%;
+  width: 50%;
 
   outline: red solid 2px;
 }
 
-#education {
-  position: relative;
-  top: 0%;
-  left: 0%;
-  height: max-content;
-  justify-self: start;
+#education-title {
+  position: absolute;
+  top: 32.5%;
+  left: 55%;
+  width: 45%;
   
-
+  outline: red solid 2px;
+}
+#education {
+  position: absolute;
+  top: 37.5%;
+  left: 55%;
+  width: 45%;
+  
   outline: red solid 2px;
 }
 
 #brands {
-  position: relative;
-  top: 25%;
-  left: 5%;
-  width: max-content;
+  position: absolute;
+  top: 62.5%;
+  left: 0%;
+  width: 100%;
 
   /*outline: red solid 2px;*/
 }
 
 #carousel-container {
-  position: relative;
-  top: 27.5%;
-  left: 5%;
-  width: 82.5%;
-  height: 10%;
-  outline: blue solid 2px;
-}
-
-#carousel {
-  position: relative;
-  top: 50%;
+  position: absolute;
+  top: 67.5%;
+  left: 0%;
+  width: 100%;
+  outline: red solid 2px;
 }
 
 
@@ -442,6 +435,48 @@
 
 
 
+@media screen and (max-width: 1024px) {
+  #content-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.75fr;
+  }
+  #heading {
+    font-size: 7vw;
+    top: 0%;
+  }
+  #profile {
+    font-size: 4vw !important;
+    top: 15%;
+  }
+  #experience-title {
+    top: 35%;
+  }
+  #experience {
+    top: 40%;
+  }
+  #education-title {
+    top: 35%;
+    left: 52.5%;
+  }
+  #education {
+    top: 40%;
+    width: 50%;
+    left: 52.5%;
+  }
+  #brands {
+    top: 80%;
+  }
+  #carousel-container {
+    top: 85%;
+  }
+  .bold {
+    font-size: 3vw;
+  }
+  .light {
+    font-size: 2.5vw;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #header-container {
     visibility: hidden;
@@ -449,33 +484,19 @@
   #burger-container {
     visibility: visible;
   }
-  #content-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+}
+
+@media screen and (max-width: 500px) {
+  #heading {
+    font-size: 6.45vw;
   }
-  /*#list-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    left: 10%;
-    width: max-content;
-    height: max-content;
-  }*/
-  #heading, #profile, #brands, #carousel {
-    left: 10%;
-  }
-  #brands {
-    top: 20%;
-  }
-  #heading p {
-    font-size: 6vw;
-  }
-  #profile p {
+  #profile {
     font-size: 3.5vw !important;
   }
   .bold {
-    font-size: 3vw;
+    font-size: 2.75vw;
   }
   .light {
-    font-size: 2.5vw;
+    font-size: 2.25vw;
   }
 }

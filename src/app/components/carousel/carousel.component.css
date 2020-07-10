@@ -1,23 +1,35 @@
 .carousel .ui-carousel .ui-carousel-content .ui-carousel-item .logo-container {
     margin: 1em;
     text-align: center;
-    outline: green solid 2px;
+    /*outline: green solid 2px;*/
     height: 5vw;
 }
 
 .carousel .ui-carousel.ui-carousel-horizontal .ui-carousel-content .ui-carousel-item.ui-carousel-item-start .logo-container {
-    margin-left: 0.6em;
+    margin-left: 0.1em;
 }
 
 .carousel .ui-carousel.ui-carousel-horizontal .ui-carousel-content .ui-carousel-item.ui-carousel-item-end .logo-container {
-    margin-right: 0.6em;
+    margin-right: 0.1em;
 }
 
 /* Dots */
-.carousel .ui-carousel.custom-carousel .ui-carousel-dot-icon {
-    width: 16px !important;
-    height: 16px !important;
-    border-radius: 50%;
+.carousel .ui-carousel.custom-carousel .ui-carousel-dots-container {
+    visibility: hidden;
+}
+
+.ui-carousel-prev, .ui-carousel-next {
+    visibility: hidden;
+}
+
+.ui-carousel-prev > span, .ui-carousel-next > span {
+    font-size: 1.5vw;
+}
+
+.ui-carousel-prev-icon, .ui-carousel-next-icon {
+    visibility: visible;
+    color: grey;
+    opacity: 0.5;
 }
 
 #logo-img {
@@ -26,4 +38,19 @@
     position: relative;
     top: 50%;
     transform: translate(0%, -50%);
+}
+
+@media screen and (max-width: 1024px) {
+    .ui-carousel-prev > span, .ui-carousel-next > span {
+        font-size: 2vw;
+    }
+    .carousel .ui-carousel .ui-carousel-content .ui-carousel-item .logo-container {
+        height: 10vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .carousel .ui-carousel .ui-carousel-content .ui-carousel-item .logo-container {
+        margin: 0.5em;
+    }
 }

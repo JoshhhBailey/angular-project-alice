@@ -3,7 +3,6 @@
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 /* INTRO */
@@ -456,19 +455,107 @@
 
 
 /* CONTENT */
-#content {
+#content-grid {
   position: absolute;
   top: calc(100% + 5vw);
-  left: 0%;
-  width: 100%;
-  height: calc(100% - 10vw);
-  outline: red solid 2px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 0;
+}
+
+.bold {
+  font-family: "GT Walsheim", sans-serif;
+  font-size: 1.5vw;
+  color: #474747;
+}
+
+#right-align {
+  position: relative;
+  left: 10%;
+}
+
+#left {
+  position: relative;
+  margin-right: 0;
+}
+
+#left img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#right {
+  position: relative;
+}
+
+#right img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+
+#right-image1 img {
+  margin-top: 1vw;
+  margin-bottom: 2vw;
+}
+
+#left-heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Gastromond, sans-serif;
+  font-size: 3.5vw;
+  color: white !important;
+  text-shadow: -1px -1px 0 #474747, 1px -1px 0 #474747, -1px 1px 0 #474747, 1px 1px 0 #474747;
+}
+
+#right-heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Gastromond, sans-serif;
+  font-size: 3.5vw;
+  color: white !important;
+  text-shadow: -1px -1px 0 #474747, 1px -1px 0 #474747, -1px 1px 0 #474747, 1px 1px 0 #474747;
+}
+
+#left-text {
+  margin-top: 0;
+}
+
+#linked-text {
+  color: #ea4a6a;
 }
 
 
 
 /* FOOTER */
 #footer-container {
-  position: relative;
-  top: 200%;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 5vw;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  #content-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  #left-heading, #right-heading {
+    font-size: 7vw;
+  }
+  #profile {
+    font-size: 4vw !important;
+  }
+  .bold {
+    font-size: 3vw;
+  }
+  #right-align {
+    left: 0%;
+  }
+  #left {
+    margin-right: 40px;
+  }
 }

@@ -91,13 +91,58 @@
     </div>
   </div>
 
-  <div id = "content">
+  <div id = "content-grid">
+
+    <figure id = "left">
+      <img src = "../../assets/film-frames/intro-film-frame.png">
+
+      <p id = "left-heading">
+        A bit about me...
+      </p>
+
+      <p id = "profile" class = "bold">
+        Hello, I'm Alice.<br>
+        I'm a Designer, Illustrator and Animator.
+      </p>
+
+      <p id = "brands" class = "bold">
+        Brands I've worked for:
+      </p>
+
+      <div id = "carousel-container">
+        <app-carousel></app-carousel>
+      </div>
+
+      <p id = "left-text" class = "bold">Want to <a routerLink = "/me" id = "linked-text" class = "bold">find out more</a>?</p>
+
+    </figure>
+
+    <figure id = "right">
+      <div id = "right-align">
+        <p id = "right-heading">Featured Projects</p>
+
+        <a routerLink = "/work/freeriderco" id = "right-image1">
+          <img src = "../../assets/featured-projects/freeriderco.jpg"
+          onmouseover = "this.src = '../../assets/featured-projects/freeriderco.gif';"
+          onmouseout = "this.src = '../../assets/featured-projects/freeriderco.jpg';">
+        </a>
+
+        <a routerLink = "/work/all-different-all-normal" id = "right-image2">
+          <img src = "../../assets/featured-projects/all-different-all-normal.jpg"
+          onmouseover = "this.src = '../../assets/featured-projects/all-different-all-normal.gif';"
+          onmouseout = "this.src = '../../assets/featured-projects/all-different-all-normal.jpg';">
+        </a>
+
+        <p id = "right-text" class = "bold"><a routerLink = "/work" id = "linked-text" class = "bold">View </a>more projects</p>
+
+      </div>
+    </figure>
     
-  </div>
-  
-  <!-- Footer -->
-  <div id = "footer-container">
-    <app-footer></app-footer>
+    <!-- Footer -->
+    <div id = "footer-container">
+      <app-footer></app-footer>
+    </div>
+
   </div>
 
 </div>
