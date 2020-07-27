@@ -46,7 +46,7 @@
 }
 
 /* Text Properties */
-#footer-text span, #footer-text a {
+#footer-text p, #footer-text a {
     text-decoration: none;
     font-family: "GT Walsheim Light", sans-serif;
     font-size: 0.65vw;
@@ -55,7 +55,7 @@
 }
 
 #footer-text a:hover {
-    color: #ea4a6a
+    color: #e98279
 }
 
 #footer-copyright, #footer-developedby {

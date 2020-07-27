@@ -106,111 +106,79 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   gap: 0;
-
-  outline: purple solid 2px;
-}
-
-#filmframe {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-#right {
-  position: relative;
-  outline: green solid 2px;
-}
-
-.bold {
-  font-family: "GT Walsheim", sans-serif;
-  font-size: 1.5vw;
-  color: #474747;
+  /*outline: purple solid 2px;*/
 }
 
 .light {
   font-family: "GT Walsheim Light", sans-serif;
-  font-size: 1.1vw;
+  font-size: 1vw;
   color: #474747;
 }
 
-#content-grid p {
-  margin: 0;
+.bold {
+  font-family: "GT Walsheim", sans-serif;
+  font-size: 1.25vw;
+  color: #474747;
+}
+
+#filmframe {
+  width: 85%;
+  height: 85%;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#right {
+  position: relative;
+  /*outline: green solid 2px;*/
+}
+
+#right a {
+  text-decoration: none;
+  font-family: "GT Walsheim Light", sans-serif;
+  color: #474747;
+}
+
+#right a:hover {
+  color: #e98279;
 }
 
 #heading {
-  position: absolute;
-  top: 12.5%;
-  left: 0%;
-  width: 100%;
-
+  margin-bottom: 0;
+  margin-top: 5vw;
   font-family: Gastromond, sans-serif;
-  font-size: 3.5vw;
+  font-size: 3vw;
   color: white !important;
   text-shadow: -1px -1px 0 #474747, 1px -1px 0 #474747, -1px 1px 0 #474747, 1px 1px 0 #474747;
-
   /*outline: red solid 2px;*/
 }
 
 #profile {
-  position: absolute;
-  top: 22.5%;
-  left: 0%;
-  width: 100%;
-
-  font-size: 2vw !important;
-
+  font-size: 1.5vw !important;
   /*outline: red solid 2px;*/
 }
 
-#experience-title {
-  position: absolute;
-  top: 32.5%;
-  left: 0%;
-  width: 50%;
-
-  outline: red solid 2px;
-}
-#experience {
-  position: absolute;
-  top: 37.5%;
-  left: 0%;
-  width: 50%;
-
-  outline: red solid 2px;
+#experience, #education {
+  display: inline-block;
+  vertical-align: top;
 }
 
-#education-title {
-  position: absolute;
-  top: 32.5%;
-  left: 55%;
-  width: 45%;
-  
-  outline: red solid 2px;
-}
 #education {
-  position: absolute;
-  top: 37.5%;
-  left: 55%;
-  width: 45%;
-  
-  outline: red solid 2px;
+  margin-left: 40px;
 }
 
-#brands {
-  position: absolute;
-  top: 62.5%;
-  left: 0%;
-  width: 100%;
+#experience-title, #education-title {
+  margin-bottom: 0;
+}
 
-  /*outline: red solid 2px;*/
+#education-text-1 {
+  line-height: 1.35vw;
 }
 
 #carousel-container {
-  position: absolute;
-  top: 67.5%;
-  left: 0%;
-  width: 100%;
-  outline: red solid 2px;
+  margin-right: 7vw;
 }
 
 
@@ -258,7 +226,7 @@
   position: absolute;
   height: 0.3vw;
   width: 3vw;
-  background: #ea4a6a;
+  background: #ebb59a;
   border-radius: 0.5vw;
   opacity: 1;
   left: 0%;
@@ -295,7 +263,7 @@
   top: 40%;
   width: 0%;
   left: 50%;
-  background: #f2d2d7
+  background: #ebb59a
 }
 #burger-container input:checked + #burger-menu > span:nth-child(2)
 {
@@ -303,7 +271,7 @@
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
-  background: #f2d2d7;
+  background: #f2e2d2;
 }
 #burger-container input:checked + #burger-menu > span:nth-child(3)
 {
@@ -311,14 +279,14 @@
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  background: #f2d2d7
+  background: #f2e2d2
 }
 #burger-container input:checked + #burger-menu > span:nth-child(4)
 {
   top: 40%;
   width: 0%;
   left: 50%;
-  background: #f2d2d7
+  background: #ebb59a
 }
 
 /* Move canvas */
@@ -333,7 +301,7 @@
   height: 100%;
   top: 0%;
   left: 0%;
-  background: #ea4a6a;
+  background: #e98279;
   -webkit-font-smoothing: antialiased;  /* to stop flickering of text in safari */
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
   padding-left: 0;
@@ -342,7 +310,7 @@
 /* Titles Text */
 .titles a, .titles label {
   text-decoration: none;
-  color: #f2d2d7;
+  color: #f2e2d2;
   font-family: "GT Walsheim", sans-serif;
   font-size: 5vw;
   position: absolute;
@@ -442,38 +410,22 @@
   }
   #heading {
     font-size: 7vw;
-    top: 0%;
   }
   #profile {
     font-size: 4vw !important;
-    top: 15%;
-  }
-  #experience-title {
-    top: 35%;
-  }
-  #experience {
-    top: 40%;
-  }
-  #education-title {
-    top: 35%;
-    left: 52.5%;
-  }
-  #education {
-    top: 40%;
-    width: 50%;
-    left: 52.5%;
-  }
-  #brands {
-    top: 80%;
-  }
-  #carousel-container {
-    top: 85%;
   }
   .bold {
-    font-size: 3vw;
+    font-size: 2.75vw;
   }
   .light {
-    font-size: 2.5vw;
+    font-size: 2.25vw;
+  }
+  #education-text-1 {
+    line-height: 3.03vw;
+  }
+  #right {
+    margin-right: 0;
+    margin-left: 80px;
   }
 }
 
@@ -484,6 +436,13 @@
   #burger-container {
     visibility: visible;
   }
+  
+}
+
+@media screen and (max-width: 565px) {
+  #education {
+    margin-left: 20px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -493,10 +452,16 @@
   #profile {
     font-size: 3.5vw !important;
   }
+}
+
+@media screen and (max-width: 475px) {
   .bold {
-    font-size: 2.75vw;
+    font-size: 2.5vw;
   }
   .light {
-    font-size: 2.25vw;
+    font-size: 2vw;
+  }
+  #education-text-1 {
+    line-height: 2.7vw;
   }
 }

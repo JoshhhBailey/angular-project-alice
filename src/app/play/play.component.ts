@@ -12,6 +12,7 @@ export class PlayComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // When burger menu open
   hideOverflow(): void {
     if ($("#check").is(':checked')) {
       $('#viewport').css('overflowY', 'hidden');

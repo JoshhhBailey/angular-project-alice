@@ -18,4 +18,14 @@ export class IntroComponent implements OnInit {
     el.scrollIntoView({behavior: "smooth"});
   }
 
+  // When burger menu open
+  hideOverflow(): void {
+    if ($("#check").is(':checked')) {
+      $('#viewport').css('overflowY', 'hidden');
+    }
+    else {
+      $('#viewport').css('overflowY', 'visible');
+    }
+  }
+
 }

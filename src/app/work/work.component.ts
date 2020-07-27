@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-import { PROJECTS } from '../project'
-
 @Component({
   selector: 'app-work',
   templateUrl: './work.component.html',
@@ -22,6 +20,7 @@ export class WorkComponent implements OnInit {
     return str;
   }
 
+  // When burger menu open
   hideOverflow(): void {
     if ($("#check").is(':checked')) {
       $('#viewport').css('overflowY', 'hidden');

@@ -1,26 +1,26 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation} from '@angular/core';
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.css'],
-	encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None
 })
-
 export class CarouselComponent {
 
   logos = ["bt.png",
-          "direct-line.png",
+          "directline.png",
           "ee.png",
           "experian.png",
           "freeriderco.png",
           "kfc.png",
-          "national-grid.png",
+          "nationalgrid.png",
           "westfield.png"];
 
   responsiveOptions;
 
-  constructor() {
+  constructor(public router: Router) {
     /*this.responsiveOptions = [
       {
         breakpoint: '1024px',

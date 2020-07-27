@@ -132,7 +132,7 @@
   position: absolute;
   height: 0.3vw;
   width: 3vw;
-  background: #ea4a6a;
+  background: #ebb59a;
   border-radius: 0.5vw;
   opacity: 1;
   left: 0%;
@@ -169,7 +169,7 @@
   top: 40%;
   width: 0%;
   left: 50%;
-  background: #f2d2d7
+  background: #ebb59a
 }
 #burger-container input:checked + #burger-menu > span:nth-child(2)
 {
@@ -177,7 +177,7 @@
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
-  background: #f2d2d7;
+  background: #f2e2d2;
 }
 #burger-container input:checked + #burger-menu > span:nth-child(3)
 {
@@ -185,14 +185,14 @@
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  background: #f2d2d7
+  background: #f2e2d2
 }
 #burger-container input:checked + #burger-menu > span:nth-child(4)
 {
   top: 40%;
   width: 0%;
   left: 50%;
-  background: #f2d2d7
+  background: #ebb59a
 }
 
 /* Move canvas */
@@ -207,7 +207,7 @@
   height: 100%;
   top: 0%;
   left: 0%;
-  background: #ea4a6a;
+  background: #e98279;
   -webkit-font-smoothing: antialiased;  /* to stop flickering of text in safari */
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
   padding-left: 0;
@@ -216,7 +216,7 @@
 /* Titles Text */
 .titles a, .titles label {
   text-decoration: none;
-  color: #f2d2d7;
+  color: #f2e2d2;
   font-family: "GT Walsheim", sans-serif;
   font-size: 5vw;
   position: absolute;
@@ -338,7 +338,19 @@
   margin-top: 2vw;
   margin-bottom: 1vw;
 }
+#ee {
+  margin-left: 4vw;
+  margin-right: 0.5vw;
+  margin-top: 0;
+  margin-bottom: 1vw;
+}
 #itsyourtime {
+  margin-left: 0.5vw;
+  margin-right: 4vw;
+  margin-top: 0;
+  margin-bottom: 1vw;
+}
+#pending {
   margin-left: 4vw;
   margin-right: 0.5vw;
   margin-top: 0;
@@ -363,11 +375,11 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
-  #freeriderco, #alldifferent, #itsyourtime, #bbcradio1 {
+  #freeriderco, #alldifferent, #ee, #itsyourtime, #pending, #bbcradio1 {
     margin-left: 4vw;
     margin-right: 4vw;
   }
-  #alldifferent, #itsyourtime {
+  #alldifferent, #itsyourtime, #ee, #pending {
     margin-bottom: 3vw;
   }
 }
