@@ -69,36 +69,14 @@
     </div>
   </div>
 
-  <!-- Header -->
-  <div id = "header-container" #work>
-    <div id = "header-text">
-      <div id = "intro-div">
-        <a (click) = "scrollTo(top)" class = "text" id = header-intro> intro </a>
-        <img src = "../../assets/header-scribbles/intro-scribble.svg" id = "intro-scribble">
-      </div>
-      <div id = "work-div">
-        <a routerLink = "/work" class = "text" id = header-work> work </a>
-        <img src = "../../assets/header-scribbles/work-scribble.svg" id = "work-scribble">
-      </div>
-      <div id = "play-div">
-        <a routerLink = "/play" class = "text" id = header-play> play </a>
-        <img src = "../../assets/header-scribbles/play-scribble.svg" id = "play-scribble">
-      </div>
-      <div id = "me-div">
-        <a routerLink = "/me" class = "text" id = header-me> me </a>
-        <img src = "../../assets/header-scribbles/me-scribble.svg" id = "me-scribble">
-      </div>
-    </div>
-  </div>
-
-  <div id = "content-grid">
+  <div id = "content-grid" #work>
 
     <figure id = "left">
-      <img src = "../../assets/film-frames/intro-film-frame.png">
-
       <p id = "left-heading">
-        A bit about me...
+        A little bit about me...
       </p>
+
+      <img src = "../../assets/film-frames/intro-film-frame.png">
 
       <p id = "profile" class = "bold">
         Hello, I'm Alice.<br>

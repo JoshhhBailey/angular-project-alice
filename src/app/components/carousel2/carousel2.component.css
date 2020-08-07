@@ -1,0 +1,48 @@
+.carousel2 .ui-carousel .ui-carousel-content .ui-carousel-item .logo-container {
+    margin: 16px;
+    text-align: center;
+    height: 5vw;
+  }
+  
+  .carousel2 .ui-carousel .ui-carousel-content {
+    padding: 0;
+  }
+  
+  .ui-carousel-container {
+    padding: 0;
+  }
+  
+  .carousel2 .ui-carousel.ui-carousel-horizontal .ui-carousel-content .ui-carousel-item.ui-carousel-item-start .logo-container {
+    margin-left: 16px;
+  }
+  
+  .carousel2 .ui-carousel.ui-carousel-horizontal .ui-carousel-content .ui-carousel-item.ui-carousel-item-end .logo-container {
+    margin-right: 16px;
+  }
+  
+  /* Dots */
+  .carousel2 .ui-carousel.custom-carousel .ui-carousel-dots-container {
+    visibility: hidden;
+  }
+  
+  .ui-carousel-prev, .ui-carousel-next {
+    visibility: hidden;
+  }
+  
+  .ui-carousel-prev > span, .ui-carousel-next > span {
+    font-size: 1.5vw;
+  }
+  
+  .ui-carousel-prev-icon, .ui-carousel-next-icon {
+    visibility: visible;
+    color: grey;
+    opacity: 0.5;
+  }
+  
+  #logo-img {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -50%);
+  }

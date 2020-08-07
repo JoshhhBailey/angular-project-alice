@@ -26,6 +26,13 @@
   color: black;
 }
 
+#header-logo > img {
+  max-width: 10%;
+  max-height: 10%;
+  margin-left: 4vw;
+  margin-top: 1.5vw;
+}
+
 /* Text and Scribble Properties */
 #header-text {
   position: absolute;

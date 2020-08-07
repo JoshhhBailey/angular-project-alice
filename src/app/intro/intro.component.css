@@ -2,7 +2,7 @@
   position: absolute;
   height: 100vh;
   width: 100vw;
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
 }
 
 /* INTRO */
@@ -164,6 +164,7 @@
   top: 2vw;
   width: 3vw;
   height: 3vw;
+  outline: solid blue 2px;
 }
 
 #check {
@@ -358,113 +359,20 @@
 
 
 
-/* HEADER */
-#header-container {
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  height: 5vw;
-  scroll-snap-align: start;
-}
-
-#header-container a {
-  text-decoration: none;
-  font-family: "GT Walsheim", sans-serif;
-  font-size: 1vw;
-  color: grey;
-  width: max-content;
-}
-
-#header-container a:hover {
-  color: black;
-}
-
-/* Text and Scribble Properties */
-#header-text {
-  position: absolute;
-  top: 50%;
-  left: 82.5%;
-  width: 15%;
-  height: 5vw;
-  transform: translate(0%, -50%);
-}
-
-#header-text img {
-  max-width: 100%;
-  width: 3.75vw;
-  height: 2.5vw;
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-  top: 50%;
-  transform: translate(0%, -50%);
-}
-
-.text {
-  position: absolute;
-  top: 50%;
-  transform: translate(50%, -50%);
-}
-
-#header-intro {
-  color: black !important;
-}
-#intro-scribble {
-  opacity: 1 !important;
-}
-#header-intro, #intro-scribble {
-  left: 0%;
-  cursor: pointer;
-}
-#header-work, #work-scribble {
-  left: 25%;
-}
-#header-play, #play-scribble {
-  left: 50%;
-}
-#header-me, #me-scribble {
-  left: 75%;
-}
-
-#intro-scribble {
-  left: 1%;
-}
-#work-scribble {
-  left: 27%;
-  top: 51% !important;
-}
-#play-scribble {
-  left: 50.5%;
-}
-#me-scribble {
-  left: 74%;
-  width: 3vw !important;
-  height: 2vw !important;
-}
-
-#header-text a:hover ~ img {
-  opacity: 1;
-}
-#header-text label:hover ~ img {
-  opacity: 1;
-}
-
-
-
 /* CONTENT */
 #content-grid {
   position: absolute;
-  top: calc(100% + 5vw);
+  top: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   gap: 0;
-  outline: blue solid 2px;
+  /*outline: blue solid 2px;*/
 }
 
 .bold {
   font-family: "GT Walsheim", sans-serif;
-  font-size: 1.25vw;
+  font-size: 1vw;
   color: #474747;
 }
 
@@ -481,23 +389,23 @@
 #left img {
   max-width: 75%;
   max-height: 75%;
-  margin-left: 5vw;
+  margin-left: 3.5vw;
 }
 
 #right {
   position: relative;
-  margin-left: 10vw;
+  margin-left: 5vw;
   margin-right: 0;
 }
 
 #right img {
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 70%;
+  max-height: 70%;
   object-fit: cover;
 }
 
 #right-image1 > img {
-  margin-top: 1vw;
+  margin-top: 3vw;
   margin-bottom: 2vw;
 }
 
@@ -509,7 +417,7 @@
   margin-top: 0;
   margin-bottom: 0;
   font-family: Gastromond, sans-serif;
-  font-size: 3vw;
+  font-size: 2.75vw;
   color: white !important;
   text-shadow: -1px -1px 0 #474747, 1px -1px 0 #474747, -1px 1px 0 #474747, 1px 1px 0 #474747;
 }
@@ -584,17 +492,5 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5vw;
-  }
-  .ui-carousel-prev > span, .ui-carousel-next > span {
-    font-size: 2vw;
-  }
-  .carousel .ui-carousel .ui-carousel-content .ui-carousel-item .logo-container {
-    height: 10vw;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .carousel .ui-carousel .ui-carousel-content .ui-carousel-item .logo-container {
-      margin: 0.5em;
   }
 }

@@ -46,3 +46,12 @@
     top: 50%;
     transform: translate(0%, -50%);
   }
+
+  @media screen and (max-width: 1024px) {
+    .ui-carousel-prev > span, .ui-carousel-next > span {
+      font-size: 2vw;
+    }
+    .carousel .ui-carousel .ui-carousel-content .ui-carousel-item .logo-container {
+      height: 10vw;
+    }
+  }

@@ -1,12 +1,11 @@
-import { Component, ViewEncapsulation} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-carousel',
-  templateUrl: './carousel.component.html',
-  styleUrls: ['./carousel.component.css'],
-  encapsulation: ViewEncapsulation.None
+  selector: 'app-carousel2',
+  templateUrl: './carousel2.component.html',
+  styleUrls: ['./carousel2.component.css']
 })
-export class CarouselComponent {
+export class Carousel2Component {
 
   logos = ["bt.png",
           "directline.png",
