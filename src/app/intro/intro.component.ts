@@ -14,6 +14,7 @@ export class IntroComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // Scroll when arrow is clicked
   scrollTo(el: HTMLElement) {
     el.scrollIntoView({behavior: "smooth"});
   }

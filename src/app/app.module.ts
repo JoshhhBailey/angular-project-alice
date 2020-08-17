@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
-import { CarouselModule } from 'primeng/carousel';
+
+import { SlickCarouselModule } from 'ngx-slick-carousel'
 
 import { AppComponent } from './app.component';
 import { IntroComponent } from './intro/intro.component';
@@ -11,7 +11,7 @@ import { PlayComponent } from './play/play.component';
 import { MeComponent } from './me/me.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
-import { Carousel2Component } from './components/carousel2/carousel2.component';
+
 
 @NgModule({
   declarations: [
@@ -21,14 +21,12 @@ import { Carousel2Component } from './components/carousel2/carousel2.component';
     PlayComponent,
     MeComponent,
     FooterComponent,
-    CarouselComponent,
-    Carousel2Component,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
     AppRoutingModule,
-    CarouselModule
+    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent],

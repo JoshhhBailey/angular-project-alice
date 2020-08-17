@@ -1,9 +1,7 @@
-<div class = "carousel">
-    <p-carousel [value] = "logos" styleClass = "custom-carousel" [numVisible] = "3" [numScroll] = "1" [circular] = "true" [responsiveOptions] = "responsiveOptions">
-        <ng-template let-logo pTemplate = "item">
-            <div class = "logo-container p-nogutter">
-                <img src = "../../../assets/carousel/logos/{{logo}}" id = "logo-img"/>
-            </div>
-        </ng-template>
-    </p-carousel>
-</div>
+<ngx-slick-carousel class="carousel" 
+                    #slickModal="slick-carousel" 
+                    [config]="slideConfig">
+    <div ngxSlickItem *ngFor="let slide of slides">
+        <img src="../../assets/carousel/logos/{{slide.name}}.png" width = "100%">
+    </div>
+</ngx-slick-carousel>

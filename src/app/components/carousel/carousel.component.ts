@@ -1,41 +1,33 @@
-import { Component, ViewEncapsulation} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
-  styleUrls: ['./carousel.component.css'],
-  encapsulation: ViewEncapsulation.None
+  styleUrls: ['./carousel.component.css']
 })
-export class CarouselComponent {
+export class CarouselComponent implements OnInit {
 
-  logos = ["bt.png",
-          "directline.png",
-          "ee.png",
-          "experian.png",
-          "freeriderco.png",
-          "kfc.png",
-          "nationalgrid.png",
-          "westfield.png"];
+  constructor() { }
 
-  responsiveOptions;
-
-  constructor() {
-    /*this.responsiveOptions = [
-      {
-        breakpoint: '1024px',
-        numVisible: 3,
-        numScroll: 3
-      },
-      {
-        breakpoint: '768px',
-        numVisible: 2,
-        numScroll: 2
-      },
-      {
-        breakpoint: '560px',
-        numVisible: 1,
-        numScroll: 1
-      }
-    ];*/
+  ngOnInit(): void {
   }
+
+  slides = [
+    {name: "bt"},
+    {name: "directline"},
+    {name: "kfc"},
+    {name: "experian"},
+    {name: "ee"},
+    {name: "freeriderco"},
+    {name: "westfield"},
+    {name: "nationalgrid"}
+  ];
+
+  slideConfig = {
+    "slidesToShow": 4,
+    "slidesToScroll": 1,
+    "accessibility": false,
+    "swipe": false
+  };
+
 }
