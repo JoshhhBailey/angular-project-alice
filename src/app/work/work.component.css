@@ -236,7 +236,7 @@
   width: 95%;
   height: 50vw;
   left: 50%;
-  top: 50%;
+  top: 55%;
   transform: translate(-50%, -50%);
 }
 
@@ -366,6 +366,18 @@
   margin-bottom: 2vw;
 }
 
+
+
+/* FOOTER */
+#footer-container {
+  position: absolute;
+  top: calc(100% + 1vw);
+  width: 100%;
+  height: 5vw;
+}
+
+
+
 /* Mobile Adjustments */
 @media screen and (max-width: 768px) {
   #header-container {
@@ -374,7 +386,15 @@
   #burger-container {
     visibility: visible;
   }
+  #header-logo > img {
+    max-width: 30%;
+    max-height: 30%;
+    display: block;
+    margin: auto;
+    margin-top: 2.5vw;
+  }
   #grid-container {
+    margin-top: 5vw;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
@@ -385,14 +405,101 @@
   #alldifferent, #itsyourtime, #ee, #pending {
     margin-bottom: 3vw;
   }
+  #burger-menu {
+    width: 6vw;
+    height: 6vw;
+    left: 91%;
+  }
+  #check {
+    left: 90.5%;
+    width: 6vw;
+    height: 5vw;
+  }
+  #burger-menu span {
+    height: 0.6vw;
+    width: 6vw;
+  }
+  .content {
+    height: 100vw;
+  }
+  .titles a, .titles label {
+    font-size: 10vw;
+  }
+  .titles img {
+    width: 30vw;
+    height: 20vw;
+  }
+  #burger-me-scribble {
+    width: 24vw !important;
+    height: 16vw !important;
+  }
+  #email {
+    font-size: 2.5vw !important;
+  }
+  .socials img {
+    width: 3vw;
+    height: 3vw;
+  }
+  #instagram {
+    left: 41%;
+  }
+  #linkedin {
+    left: 47%;
+  }
+  #vimeo {
+    left: 53%;
+  }
+  #giphy {
+    left: 59%;
+  }
+  #arrow {
+    width: 6vw;
+    height: 6vw;
+  }
 }
 
-
-
-/* FOOTER */
-#footer-container {
-  position: absolute;
-  top: calc(100% + 1vw);
-  width: 100%;
-  height: 5vw;
+@media screen and (max-width: 425px) {
+  #burger-menu {
+    width: 7.5vw;
+    height: 7.5vw;
+    left: 90%;
+  }
+  #check {
+    left: 89%;
+    width: 7.5vw;
+    height: 6.25vw;
+  }
+  #burger-menu span {
+    height: 0.75vw;
+    width: 7.5vw;
+  }
+  .content {
+    height: 125vw;
+  }
+  .titles a, .titles label {
+    font-size: 12.5vw;
+  }
+  #email {
+    font-size: 3.125vw !important;
+  }
+  .socials img {
+    width: 4.5vw;
+    height: 4.5vw;
+  }
+  #instagram {
+    left: 36.5%;
+  }
+  #linkedin {
+    left: 45.5%;
+  }
+  #vimeo {
+    left: 54.5%;
+  }
+  #giphy {
+    left: 63.5%;
+  }
+  #arrow {
+    width: 7.5vw;
+    height: 7.5vw;
+  }
 }

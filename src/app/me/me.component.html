@@ -1,9 +1,5 @@
 <div id = "viewport">
 
-<div id = "header-logo">
-  <img src = "../../assets/logo-dark.gif">
-</div>
-
   <!-- Header -->
   <div id = "header-container" #work>
     <div id = "header-text">
@@ -25,6 +21,9 @@
       </div>
     </div>
   </div>
+
+  <!-- Logo -->
+  <a routerLink = "/work" id = "header-logo"><img src = "../../assets/logo-dark.gif"></a>
 
   <div id = "content-grid">
 
@@ -63,7 +62,7 @@
           with First Class Honours<br>
         </p>
         <p class = "light">
-          280+ million <a href = "https://giphy.com/alicehodgedesign"> Instagram GIF</a> views<br><br>
+          330+ million <a href = "https://giphy.com/alicehodgedesign"> Instagram GIF</a> views<br><br>
           <a href = "https://www.creative-conscience.org.uk/shortlisted-entries/"> Creative Conscience</a> Award Shortlist
         </p>
       </div>
@@ -71,16 +70,17 @@
       <p id = "brands" class = "bold">
         Brands I've worked for:
       </p>
-
-      <div id = "carousel-container">
-        <app-carousel></app-carousel>
-      </div>
       
     </figure>
 
     <!-- Footer -->
     <div id = "footer-container">
       <app-footer></app-footer>
+    </div>
+
+    <!-- Carousel -->
+    <div id = "carousel-container">
+      <app-carousel></app-carousel>
     </div>
 
   </div>

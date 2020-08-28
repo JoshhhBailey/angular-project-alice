@@ -26,11 +26,15 @@
   color: black;
 }
 
+#header-logo {
+  position: relative;
+  top: 1.5vw;
+  left: 4vw;
+}
+
 #header-logo > img {
   max-width: 10%;
   max-height: 10%;
-  margin-left: 4vw;
-  margin-top: 1.5vw;
 }
 
 /* Text and Scribble Properties */
@@ -129,8 +133,8 @@
 }
 
 #filmframe {
-  width: 85%;
-  height: 85%;
+  width: 75%;
+  height: 75%;
   object-fit: cover;
   display: block;
   margin-left: auto;
@@ -186,8 +190,9 @@
 
 #carousel-container {
   position: absolute;
-  width: 85%;
-  outline: blue solid 2px;
+  top: 72.5%;
+  left: calc(50% + 75px);
+  width: 35%;
 }
 
 
@@ -331,7 +336,7 @@
   width: 95%;
   height: 50vw;
   left: 50%;
-  top: 50%;
+  top: 55%;
   transform: translate(-50%, -50%);
 }
 
@@ -418,6 +423,9 @@
   #profile {
     font-size: 4vw !important;
   }
+  #brands {
+    margin-top: 4vw;
+  }
   .bold {
     font-size: 2.75vw;
   }
@@ -431,6 +439,15 @@
     margin-right: 0;
     margin-left: 80px;
   }
+  #carousel-container {
+    top: 96%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 78%;
+  }
+  #footer-container {
+    height: 15vw;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -440,7 +457,79 @@
   #burger-container {
     visibility: visible;
   }
-  
+  #header-logo {
+    left: 0;
+    top: 2.5vw;
+  }
+  #header-logo > img {
+    max-width: 30%;
+    max-height: 30%;
+    display: block;
+    margin: auto;
+  }
+  #content-grid {
+    margin-top: 4vw;
+  }
+  #burger-menu {
+    width: 6vw;
+    height: 6vw;
+    left: 91%;
+  }
+  #check {
+    left: 90.5%;
+    width: 6vw;
+    height: 5vw;
+  }
+  #burger-menu span {
+    height: 0.6vw;
+    width: 6vw;
+  }
+  .content {
+    height: 100vw;
+  }
+  .titles a, .titles label {
+    font-size: 10vw;
+  }
+  .titles img {
+    width: 30vw;
+    height: 20vw;
+  }
+  #burger-me-scribble {
+    width: 24vw !important;
+    height: 16vw !important;
+  }
+  #email {
+    font-size: 2.5vw !important;
+  }
+  .socials img {
+    width: 3vw;
+    height: 3vw;
+  }
+  #instagram {
+    left: 41%;
+  }
+  #linkedin {
+    left: 47%;
+  }
+  #vimeo {
+    left: 53%;
+  }
+  #giphy {
+    left: 59%;
+  }
+  #arrow {
+    width: 6vw;
+    height: 6vw;
+  }
+  #right {
+    margin-left: 60px;
+  }
+  #carousel-container {
+    width: 76%;
+  }
+  #footer-container {
+    height: 20vw;
+  }
 }
 
 @media screen and (max-width: 565px) {
@@ -467,5 +556,75 @@
   }
   #education-text-1 {
     line-height: 2.7vw;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #burger-menu {
+    width: 7.5vw;
+    height: 7.5vw;
+    left: 90%;
+  }
+  #check {
+    left: 89%;
+    width: 7.5vw;
+    height: 6.25vw;
+  }
+  #burger-menu span {
+    height: 0.75vw;
+    width: 7.5vw;
+  }
+  .content {
+    height: 125vw;
+  }
+  .titles a, .titles label {
+    font-size: 12.5vw;
+  }
+  #email {
+    font-size: 3.125vw !important;
+  }
+  .socials img {
+    width: 4.5vw;
+    height: 4.5vw;
+  }
+  #instagram {
+    left: 36.5%;
+  }
+  #linkedin {
+    left: 45.5%;
+  }
+  #vimeo {
+    left: 54.5%;
+  }
+  #giphy {
+    left: 63.5%;
+  }
+  #arrow {
+    width: 7.5vw;
+    height: 7.5vw;
+  }
+  #right {
+    margin-left: 50px;
+  }
+  #carousel-container {
+    width: 63%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #right {
+    margin-left: 45px;
+  }
+  #carousel-container {
+    width: 61%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #right {
+    margin-left: 40px;
+  }
+  #carousel-container {
+    width: 58%;
   }
 }

@@ -11,6 +11,7 @@ import { PlayComponent } from './play/play.component';
 import { MeComponent } from './me/me.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { AllDifferentAllNormalComponent } from './project-pages/all-different-all-normal/all-different-all-normal.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     PlayComponent,
     MeComponent,
     FooterComponent,
-    CarouselComponent
+    CarouselComponent,
+    AllDifferentAllNormalComponent
   ],
   imports: [
     BrowserModule,

@@ -21,7 +21,9 @@
       </p>
     </div>
     <p id = "hello-text">Hello, I'm Alice</p>
-    <img id = "arrow" src = "../../assets/navigation/down_arrow.svg" (click) = "scrollTo(work)">
+    <div id = "arrow-container">
+      <img id = "arrow" src = "../../assets/navigation/down_arrow.svg" (click) = "scrollTo(work)">
+    </div>
   </div>
 
   <div id = "content-grid" #work>
@@ -67,6 +69,7 @@
       </div>
     </figure>
 
+    <!-- Carousel -->
     <div id = "carousel-container">
       <app-carousel></app-carousel>
     </div>
@@ -111,6 +114,7 @@
             <img src = "../../assets/burger-menu/scribbles/me-scribble.svg" id = "burger-me-scribble">
           </div>
           <a href = "mailto: alicelhodge@icloud.com" id = "email">alicelhodge@icloud.com</a>
+          <img src = "../../assets/burger-menu/scribbles/email-line-wiggle.svg" id = "email-line">
         </div>
 
         <div class = "socials">

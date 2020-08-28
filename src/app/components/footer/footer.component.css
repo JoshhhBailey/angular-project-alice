@@ -76,3 +76,48 @@
 #footer-developedby {
     top: 60%;
 }
+
+@media screen and (max-width: 768px) {
+    #footer-container {
+        height: 15vw;
+    }
+    #footer-socials {
+        top: 10%;
+        left: 0%;
+        width: 100%;
+    }
+    #footer-socials img {
+        width: 3vw;
+        height: 3vw;
+    }
+    #footer-instagram {
+        left: 41%;
+    }
+    #footer-linkedin {
+        left: 47%;
+    }
+    #footer-vimeo {
+        left: 53%;
+    }
+    #footer-giphy {
+        left: 59%;
+    }
+    #footer-text {
+        top: 50%;
+        left: 0%;
+        width: 100%;
+    }
+    #footer-text p, #footer-text a {
+        font-size: 1.5vw;
+    }
+    #footer-copyright {
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+    #footer-developedby {
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+}
