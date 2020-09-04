@@ -6,6 +6,7 @@ import { PlayComponent } from './play/play.component';
 import { MeComponent } from './me/me.component';
 
 import { AllDifferentAllNormalComponent } from './project-pages/all-different-all-normal/all-different-all-normal.component'
+import { ItsYourTimeComponent } from './project-pages/its-your-time/its-your-time.component'
 
 const routes: Routes = [
   { path: '', redirectTo: '/intro', pathMatch: 'full'},
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'work', component: WorkComponent },
   { path: 'play', component: PlayComponent },
   { path: 'me', component: MeComponent },
-  { path: 'work/all-different-all-normal', component: AllDifferentAllNormalComponent }
+  { path: 'work/all-different-all-normal', component: AllDifferentAllNormalComponent },
+  { path: 'work/its-your-time', component: ItsYourTimeComponent }
 ];
 
 @NgModule({

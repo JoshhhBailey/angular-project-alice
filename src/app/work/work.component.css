@@ -27,11 +27,15 @@
   color: black;
 }
 
+#header-logo {
+  position: relative;
+  top: 1.25vw;
+  left: 4vw;
+}
+
 #header-logo > img {
   max-width: 10%;
   max-height: 10%;
-  margin-left: 4vw;
-  margin-top: 1.5vw;
 }
 
 /* Text and Scribble Properties */
@@ -386,12 +390,15 @@
   #burger-container {
     visibility: visible;
   }
+  #header-logo {
+    left: 0;
+    top: 1.25vw;
+  }
   #header-logo > img {
     max-width: 30%;
     max-height: 30%;
     display: block;
     margin: auto;
-    margin-top: 2.5vw;
   }
   #grid-container {
     margin-top: 5vw;
@@ -452,10 +459,6 @@
   #giphy {
     left: 59%;
   }
-  #arrow {
-    width: 6vw;
-    height: 6vw;
-  }
 }
 
 @media screen and (max-width: 425px) {
@@ -497,9 +500,5 @@
   }
   #giphy {
     left: 63.5%;
-  }
-  #arrow {
-    width: 7.5vw;
-    height: 7.5vw;
   }
 }

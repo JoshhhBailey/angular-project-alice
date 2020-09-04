@@ -11,14 +11,14 @@ export class WorkComponent implements OnInit {
 
   ngOnInit(): void { }
 
-  hyphenateURL(str: string) {
+  /*hyphenateURL(str: string) {
     str = str.replace(/'/g, "");  // remove apostrophies
     str = str.replace(/[^A-Z0-9]+/ig, "-").toLowerCase();  // remove symbols
     if (str.endsWith("-")) {
       return str.slice(0, -1);  // remove trailing hyphen
     }
     return str;
-  }
+  }*/
 
   // When burger menu open
   hideOverflow(): void {

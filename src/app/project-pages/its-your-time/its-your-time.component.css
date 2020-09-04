@@ -1,0 +1,175 @@
+#viewport {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+
+/* LOGO */
+#header-logo {
+    position: relative;
+    top: 1.25vw;
+    left: 4vw;
+}
+#header-logo > img {
+    max-width: 10%;
+    max-height: 10%;
+}
+
+
+/* FONTS */
+.light {
+    font-family: "GT Walsheim Light", sans-serif;
+    font-size: 1vw;
+    color: #474747;
+  }
+  
+.bold {
+    font-family: "GT Walsheim", sans-serif;
+    font-size: 1.25vw;
+    color: #474747;
+}
+
+
+
+/* CONTENT */
+#content {
+    position: absolute;
+    top: 5vw;
+    width: 100%;
+}
+
+#main-image-container {
+    position: relative;
+    width: 100%;
+    height: 42.5vw;
+    overflow: hidden;
+}
+
+#main-image {
+    max-width: 100%;
+    margin-top: -17.5vw;
+}
+
+#brief-container {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 60%;
+    margin-top: 5vw;
+}
+
+#project-title {
+    font-size: 0.75vw !important;
+}
+
+#brief-title {
+    margin-top: 0;
+}
+
+#solution-container {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 60%;
+    margin-top: 5vw;
+}
+
+#solution-title {
+    margin-top: 0;
+}
+
+#promo-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 5vw;
+}
+
+#promo-video {
+    max-width: calc(82.5% + 4vw);
+}
+
+#phones-container {
+    position: relative;
+    max-width: calc(82.5% + 4vw);
+    height: 42.5vw;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    overflow: hidden;
+    margin-top: 5vw;
+}
+
+#phones-image {
+    max-width: 100%;
+    margin-top: -7.5vw;
+}
+
+#misc-images {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 2.5vw;
+}
+
+#misc-images img {
+    display: inline-block;
+    max-width: calc(41.5% + 1vw);
+    max-height: calc(41.5% + 1vw);
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+
+
+/* FOOTER */
+#footer-container {
+    position: relative;
+    top: 7.5vw;
+}
+
+@media screen and (max-width: 1024px) {
+    .bold {
+      font-size: 2.75vw;
+    }
+    .light {
+      font-size: 2.25vw;
+    }
+    #project-title {
+      font-size: 1.75vw !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #header-logo {
+      left: 0;
+      top: 1.25vw;
+    }
+    #header-logo > img {
+      max-width: 30%;
+      max-height: 30%;
+      display: block;
+      margin: auto;
+    }
+    #content {
+        margin-top: 7vw;
+    }
+    #footer-container {
+        height: 7.5vw;
+        top: 5vw;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .bold {
+      font-size: 2.5vw;
+    }
+    .light {
+      font-size: 2vw;
+    }
+    #project-title {
+      font-size: 1.5vw !important;
+    }
+}

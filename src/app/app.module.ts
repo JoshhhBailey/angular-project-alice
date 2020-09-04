@@ -12,6 +12,9 @@ import { MeComponent } from './me/me.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { AllDifferentAllNormalComponent } from './project-pages/all-different-all-normal/all-different-all-normal.component';
+import { HeaderComponent } from './components/project-pages/header/header.component';
+import { BurgerMenuComponent } from './components/project-pages/burger-menu/burger-menu.component';
+import { ItsYourTimeComponent } from './project-pages/its-your-time/its-your-time.component';
 
 
 @NgModule({
@@ -23,7 +26,10 @@ import { AllDifferentAllNormalComponent } from './project-pages/all-different-al
     MeComponent,
     FooterComponent,
     CarouselComponent,
-    AllDifferentAllNormalComponent
+    AllDifferentAllNormalComponent,
+    HeaderComponent,
+    BurgerMenuComponent,
+    ItsYourTimeComponent
   ],
   imports: [
     BrowserModule,
