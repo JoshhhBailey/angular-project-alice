@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-project-alice": {
+      "hosting": {
+        "angular-project-alice": [
+          "angular-project-alice"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-project-alice"
+  }
+}

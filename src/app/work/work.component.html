@@ -1,8 +1,5 @@
 <div id = "viewport">
 
-  <!-- Logo -->
-  <a routerLink = "/work" id = "header-logo"><img src = "../../assets/header/logo-dark.gif"></a>
-
   <!-- Header -->
   <div id = "header-container">
     <div id = "header-text">
@@ -30,7 +27,7 @@
     <figure id = "freeriderco">
       <a routerLink = "/work/freeriderco">
         <img src = "../../assets/work-page/freeriderco.jpg"
-        onmouseover = "this.src = '../../assets/work-page/freeriderco.gif';"
+        onmouseover = "this.src = '../../assets/work-page/freeriderco-hover.jpg';"
         onmouseout = "this.src = '../../assets/work-page/freeriderco.jpg';"
         class = "grid-image"></a>
     </figure>
@@ -38,7 +35,7 @@
     <figure id = "alldifferent">
       <a routerLink = "/work/all-different-all-normal">
         <img src = "../../assets/work-page/all-different-all-normal.jpg"
-        onmouseover = "this.src = '../../assets/work-page/all-different-all-normal.gif';"
+        onmouseover = "this.src = '../../assets/work-page/all-different-all-normal-hover.jpg';"
         onmouseout = "this.src = '../../assets/work-page/all-different-all-normal.jpg';"
         class = "grid-image"></a>
     </figure>
@@ -46,7 +43,7 @@
     <figure id = "ee">
       <a routerLink = "/work/ee">
         <img src = "../../assets/work-page/ee.jpg"
-        onmouseover = "this.src = '../../assets/work-page/ee.gif';"
+        onmouseover = "this.src = '../../assets/work-page/ee-hover.jpg';"
         onmouseout = "this.src = '../../assets/work-page/ee.jpg';"
         class = "grid-image"></a>
     </figure>
@@ -54,34 +51,38 @@
     <figure id = "itsyourtime">
       <a routerLink = "/work/its-your-time">
         <img src = "../../assets/work-page/its-your-time.jpg"
-        onmouseover = "this.src = '../../assets/work-page/its-your-time.gif';"
+        onmouseover = "this.src = '../../assets/work-page/its-your-time-hover.jpg';"
         onmouseout = "this.src = '../../assets/work-page/its-your-time.jpg';"
-        class = "grid-image"></a>
-    </figure>
-
-    <figure id = "pending">
-      <a routerLink = "/work/pending">
-        <img src = "../../assets/work-page/ee.jpg"
-        onmouseover = "this.src = '../../assets/work-page/ee.gif';"
-        onmouseout = "this.src = '../../assets/work-page/ee.jpg';"
         class = "grid-image"></a>
     </figure>
 
     <figure id = "bbcradio1">
       <a routerLink = "/work/bbc-radio-1">
         <img src = "../../assets/work-page/bbc-radio-1.jpg"
-        onmouseover = "this.src = '../../assets/work-page/bbc-radio-1.gif';"
+        onmouseover = "this.src = '../../assets/work-page/bbc-radio-1-hover.jpg';"
         onmouseout = "this.src = '../../assets/work-page/bbc-radio-1.jpg';"
         class = "grid-image">
       </a>
-
     </figure>
+
+    <figure id = "pending">
+      <a routerLink = "/work/pending">
+        <img src = "../../assets/work-page/lola-waves.jpg"
+        onmouseover = "this.src = '../../assets/work-page/lola-waves-hover.jpg';"
+        onmouseout = "this.src = '../../assets/work-page/lola-waves.jpg';"
+        class = "grid-image"></a>
+    </figure>
+
+    
     <!-- Footer -->
     <div id = "footer-container">
       <app-footer></app-footer>
     </div>
 
   </div>
+
+  <div id = "header-logo-container"></div>
+  <a routerLink = "/work" id = "header-logo"><img src = "../../assets/header/logo-dark.gif"></a>
 
   <!-- Burger Menu -->
   <div id = "burger-container">
@@ -119,10 +120,18 @@
         </div>
 
         <div class = "socials">
-          <a href = "https://www.instagram.com/alicehodgedesign/"><img src = "../../assets/burger-menu/social-icons/instagram.svg" id = "instagram"></a>
-          <a href = "https://www.linkedin.com/in/alice-hodge-a88995151/"><img src = "../../assets/burger-menu/social-icons/linkedin.svg" id = "linkedin"></a>
-          <a href = "https://vimeo.com/user80054186"><img src = "../../assets/burger-menu/social-icons/vimeo.svg" id = "vimeo"></a>
-          <a href = "https://giphy.com/Alicehodgedesign"><img src = "../../assets/burger-menu/social-icons/giphy.svg" id = "giphy"></a>
+          <a href = "https://www.instagram.com/alicehodgedesign/"><img src = "../../assets/burger-menu/social-icons/instagram.svg"
+            onmouseover = "this.src = '../../assets/burger-menu/social-icons/instagram_white.svg';"
+            onmouseout = "this.src = '../../assets/burger-menu/social-icons/instagram.svg';" id = "instagram"></a>
+          <a href = "https://www.linkedin.com/in/alice-hodge-a88995151/"><img src = "../../assets/burger-menu/social-icons/linkedin.svg"
+            onmouseover = "this.src = '../../assets/burger-menu/social-icons/linkedin_white.svg';"
+            onmouseout = "this.src = '../../assets/burger-menu/social-icons/linkedin.svg';" id = "linkedin"></a>
+          <a href = "https://vimeo.com/user80054186"><img src = "../../assets/burger-menu/social-icons/vimeo.svg"
+            onmouseover = "this.src = '../../assets/burger-menu/social-icons/vimeo_white.svg';"
+            onmouseout = "this.src = '../../assets/burger-menu/social-icons/vimeo.svg';" id = "vimeo"></a>
+          <a href = "https://giphy.com/Alicehodgedesign"><img src = "../../assets/burger-menu/social-icons/giphy.svg"
+            onmouseover = "this.src = '../../assets/burger-menu/social-icons/giphy_white.svg';"
+            onmouseout = "this.src = '../../assets/burger-menu/social-icons/giphy.svg';" id = "giphy"></a>
         </div>
       </div>
     </div>

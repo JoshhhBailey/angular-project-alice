@@ -81,43 +81,77 @@
     #footer-container {
         height: 15vw;
     }
-    #footer-socials {
-        top: 10%;
-        left: 0%;
-        width: 100%;
-    }
-    #footer-socials img {
-        width: 3vw;
-        height: 3vw;
-    }
-    #footer-instagram {
-        left: 41%;
-    }
-    #footer-linkedin {
-        left: 47%;
-    }
-    #footer-vimeo {
-        left: 53%;
-    }
-    #footer-giphy {
-        left: 59%;
-    }
     #footer-text {
-        top: 50%;
-        left: 0%;
-        width: 100%;
+        width: 40%;
+        height: 6vw;
+        left: 4.25%;
     }
     #footer-text p, #footer-text a {
-        font-size: 1.5vw;
+        font-size: 2.25vw;
     }
     #footer-copyright {
-        top: 25%;
-        left: 50%;
-        transform: translate(-50%, 0%);
+        top: calc(0% + 1.5vw);
     }
     #footer-developedby {
-        top: 75%;
-        left: 50%;
-        transform: translate(-50%, 0%);
+        top: 4.5vw;
+    }
+    #footer-socials {
+        left: 56.25%;
+        width: 40%;
+        height: 6vw;
+    }
+    #footer-socials img {
+        width: 4.5vw;
+        height: 4.5vw;
+    }
+    #footer-instagram {
+        left: calc(40% - 2.25vw);
+    }
+    #footer-linkedin {
+        left: calc(60% - 2.25vw);
+    }
+    #footer-vimeo {
+        left: calc(80% - 2.25vw);
+    }
+    #footer-giphy {
+        left: calc(100% - 2.25vw);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #footer-text {
+        width: 40%;
+        height: 7vw;
+        left: 5%;
+    }
+    #footer-text p, #footer-text a {
+        font-size: 3vw;
+    }
+    #footer-copyright {
+        top: calc(0% + 1.5vw);
+    }
+    #footer-developedby {
+        top: 5.5vw;
+    }
+    #footer-socials {
+        left: 55.5%;
+        width: 40%;
+        height: 6vw;
+    }
+    #footer-socials img {
+        width: 6vw;
+        height: 6vw;
+    }
+    #footer-instagram {
+        left: calc(25% - 3vw);
+    }
+    #footer-linkedin {
+        left: calc(50% - 3vw);
+    }
+    #footer-vimeo {
+        left: calc(75% - 3vw);
+    }
+    #footer-giphy {
+        left: calc(100% - 3vw);
     }
 }

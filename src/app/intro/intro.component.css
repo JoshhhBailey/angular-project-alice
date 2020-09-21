@@ -3,7 +3,6 @@
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
-  outline: solid green 2px;
 }
 
 /* INTRO */
@@ -33,10 +32,7 @@
   font-size: 7vw;
   font-family: "GT Walsheim", sans-serif;
   color: #e98279;
-}
-
-#hello-text:hover {
-  cursor: default;
+  pointer-events: none;
 }
 
 .marquee {
@@ -461,6 +457,12 @@
 
 
 
+@media screen and (max-width: 2560px) {
+  #carousel-container {
+    top: 84%;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   #content-grid {
     grid-template-columns: 1fr;
@@ -471,13 +473,11 @@
     text-align: center;
     margin-left: 0;
   }
-  #profile {
-    font-size: 4vw !important;
-  }
-  #profile, #brands {
+  #profile, #brands, #right-text, #linked-text {
     text-align: center;
     margin-top: 1vw;
     margin-left: 0;
+    font-size: 4vw;
   }
   .bold {
     font-size: 3vw;
@@ -493,12 +493,11 @@
     margin-left: 40px;
     margin-right: 40px;
   }
-  #left-text, #right-text {
-    text-align: center;
-  }
   #left-text {
-    margin-top: 20vw;
+    text-align: center;
     margin-left: 0;
+    font-size: 4vw;
+    margin-top: 20vw;
   }
   #left img, #right-image1 > img, #right-image2 > img {
     display: block;
@@ -511,7 +510,7 @@
     max-height: 80%;
   }
   #carousel-container {
-    top: 40%;
+    top: 39.5%;
     left: 50%;
     transform: translate(-50%, 0%);
     width: 75%;
@@ -580,16 +579,19 @@
     width: 6vw;
     height: 6vw;
   }
+  #carousel-container {
+    top: 39.25%;
+  }
 }
 
 @media screen and (max-width: 425px) {
   #burger-menu {
     width: 7.5vw;
     height: 7.5vw;
-    left: 90%;
+    left: calc(90.5% - 3vw);
   }
   #check {
-    left: 89%;
+    left: calc(89.5% - 3vw);
     width: 7.5vw;
     height: 6.25vw;
   }
@@ -625,5 +627,8 @@
   #arrow {
     width: 7.5vw;
     height: 7.5vw;
+  }
+  #carousel-container {
+    top: 38.5%;
   }
 }

@@ -23,6 +23,7 @@
 .light {
     font-family: "GT Walsheim Light", sans-serif;
     font-size: 1vw;
+    line-height: 1.5vw;
     color: #474747;
   }
   
@@ -49,35 +50,25 @@
 }
 
 #main-image {
-    max-width: 100%;
-    margin-top: -17.5vw;
+    width: 100%;
 }
 
-#brief-container {
+.text-container {
     position: relative;
     left: 50%;
     transform: translate(-50%, 0%);
-    width: 60%;
-    margin-top: 5vw;
+    width: 45%;
+    margin-top: 2.5vw;
 }
 
 #project-title {
-    font-size: 0.75vw !important;
-}
-
-#brief-title {
-    margin-top: 0;
-}
-
-#solution-container {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    width: 60%;
+    font-family: "GT Walsheim", sans-serif;
+    font-size: 2vw;
+    color: #474747;
     margin-top: 5vw;
 }
 
-#solution-title {
+#brief-title, #solution-title, #why-title, #where-title {
     margin-top: 0;
 }
 
@@ -86,40 +77,42 @@
     width: 100%;
     text-align: center;
     margin-top: 5vw;
+    margin-bottom: 5vw;
 }
 
 #promo-video {
-    max-width: calc(82.5% + 4vw);
+    width: 85%;
+    height: 85%;
 }
 
 #phones-container {
     position: relative;
-    max-width: calc(82.5% + 4vw);
-    height: 42.5vw;
+    width: 100%;
     left: 50%;
     transform: translate(-50%, 0%);
-    overflow: hidden;
     margin-top: 5vw;
+    margin-bottom: 5vw;
+    text-align: center;
 }
 
 #phones-image {
-    max-width: 100%;
-    margin-top: -7.5vw;
+    width: 85%;
+    height: 85%;
 }
 
 #misc-images {
     position: relative;
     width: 100%;
     text-align: center;
-    margin-top: 2.5vw;
+    margin-top: 5vw;
 }
 
-#misc-images img {
+#misc-images img, #misc-images video {
     display: inline-block;
-    max-width: calc(41.5% + 1vw);
-    max-height: calc(41.5% + 1vw);
-    padding-left: 1vw;
-    padding-right: 1vw;
+    width: 41.5%;
+    height: 41.5%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 
@@ -135,41 +128,69 @@
       font-size: 2.75vw;
     }
     .light {
-      font-size: 2.25vw;
+        font-size: 2.25vw;
+        line-height: 3.375vw;
+    }
+    .text-container {
+        width: 60%;
     }
     #project-title {
-      font-size: 1.75vw !important;
+      font-size: 4vw;
     }
 }
 
 @media screen and (max-width: 768px) {
     #header-logo {
-      left: 0;
-      top: 1.25vw;
+        top: 1.25vw;
     }
     #header-logo > img {
-      max-width: 30%;
-      max-height: 30%;
-      display: block;
-      margin: auto;
+        max-width: 30%;
+        max-height: 30%;
     }
     #content {
-        margin-top: 7vw;
+        margin-top: 5vw;
     }
     #footer-container {
         height: 7.5vw;
         top: 5vw;
     }
+    #header-logo-container {
+        position: fixed;
+        width: 100%;
+        height: 10vw;
+        background-color: white;
+    }
+    #header-logo {
+        position: fixed;
+        top: 1.25vw;
+        left: 4vw;
+    }
+    #header-logo > img {
+        width: 25%;
+        height: 25%;
+    }
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 425px) {
     .bold {
-      font-size: 2.5vw;
+        font-size: 5.5vw;
     }
     .light {
-      font-size: 2vw;
+        font-size: 4.5vw;
+        line-height: 6.75vw;
     }
     #project-title {
-      font-size: 1.5vw !important;
+        font-size: 8vw;
+    }
+    .text-container, #promo-video, #phones-image {
+        width: 90%;
+    }
+    #misc-images img, #misc-images video {
+        width: 44%;
+        height: 44%;
+    }
+    #header-logo {
+        top: 1.75vw;
+        left: 4.75vw;
     }
 }

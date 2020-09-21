@@ -118,7 +118,7 @@
 #burger-menu {
   position: fixed;
   left: 95%;
-  top: 2vw;
+  top: 1.5vw;
   width: 3vw;
   height: 3vw;
   z-index: 1;
@@ -126,7 +126,7 @@
 
 #check {
   position: fixed;
-  top: 2vw;
+  top: 1.5vw;
   left: 94.9%;
   width: 3vw;
   height: 2.5vw;
@@ -357,13 +357,13 @@
   margin-top: 0;
   margin-bottom: 1vw;
 }
-#pending {
+#bbcradio1 {
   margin-left: 4vw;
   margin-right: 0.5vw;
   margin-top: 0;
   margin-bottom: 2vw;
 }
-#bbcradio1 {
+#pending {
   margin-left: 0.5vw;
   margin-right: 4vw;
   margin-top: 0;
@@ -391,14 +391,11 @@
     visibility: visible;
   }
   #header-logo {
-    left: 0;
     top: 1.25vw;
   }
   #header-logo > img {
     max-width: 30%;
     max-height: 30%;
-    display: block;
-    margin: auto;
   }
   #grid-container {
     margin-top: 5vw;
@@ -409,7 +406,7 @@
     margin-left: 4vw;
     margin-right: 4vw;
   }
-  #alldifferent, #itsyourtime, #ee, #pending {
+  #alldifferent, #itsyourtime, #ee, #bbcradio1 {
     margin-bottom: 3vw;
   }
   #burger-menu {
@@ -459,16 +456,35 @@
   #giphy {
     left: 59%;
   }
+  #header-logo-container {
+    position: fixed;
+    width: 100%;
+    height: 10vw;
+    background-color: white;
+  }
+  #header-logo {
+    position: fixed;
+    top: 1.25vw;
+    left: 4vw;
+  }
+  #header-logo > img {
+    width: 25%;
+    height: 25%;
+  }
 }
 
 @media screen and (max-width: 425px) {
+  #freeriderco, #alldifferent, #ee, #itsyourtime, #pending, #bbcradio1 {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
   #burger-menu {
     width: 7.5vw;
     height: 7.5vw;
-    left: 90%;
+    left: calc(90.5% - 3vw);
   }
   #check {
-    left: 89%;
+    left: calc(89.5% - 3vw);
     width: 7.5vw;
     height: 6.25vw;
   }
@@ -500,5 +516,9 @@
   }
   #giphy {
     left: 63.5%;
+  }
+  #header-logo {
+    top: 1.75vw;
+    left: 4.75vw;
   }
 }

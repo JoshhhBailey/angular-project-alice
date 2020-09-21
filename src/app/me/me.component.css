@@ -116,7 +116,6 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   gap: 0;
-  /*outline: purple solid 2px;*/
 }
 
 .light {
@@ -132,8 +131,8 @@
 }
 
 #filmframe {
-  width: 75%;
-  height: 75%;
+  width: 80%;
+  height: 80%;
   object-fit: cover;
   display: block;
   margin-left: auto;
@@ -142,7 +141,6 @@
 
 #right {
   position: relative;
-  /*outline: green solid 2px;*/
 }
 
 #right a {
@@ -162,12 +160,10 @@
   font-size: 3vw;
   color: white !important;
   text-shadow: -1px -1px 0 #474747, 1px -1px 0 #474747, -1px 1px 0 #474747, 1px 1px 0 #474747;
-  /*outline: red solid 2px;*/
 }
 
 #profile {
   font-size: 1.5vw !important;
-  /*outline: red solid 2px;*/
 }
 
 #experience, #education {
@@ -189,7 +185,7 @@
 
 #carousel-container {
   position: absolute;
-  top: 72.5%;
+  top: 70%;
   left: calc(50% + 75px);
   width: 35%;
 }
@@ -213,7 +209,7 @@
 #burger-menu {
   position: fixed;
   left: 95%;
-  top: 2vw;
+  top: 1.5vw;
   width: 3vw;
   height: 3vw;
   z-index: 1;
@@ -221,7 +217,7 @@
 
 #check {
   position: fixed;
-  top: 2vw;
+  top: 1.5vw;
   left: 94.9%;
   width: 3vw;
   height: 2.5vw;
@@ -439,7 +435,7 @@
     margin-left: 80px;
   }
   #carousel-container {
-    top: 96%;
+    top: 97%;
     left: 50%;
     transform: translate(-50%, 0%);
     width: 78%;
@@ -457,14 +453,11 @@
     visibility: visible;
   }
   #header-logo {
-    left: 0;
     top: 1.25vw;
   }
   #header-logo > img {
     max-width: 30%;
     max-height: 30%;
-    display: block;
-    margin: auto;
   }
   #content-grid {
     margin-top: 4vw;
@@ -525,6 +518,21 @@
   #footer-container {
     height: 20vw;
   }
+  #header-logo-container {
+    position: fixed;
+    width: 100%;
+    height: 10vw;
+    background-color: white;
+  }
+  #header-logo {
+    position: fixed;
+    top: 1.25vw;
+    left: 4vw;
+  }
+  #header-logo > img {
+    width: 25%;
+    height: 25%;
+  }
 }
 
 @media screen and (max-width: 565px) {
@@ -555,13 +563,16 @@
 }
 
 @media screen and (max-width: 425px) {
+  figure {
+    margin: 0;
+  }
   #burger-menu {
     width: 7.5vw;
     height: 7.5vw;
-    left: 90%;
+    left: calc(90.5% - 3vw);
   }
   #check {
-    left: 89%;
+    left: calc(89.5% - 3vw);
     width: 7.5vw;
     height: 6.25vw;
   }
@@ -595,27 +606,50 @@
     left: 63.5%;
   }
   #right {
-    margin-left: 50px;
+    display: block;
+    margin: 5%;
   }
   #carousel-container {
-    width: 63%;
+    width: 75%;
+    top: 98%;
   }
-}
-
-@media screen and (max-width: 375px) {
-  #right {
-    margin-left: 45px;
+  #experience, #education {
+    display: inline;
   }
-  #carousel-container {
-    width: 61%;
+  .bold {
+    font-size: 5.5vw;
   }
-}
-
-@media screen and (max-width: 320px) {
-  #right {
-    margin-left: 40px;
+  .light {
+    font-size: 4.5vw;
   }
-  #carousel-container {
-    width: 58%;
+  #heading {
+    position: absolute;
+    top: -25%;
+    font-size: 7.5vw;
+  }
+  #profile {
+    position: absolute;
+    top: -14%;
+    font-size: 4vw !important;
+  }
+  #education-title {
+    margin-top: 0;
+  }
+  #education-text-1 {
+    line-height: 5.5vw;
+  }
+  #experience-title {
+    margin-top: 0;
+  }
+  #experience-text {
+    margin-bottom: 0;
+  }
+  #brands {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  #header-logo {
+    top: 1.75vw;
+    left: 4.75vw;
   }
 }

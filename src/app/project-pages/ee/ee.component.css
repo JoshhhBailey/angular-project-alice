@@ -1,0 +1,224 @@
+#viewport {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+
+/* LOGO */
+#header-logo {
+    position: relative;
+    top: 1.25vw;
+    left: 4vw;
+}
+#header-logo > img {
+    max-width: 10%;
+    max-height: 10%;
+}
+
+
+/* FONTS */
+.light {
+    font-family: "GT Walsheim Light", sans-serif;
+    font-size: 1vw;
+    line-height: 1.5vw;
+    color: #474747;
+  }
+  
+.bold {
+    font-family: "GT Walsheim", sans-serif;
+    font-size: 1.25vw;
+    color: #474747;
+}
+.red-text {
+    font-family: "GT Walsheim Light", sans-serif;
+    font-size: 1vw;
+    color: #e98279;
+    margin-bottom: 0;
+}
+
+
+
+/* CONTENT */
+#content {
+    position: absolute;
+    top: 5vw;
+    width: 100%;
+}
+
+#main-image-container {
+    position: relative;
+    width: 100%;
+    height: 42.5vw;
+    overflow: hidden;
+}
+
+#main-image {
+    width: 100%;
+}
+#agency2, #designer2, #animator2 {
+    margin-bottom: 2.5vw;
+    margin-top: 0;
+}
+
+.text-container {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 45%;
+    margin-top: 5vw;
+}
+
+#project-title {
+    font-family: "GT Walsheim", sans-serif;
+    font-size: 2vw;
+    color: #474747;
+    margin-bottom: 0;
+}
+
+.credit {
+    display: inline-block;
+    margin-right: 5vw;
+}
+
+#brief-title, #solution-title {
+    margin-top: 0;
+}
+
+#promo-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 5vw;
+}
+
+#promo-video {
+    width: 85%;
+    height: 85%;
+}
+
+#storyboard-container {
+    position: relative;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin-top: 5vw;
+    text-align: center;
+}
+
+#storyboard-image {
+    width: 85%;
+    height: 85%;
+}
+
+.misc-images {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+#misc-1 {
+    margin-top: 2.5vw;
+}
+#misc-2 {
+    margin-top: 1.5%;
+}
+
+.misc-images img {
+    display: inline-block;
+    width: 41.5%;
+    height: 41.5%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+
+
+/* FOOTER */
+#footer-container {
+    position: relative;
+    top: 7.5vw;
+}
+
+@media screen and (max-width: 1024px) {
+    .bold {
+      font-size: 2.75vw;
+    }
+    .light {
+        font-size: 2.25vw;
+        line-height: 3.375vw;
+    }
+    .red-text {
+        font-size: 2.25vw;
+    }
+    .text-container {
+        width: 60%;
+    }
+    #project-title {
+      font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #header-logo {
+        top: 1.25vw;
+    }
+    #header-logo > img {
+        max-width: 30%;
+        max-height: 30%;
+    }
+    #content {
+        margin-top: 5vw;
+    }
+    #footer-container {
+        height: 7.5vw;
+        top: 5vw;
+    }
+    #header-logo-container {
+        position: fixed;
+        width: 100%;
+        height: 10vw;
+        background-color: white;
+    }
+    #header-logo {
+        position: fixed;
+        top: 1.25vw;
+        left: 4vw;
+    }
+    #header-logo > img {
+        width: 25%;
+        height: 25%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .bold {
+        font-size: 5.5vw;
+    }
+    .light {
+        font-size: 4.5vw;
+        line-height: 6.75vw;
+    }
+    .red-text {
+        font-size: 4vw;
+    }
+    #agency2, #designer2, #animator2 {
+        font-size: 4vw !important;
+    }
+    #project-title {
+        font-size: 8vw;
+    }
+    .text-container, #promo-video, #storyboard-image {
+        width: 90%;
+    }
+    .misc-images img {
+        width: 44%;
+        height: 44%;
+    }
+    #header-logo {
+        top: 1.75vw;
+        left: 4.75vw;
+    }
+}

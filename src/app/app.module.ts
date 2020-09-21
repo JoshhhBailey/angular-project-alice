@@ -15,6 +15,9 @@ import { AllDifferentAllNormalComponent } from './project-pages/all-different-al
 import { HeaderComponent } from './components/project-pages/header/header.component';
 import { BurgerMenuComponent } from './components/project-pages/burger-menu/burger-menu.component';
 import { ItsYourTimeComponent } from './project-pages/its-your-time/its-your-time.component';
+import { FreeridercoComponent } from './project-pages/freeriderco/freeriderco.component';
+import { EeComponent } from './project-pages/ee/ee.component';
+import { BbcRadioOneComponent } from './project-pages/bbc-radio-one/bbc-radio-one.component';
 
 
 @NgModule({
@@ -29,7 +32,10 @@ import { ItsYourTimeComponent } from './project-pages/its-your-time/its-your-tim
     AllDifferentAllNormalComponent,
     HeaderComponent,
     BurgerMenuComponent,
-    ItsYourTimeComponent
+    ItsYourTimeComponent,
+    FreeridercoComponent,
+    EeComponent,
+    BbcRadioOneComponent
   ],
   imports: [
     BrowserModule,

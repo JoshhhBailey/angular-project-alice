@@ -114,7 +114,7 @@
   top: 5vw;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   gap: 2vw;
   margin-left: 10vw;
   margin-right: 10vw;
@@ -129,7 +129,7 @@
 
 #gif-1, #gif-2, #gif-3, #gif-4, #gif-5, #gif-6, #gif-7, #gif-8,
 #gif-9, #gif-10, #gif-11, #gif-12, #gif-13, #gif-14, #gif-15,
-#gif-16, #gif-17, #gif-18 {
+#gif-16, #gif-17, #gif-18, #gif-19, #gif-20 {
   margin: 0;
 }
 
@@ -143,7 +143,7 @@
 #burger-menu {
   position: fixed;
   left: 95%;
-  top: 2vw;
+  top: 1.5vw;
   width: 3vw;
   height: 3vw;
   z-index: 1;
@@ -151,7 +151,7 @@
 
 #check {
   position: fixed;
-  top: 2vw;
+  top: 1.5vw;
   left: 94.9%;
   width: 3vw;
   height: 2.5vw;
@@ -356,7 +356,7 @@
 @media screen and (max-width: 1024px) {
   #grid-container {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     margin-left: 5vw;
     margin-right: 5vw;
   }
@@ -373,14 +373,11 @@
     visibility: visible;
   }
   #header-logo {
-    left: 0;
     top: 1.25vw;
   }
   #header-logo > img {
     max-width: 30%;
     max-height: 30%;
-    display: block;
-    margin: auto;
   }
   #grid-container {
     margin-top: 7vw;
@@ -432,20 +429,35 @@
   #giphy {
     left: 59%;
   }
+  #header-logo-container {
+    position: fixed;
+    width: 100%;
+    height: 10vw;
+    background-color: white;
+  }
+  #header-logo {
+    position: fixed;
+    top: 1.25vw;
+    left: 4vw;
+  }
+  #header-logo > img {
+    width: 25%;
+    height: 25%;
+  }
 }
 
 @media screen and (max-width: 425px) {
   #grid-container {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(10, 1fr);
   }
   #burger-menu {
     width: 7.5vw;
     height: 7.5vw;
-    left: 90%;
+    left: calc(90.5% - 3vw);
   }
   #check {
-    left: 89%;
+    left: calc(89.5% - 3vw);
     width: 7.5vw;
     height: 6.25vw;
   }
@@ -477,5 +489,9 @@
   }
   #giphy {
     left: 63.5%;
+  }
+  #header-logo {
+    top: 1.75vw;
+    left: 4.75vw;
   }
 }

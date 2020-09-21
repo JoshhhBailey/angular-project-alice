@@ -3,65 +3,57 @@
     <!-- Header -->
     <app-header></app-header>
 
-    <!-- Logo -->
-    <a routerLink = "/work" id = "header-logo"><img src = "../../assets/header/logo-dark.gif"></a>
-
     <div id = "content">
         <div id = "main-image-container">
-            <img src = "../../../assets/project-pages/all-different-all-normal/images/website-mockup.jpg" id = "main-image">
+            <img src = "../../../assets/project-pages/all-different-all-normal/images/promo.jpg" id = "main-image">
         </div>
 
-        <div id = "brief-container">
-            <p id = "project-title" class = "bold">
-                ALL DIFFERENT. ALL NORMAL.
+        <div class = "text-container">
+            <p id = "project-title">
+                All Different. All Normal.
             </p>
             <p id = "brief-title" class = "bold">
-                Brief
+                The challenge
             </p>
-            <p id = "brief-text" class = "light">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit
-                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
+            <p class = "light">
+                Cervical cancer screening rates are at a 20 year low.
+                One in three women don’t attend their appointments due to embarrassment.
+                This embarrassment consists of concerns over the appearance of their vulva.
+            </p>
+        </div>
+
+        <div class = "text-container">
+            <p id = "solution-title" class = "bold">
+                The solution
+            </p>
+            <p class = "light">
+                An integrated campaign aiming to increase the attendance rate of cervical
+                screenings, by promoting individuality and self-love. Involving videos,
+                animations and print materials that advertise a pop up event and website.
             </p>
         </div>
 
         <div id = "vaginas-container">
-            <video class = "vaginas-video" loop autoplay>
-                <source src = "../../../assets/project-pages/all-different-all-normal/videos/brown.mp4" type = "video/mp4">
+            <video id = "vaginas-video" loop autoplay>
+                <source src = "../../../assets/project-pages/all-different-all-normal/videos/vaginas.mp4" type = "video/mp4">
             </video>
-            <video class = "vaginas-video" loop autoplay>
-                <source src = "../../../assets/project-pages/all-different-all-normal/videos/pink.mp4" type = "video/mp4">
-            </video>
-            <video class = "vaginas-video" loop autoplay>
-                <source src = "../../../assets/project-pages/all-different-all-normal/videos/red.mp4" type = "video/mp4">
-            </video>
-        </div>
-
-        <div id = "solution-container">
-            <p id = "solution-title" class = "bold">
-                Solution
-            </p>
-            <p id = "solution-text" class = "light">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit
-                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
-            </p>
         </div>
 
         <div id = "promo-container">
-            <video id = "promo-video" controls controlsList = "nodownload" disablePictureInPicture>
+            <video id = "promo-video" controls controlsList = "nodownload" disablePictureInPicture poster = "../../../assets/project-pages/all-different-all-normal/images/thumbnail.jpg">
                 <source src = "../../../assets/project-pages/all-different-all-normal/videos/promo.mp4" type = "video/mp4">
             </video>
+        </div>
+
+        <div class = "text-container">
+            <p id = "approach-title" class = "bold">
+                The approach
+            </p>
+            <p class = "light">
+                A bold visual approach opens up conversations about a taboo subject.
+                The website improves the booking process, as well as, helping to inform
+                and inspire women.
+            </p>
         </div>
 
         <div id = "underground-container">
@@ -80,7 +72,8 @@
 
     </div>
 
-    
+    <div id = "header-logo-container"></div>
+    <a routerLink = "/work" id = "header-logo"><img src = "../../assets/header/logo-dark.gif"></a>
 
     <!-- Burger Menu -->
     <app-burger-menu></app-burger-menu>

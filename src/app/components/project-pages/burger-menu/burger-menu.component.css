@@ -6,7 +6,7 @@
 #burger-menu {
     position: fixed;
     left: 95%;
-    top: 2vw;
+    top: 1.5vw;
     width: 3vw;
     height: 3vw;
     z-index: 1;
@@ -14,7 +14,7 @@
 
 #check {
     position: fixed;
-    top: 2vw;
+    top: 1.5vw;
     left: 94.9%;
     width: 3vw;
     height: 2.5vw;
@@ -249,10 +249,10 @@
     #burger-menu {
         width: 7.5vw;
         height: 7.5vw;
-        left: 90%;
+        left: calc(90.5% - 3vw);
     }
     #check {
-        left: 89%;
+        left: calc(89.5% - 3vw);
         width: 7.5vw;
         height: 6.25vw;
     }

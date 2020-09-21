@@ -1,0 +1,219 @@
+#viewport {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+
+/* LOGO */
+#header-logo {
+    position: relative;
+    top: 1.25vw;
+    left: 4vw;
+}
+#header-logo > img {
+    max-width: 10%;
+    max-height: 10%;
+}
+
+
+
+/* FONTS */
+.light {
+    font-family: "GT Walsheim Light", sans-serif;
+    font-size: 1vw;
+    line-height: 1.5vw;
+    color: #474747;
+  }
+  
+.bold {
+    font-family: "GT Walsheim", sans-serif;
+    font-size: 1.25vw;
+    color: #474747;
+}
+
+
+
+/* CONTENT */
+#content {
+    position: absolute;
+    top: 5vw;
+    width: 100%;
+}
+
+#main-image-container {
+    position: relative;
+    width: 100%;
+    height: 42.5vw;
+    overflow: hidden;
+}
+
+#main-image {
+    width: 100%;
+}
+
+.text-container {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 45%;
+    margin-top: 5vw;
+}
+
+#project-title {
+    font-family: "GT Walsheim", sans-serif;
+    font-size: 2vw;
+    color: #474747;
+}
+
+#brief-title, #solution-title, #text-title {
+    margin-top: 0;
+}
+
+#phones-container, #guidelines-container, #email-container {
+    position: relative;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin-top: 5vw;
+    text-align: center;
+}
+
+#phones-image, #brand-guidelines-image, #email-image {
+    width: 85%;
+    height: 85%;
+}
+
+#misc-images {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 2.5vw;
+}
+
+#misc-images img {
+    display: inline-block;
+    width: 41.5%;
+    height: 41.5%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+#misc-videos-container-1, #misc-videos-container-2 {
+    position: relative;
+    width: 50%;
+    margin-top: 2.5vw;
+    display: inline-block;
+}
+
+#misc-videos-container-1 {
+    text-align: right;
+}
+
+.misc-video {
+    display: inline-block;
+    width: 39.5%;
+    height: 39.5%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+
+
+/* FOOTER */
+#footer-container {
+    position: relative;
+    top: 7.5vw;
+}
+
+@media screen and (max-width: 1024px) {
+    .bold {
+      font-size: 2.75vw;
+    }
+    .light {
+        font-size: 2.25vw;
+        line-height: 3.375vw;
+    }
+    .text-container {
+        width: 60%;
+    }
+    #project-title {
+      font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #header-logo {
+        top: 1.25vw;
+    }
+    #header-logo > img {
+        max-width: 30%;
+        max-height: 30%;
+    }
+    #content {
+        margin-top: 5vw;
+    }
+    #footer-container {
+        height: 7.5vw;
+        top: 5vw;
+    }
+    #header-logo-container {
+        position: fixed;
+        width: 100%;
+        height: 10vw;
+        background-color: white;
+    }
+    #header-logo {
+        position: fixed;
+        top: 1.25vw;
+        left: 4vw;
+    }
+    #header-logo > img {
+        width: 25%;
+        height: 25%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .bold {
+        font-size: 5.5vw;
+    }
+    .light {
+        font-size: 4.5vw;
+        line-height: 6.75vw;
+    }
+    #project-title {
+        font-size: 8vw;
+    }
+    .text-container, #promo-video, #phones-image,
+    #brand-guidelines-image, #email-image {
+        width: 90%;
+    }
+    #misc-images img {
+        width: 44%;
+        height: 44%;
+    }
+    #misc-videos-container-1, #misc-videos-container-2 {
+        display: block;
+        width: 100%;
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+    #misc-videos-container-2 {
+        margin-top: 1%;
+        margin-bottom: 5vw;
+    }
+    .misc-video {
+        width: 44%;
+        height: 44%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    #header-logo {
+        top: 1.75vw;
+        left: 4.75vw;
+    }
+}

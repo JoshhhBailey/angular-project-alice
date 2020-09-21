@@ -3,52 +3,54 @@
     <!-- Header -->
     <app-header></app-header>
 
-    <!-- Logo -->
-    <a routerLink = "/work" id = "header-logo"><img src = "../../assets/header/logo-dark.gif"></a>
-
     <div id = "content">
         <div id = "main-image-container">
             <img src = "../../../assets/project-pages/its-your-time/images/promo.gif" id = "main-image">
         </div>
 
-        <div id = "brief-container">
-            <p id = "project-title" class = "bold">
-                IT'S YOUR TIME.
+        <div class = "text-container">
+            <p id = "project-title">
+                It's YOUR time.
             </p>
             <p id = "brief-title" class = "bold">
-                Brief
+                The insight
             </p>
-            <p id = "brief-text" class = "light">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit
-                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
+            <p class = "light">
+                Each phase of your menstrual cycle has different strengths.
+                For example, the Follicular Phase is the ‘most empowering’
+                time of the month.
+            </p>
+        </div>
+
+        <div class = "text-container">
+            <p id = "solution-title" class = "bold">
+                The solution
+            </p>
+            <p class = "light">
+                An extension to your phone calendar that helps you track your
+                menstrual cycle phases and use them to your advantage. Tackling
+                the stigma that being on your period holds you back. Informing
+                you of the main strengths of your current phase and how long it’ll
+                last. It connects with the events you’ve added to your calendar,
+                sending out encouragement and advice through notifications.
             </p>
         </div>
 
         <div id = "promo-container">
-            <video id = "promo-video" controls controlsList = "nodownload" disablePictureInPicture>
+            <video id = "promo-video" controls controlsList = "nodownload" disablePictureInPicture poster = "../../../assets/project-pages/its-your-time/images/thumbnail.jpg">
                 <source src = "../../../assets/project-pages/its-your-time/videos/promo.mp4" type = "video/mp4">
             </video>
         </div>
 
-        <div id = "solution-container">
-            <p id = "solution-title" class = "bold">
-                Solution
+        <div class = "text-container">
+            <p id = "why-title" class = "bold">
+                Why you need it
             </p>
-            <p id = "solution-text" class = "light">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit
-                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
+            <p class = "light">
+                Connect with friends, track your achievements and progress from
+                previous months. This encourages you to carry on using the app,
+                helping you inspire others and your future self. Follow up questions the day
+                after calendar events provide quick comparable data.
             </p>
         </div>
 
@@ -56,8 +58,22 @@
             <img src = "../../../assets/project-pages/its-your-time/images/four-phones.jpg" id = "phones-image">
         </div>
 
+        <div class = "text-container">
+            <p id = "where-title" class = "bold">
+                Where it'll be seen
+            </p>
+            <p class = "light">
+                Promoted on social media such as Instagram and supported by appropriate
+                influencers, with a wide female audience interested in health and well-being.
+                It could be linked to the health app, apple watch and step counter. Also,
+                events and meet-ups could be organised to connect those in the same phase.
+            </p>
+        </div>
+
         <div id = "misc-images">
-            <img src = "../../../assets/project-pages/its-your-time/images/menstrual.gif">
+            <video loop autoplay>
+                <source src = "../../../assets/project-pages/its-your-time/videos/menstrual.mp4" type = "video/mp4">
+            </video>
             <img src = "../../../assets/project-pages/its-your-time/images/new-friends.jpg">
         </div>
 
@@ -68,7 +84,8 @@
 
     </div>
 
-    
+    <div id = "header-logo-container"></div>
+    <a routerLink = "/work" id = "header-logo"><img src = "../../assets/header/logo-dark.gif"></a>
 
     <!-- Burger Menu -->
     <app-burger-menu></app-burger-menu>
