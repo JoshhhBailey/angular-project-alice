@@ -13,9 +13,9 @@
     top: 1.25vw;
     left: 4vw;
 }
+  
 #header-logo > img {
-    max-width: 10%;
-    max-height: 10%;
+    width: 175px;
 }
 
 
@@ -23,14 +23,20 @@
 /* FONTS */
 .light {
     font-family: "GT Walsheim Light", sans-serif;
-    font-size: 1vw;
-    line-height: 1.5vw;
+    font-size: 20px;
+    line-height: 30px;
     color: #474747;
-  }
+}
   
 .bold {
     font-family: "GT Walsheim", sans-serif;
-    font-size: 1.25vw;
+    font-size: 25px;
+    color: #474747;
+}
+
+#project-title {
+    font-family: "GT Walsheim", sans-serif;
+    font-size: 35px;
     color: #474747;
 }
 
@@ -39,7 +45,7 @@
 /* CONTENT */
 #content {
     position: absolute;
-    top: 5vw;
+    top: calc(75px + 2vw);
     width: 100%;
 }
 
@@ -62,14 +68,17 @@
     margin-top: 5vw;
 }
 
-#project-title {
-    font-family: "GT Walsheim", sans-serif;
-    font-size: 2vw;
-    color: #474747;
-}
-
 #brief-title, #solution-title, #text-title {
     margin-top: 0;
+}
+
+#link {
+    text-decoration: none;
+    font-family: "GT Walsheim Light", sans-serif;
+    color: #474747;
+}
+#link:hover {
+    color: #e98279;
 }
 
 #phones-container, #guidelines-container, #email-container {
@@ -129,63 +138,25 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .bold {
-      font-size: 2.75vw;
-    }
-    .light {
-        font-size: 2.25vw;
-        line-height: 3.375vw;
-    }
     .text-container {
         width: 60%;
-    }
-    #project-title {
-      font-size: 4vw;
     }
 }
 
 @media screen and (max-width: 768px) {
     #header-logo {
         top: 1.25vw;
+        left: 4vw;
     }
     #header-logo > img {
-        max-width: 30%;
-        max-height: 30%;
+        width: 22.5%;
     }
     #content {
-        margin-top: 5vw;
+        top: 12vw;
     }
     #footer-container {
         height: 7.5vw;
         top: 5vw;
-    }
-    #header-logo-container {
-        position: fixed;
-        width: 100%;
-        height: 10vw;
-        background-color: white;
-    }
-    #header-logo {
-        position: fixed;
-        top: 1.25vw;
-        left: 4vw;
-    }
-    #header-logo > img {
-        width: 25%;
-        height: 25%;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .bold {
-        font-size: 5.5vw;
-    }
-    .light {
-        font-size: 4.5vw;
-        line-height: 6.75vw;
-    }
-    #project-title {
-        font-size: 8vw;
     }
     .text-container, #promo-video, #phones-image,
     #brand-guidelines-image, #email-image {
@@ -215,5 +186,11 @@
     #header-logo {
         top: 1.75vw;
         left: 4.75vw;
+    }
+    #white-bar {
+        position: fixed;
+        height: 10vw;
+        width: 100%;
+        background-color: white;
     }
 }

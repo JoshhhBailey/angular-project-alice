@@ -1,85 +1,49 @@
+/* HEADER */
 #header-container {
-    position: absolute;
-    top: 0%;
-    width: 100%;
-    height: 5vw;
-  }
-  
-  #header-container a {
-    text-decoration: none;
-    font-family: "GT Walsheim", sans-serif;
-    font-size: 1vw;
-    color: grey;
-    width: max-content;
-  }
-  
-  #header-container a:hover {
-    color: black;
-  }
-  
-  /* Text and Scribble Properties */
-  #header-text {
-    position: absolute;
-    top: 50%;
-    left: 82.5%;
-    width: 15%;
-    height: 5vw;
-    transform: translate(0%, -50%);
-  }
-  
-  #header-text img {
-    max-width: 100%;
-    width: 3.75vw;
-    height: 2.5vw;
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
-    top: 50%;
-    transform: translate(0%, -50%);
-  }
-  
-  .text {
-    position: absolute;
-    top: 50%;
-    transform: translate(50%, -50%);
-  }
-  
-  #header-intro, #intro-scribble {
-    left: 0%;
-    cursor: pointer;
-  }
-  #header-work, #work-scribble {
-    left: 25%;
-  }
-  #header-play, #play-scribble {
-    left: 50%;
-  }
-  #header-me, #me-scribble {
-    left: 75%;
-  }
-  
-  #intro-scribble {
-    left: 1%;
-  }
-  #work-scribble {
-    left: 27%;
-    top: 51% !important;
-  }
-  #play-scribble {
-    left: 50.5%;
-  }
-  #me-scribble {
-    left: 74%;
-    width: 3vw !important;
-    height: 2vw !important;
-  }
-  
-  #header-text a:hover ~ img {
-    opacity: 1;
-  }
-  #header-text label:hover ~ img {
-    opacity: 1;
-  }
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 75px;
+}
+
+/* Text and Scribble Properties */
+#header-text {
+  position: relative;
+  top: 1.25vw;
+  right: 3vw;
+}
+
+#header-text a {
+  float: right;
+  text-decoration: none;
+  font-family: "GT Walsheim", sans-serif;
+  font-size: 17px;
+  margin: 8px 15px;
+  color: grey;
+  text-align: center;
+}
+
+.scribble {
+  top: 2vw;
+  width: max-content;
+  height: 34px;
+  float: right;
+}
+
+#header-text a:hover {
+  color: black;
+}
+
+#header-logo {
+  position: relative;
+  top: 1.25vw;
+  left: 4vw;
+}
+
+#header-logo > img {
+  max-width: 10%;
+  max-height: 10%;
+}
 
   @media screen and (max-width: 768px) {
     #header-container {

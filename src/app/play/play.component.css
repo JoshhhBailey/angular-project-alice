@@ -10,19 +10,42 @@
     position: absolute;
     top: 0%;
     width: 100%;
-    height: 5vw;
-  }
-  
-#header-container a {
-  text-decoration: none;
-  font-family: "GT Walsheim", sans-serif;
-  font-size: 1vw;
-  color: grey;
-  width: max-content;
+    height: 75px;
 }
 
-#header-container a:hover {
+/* Text and Scribble Properties */
+#header-text {
+  position: relative;
+  top: 1.25vw;
+  right: 3vw;
+}
+
+#header-text a {
+  float: right;
+  text-decoration: none;
+  font-family: "GT Walsheim", sans-serif;
+  font-size: 17px;
+  margin: 8px 15px;
+  color: grey;
+  text-align: center;
+}
+
+.header-scribble {
+  top: 2vw;
+  width: max-content;
+  height: 34px;
+  float: right;
+}
+
+#header-text a:hover {
   color: black;
+}
+
+#header-play {
+  color: black !important;
+}
+#container-play {
+  background: url(../../assets/header/scribbles/play-scribble.svg) no-repeat;
 }
 
 #header-logo {
@@ -32,93 +55,22 @@
 }
 
 #header-logo > img {
-  max-width: 10%;
-  max-height: 10%;
+  width: 175px;
 }
-
-/* Text and Scribble Properties */
-#header-text {
-  position: absolute;
-  top: 50%;
-  left: 82.5%;
-  width: 15%;
-  height: 5vw;
-  transform: translate(0%, -50%);
-}
-
-#header-text img {
-  max-width: 100%;
-  width: 3.75vw;
-  height: 2.5vw;
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-  top: 50%;
-  transform: translate(0%, -50%);
-}
-
-.text {
-  position: absolute;
-  top: 50%;
-  transform: translate(50%, -50%);
-}
-
-#header-intro, #intro-scribble {
-  left: 0%;
-  cursor: pointer;
-}
-#header-work, #work-scribble {
-  left: 25%;
-}
-#header-play, #play-scribble {
-  left: 50%;
-}
-#header-play {
-  color: black !important;
-}
-#play-scribble {
-  opacity: 1 !important;
-}
-#header-me, #me-scribble {
-  left: 75%;
-}
-
-#intro-scribble {
-  left: 1%;
-}
-#work-scribble {
-  left: 27%;
-  top: 51% !important;
-}
-#play-scribble {
-  left: 50.5%;
-}
-#me-scribble {
-  left: 74%;
-  width: 3vw !important;
-  height: 2vw !important;
-}
-
-#header-text a:hover ~ img {
-  opacity: 1;
-}
-#header-text label:hover ~ img {
-  opacity: 1;
-}
-
 
 
 /* GIF GRID */
 #grid-container {
   position: absolute;
-  top: 5vw;
+  top: 75px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(4, 1fr);
   gap: 2vw;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  left: 50%;
+  transform: translate(-50%, 0%);
   margin-top: 2vw;
+  width: calc(100% - 20vw);
 }
 
 .grid-image {
@@ -142,19 +94,19 @@
 
 #burger-menu {
   position: fixed;
-  left: 95%;
-  top: 1.5vw;
-  width: 3vw;
-  height: 3vw;
+  left: calc(97.5% - 6.5vw);
+  top: 2vw;
+  width: 6.5vw;
+  height: 6.5vw;
   z-index: 1;
 }
 
 #check {
   position: fixed;
-  top: 1.5vw;
-  left: 94.9%;
-  width: 3vw;
-  height: 2.5vw;
+  top: 2vw;
+  left: calc(97% - 6.5vw);
+  width: 6.5vw;
+  height: 5.6vw;
   cursor: pointer;
   opacity: 0;
   z-index: 2;
@@ -162,8 +114,8 @@
 
 #burger-menu span {
   position: absolute;
-  height: 0.3vw;
-  width: 3vw;
+  height: 0.65vw;
+  width: 6.5vw;
   background: #ebb59a;
   border-radius: 0.5vw;
   opacity: 1;
@@ -201,7 +153,7 @@
   top: 40%;
   width: 0%;
   left: 50%;
-  background: #ebb59a
+  background: #ebb59a;
 }
 #burger-container input:checked + #burger-menu > span:nth-child(2)
 {
@@ -217,14 +169,14 @@
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  background: #f2e2d2
+  background: #f2e2d2;
 }
 #burger-container input:checked + #burger-menu > span:nth-child(4)
 {
   top: 40%;
   width: 0%;
   left: 50%;
-  background: #ebb59a
+  background: #ebb59a;
 }
 
 /* Move canvas */
@@ -245,98 +197,76 @@
   padding-left: 0;
 }
 
-/* Titles Text */
-.titles a, .titles label {
+.content {
+  position: relative;
+  width: 95%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content > .scribble > a, .content label {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
   text-decoration: none;
   color: #f2e2d2;
   font-family: "GT Walsheim", sans-serif;
-  font-size: 5vw;
-  position: absolute;
+  font-size: 11vw;
   width: max-content;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: block;
+  margin: auto;
 }
-.titles label {
+.content label {
   cursor: pointer;
 }
-
-.content {
-  position: absolute;
-  width: 95%;
-  height: 50vw;
-  left: 50%;
-  top: 55%;
-  transform: translate(-50%, -50%);
-}
-
-/* Text / Image Positioning */
-#burger-intro-text, #burger-intro-scribble {
-  top: 18%;
-}
-#burger-work-text, #burger-work-scribble {
-  top: 30%;
-}
-#burger-play-text {
-  top: 42%;
-}
-#burger-play-scribble {
-  top: 43%;
-}
-#burger-me-text {
-  top: 54%;
-}
-#burger-me-scribble {
-  width: 12vw !important;
-  height: 8vw !important;
-  top: 55%;
-}
 #email {
-  top: 69%;
-  font-size: 1.25vw !important;
+  font-size: 2.85vw !important;
+  margin-top: 2.85vw;
 }
 
-/* Scribble Properties */
-.titles img {
-  max-width: 100%;
-  width: 15vw;
-  height: 10vw;
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.scribble {
+  display: block;
+  margin: auto;
 }
 
-/* Scribble Hover */
-.titles a:hover ~ img {
-  opacity: 1;
+#scribble1 {
+  width: 30vw;
+  height: 16vw;
 }
-.titles label:hover ~ img {
-  opacity: 1;
+#scribble2 {
+  width: 35vw;
+  height: 16vw;
+}
+#scribble3 {
+  width: 32vw;
+  height: 16vw;
+}
+#scribble4 {
+  width: 23vw;
+  height: 16vw;
+}
+#scribble5 {
+  width: 32vw;
+  height: 6vw;
 }
 
-/* Social Icon Properties */
-.socials img {
-  width: 1.5vw;
-  height: 1.5vw;
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#socials {
+  position: relative;
+  text-align: center;
+  margin-top: 2.85vw;
 }
 
-/* Social Icon Positions */
-#instagram {
-  left: 45.5%;
+#socials > a {
+  font-size: 0;
 }
-#linkedin {
-  left: 48.5%;
-}
-#vimeo {
-  left: 51.5%;
-}
-#giphy {
-  left: 54.5%;
+
+#socials img {
+  display: inline-block;
+  width: 2.85vw;
+  height: 2.85vw;
+  margin-left: 1.425vw;
+  margin-right: 1.425vw;
 }
 
 
@@ -357,8 +287,7 @@
   #grid-container {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    margin-left: 5vw;
-    margin-right: 5vw;
+    width: calc(100% - 10vw);
   }
   #footer-container {
     width: 110%;
@@ -374,75 +303,19 @@
   }
   #header-logo {
     top: 1.25vw;
-  }
-  #header-logo > img {
-    max-width: 30%;
-    max-height: 30%;
-  }
-  #grid-container {
-    margin-top: 7vw;
-  }
-  #burger-menu {
-    width: 6vw;
-    height: 6vw;
-    left: 91%;
-  }
-  #check {
-    left: 90.5%;
-    width: 6vw;
-    height: 5vw;
-  }
-  #burger-menu span {
-    height: 0.6vw;
-    width: 6vw;
-  }
-  .content {
-    height: 100vw;
-  }
-  .titles a, .titles label {
-    font-size: 10vw;
-  }
-  .titles img {
-    width: 30vw;
-    height: 20vw;
-  }
-  #burger-me-scribble {
-    width: 24vw !important;
-    height: 16vw !important;
-  }
-  #email {
-    font-size: 2.5vw !important;
-  }
-  .socials img {
-    width: 3vw;
-    height: 3vw;
-  }
-  #instagram {
-    left: 41%;
-  }
-  #linkedin {
-    left: 47%;
-  }
-  #vimeo {
-    left: 53%;
-  }
-  #giphy {
-    left: 59%;
-  }
-  #header-logo-container {
-    position: fixed;
-    width: 100%;
-    height: 10vw;
-    background-color: white;
-  }
-  #header-logo {
-    position: fixed;
-    top: 1.25vw;
     left: 4vw;
   }
   #header-logo > img {
-    width: 25%;
-    height: 25%;
+    width: 22.5%;
+  }
+  #grid-container {
+    top: 10vw;
+  }
+  #white-bar {
+    position: fixed;
+    height: 10vw;
+    width: 100%;
+    background-color: white;
   }
 }
 
@@ -451,47 +324,11 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(10, 1fr);
   }
-  #burger-menu {
-    width: 7.5vw;
-    height: 7.5vw;
-    left: calc(90.5% - 3vw);
-  }
-  #check {
-    left: calc(89.5% - 3vw);
-    width: 7.5vw;
-    height: 6.25vw;
-  }
-  #burger-menu span {
-    height: 0.75vw;
-    width: 7.5vw;
-  }
-  .content {
-    height: 125vw;
-  }
-  .titles a, .titles label {
-    font-size: 12.5vw;
-  }
-  #email {
-    font-size: 3.125vw !important;
-  }
-  .socials img {
-    width: 4.5vw;
-    height: 4.5vw;
-  }
-  #instagram {
-    left: 36.5%;
-  }
-  #linkedin {
-    left: 45.5%;
-  }
-  #vimeo {
-    left: 54.5%;
-  }
-  #giphy {
-    left: 63.5%;
-  }
   #header-logo {
     top: 1.75vw;
     left: 4.75vw;
+  }
+  #check {
+    left: calc(96.5% - 6.5vw);
   }
 }

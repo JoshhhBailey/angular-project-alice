@@ -3,21 +3,17 @@
   <!-- Header -->
   <div id = "header-container">
     <div id = "header-text">
-      <div id = "intro-div">
-        <a routerLink = "/intro" class = "text" id = header-intro> intro </a>
-        <img src = "../../assets/header/scribbles/intro-scribble.svg" id = "intro-scribble">
+      <div class = "header-scribble" id = "container-me">
+        <a routerLink = "/me" id = header-me> me </a>
       </div>
-      <div id = "work-div">
-        <a routerLink = "/work" class = "text" id = header-work> work </a>
-        <img src = "../../assets/header/scribbles/work-scribble.svg" id = "work-scribble">
+      <div class = "header-scribble">
+        <a routerLink = "/play" id = header-play> play </a>
       </div>
-      <div id = "play-div">
-        <a routerLink = "/play" class = "text" id = header-play> play </a>
-        <img src = "../../assets/header/scribbles/play-scribble.svg" id = "play-scribble">
+      <div class = "header-scribble">
+        <a routerLink = "/work" id = header-work> work </a>
       </div>
-      <div id = "me-div">
-        <a routerLink = "/me" class = "text" id = header-me> me </a>
-        <img src = "../../assets/header/scribbles/me-scribble.svg" id = "me-scribble">
+      <div class = "header-scribble">
+        <a routerLink = "/intro" id = header-intro> intro </a>
       </div>
     </div>
   </div>
@@ -44,7 +40,7 @@
         <p id = "experience-text" class = "light">
           Designer at <a href = "https://www.sideshowagency.com/"> Sideshow</a> (2019 - Present)<br><br>
           Creative Intern at <a href = "https://www.bartleboglehegarty.com/"> BBH</a> (2019)<br><br>
-          Creative Intern at <a href = "https://www.rla.co.uk/"> RLA Group</a> (2018)<br><br>
+          Creative Intern at <a href = "https://www.aprilsix.com/"> RLA Group</a> (2018)<br><br>
           Creative Intern at <a href = "https://www.emeraldcolour.com/"> Emerald Colour</a> (2018)<br><br>
           Creative Intern at <a href = "https://amayse.com/"> Amayse Ltd</a> (2015)
         </p>
@@ -60,7 +56,7 @@
           with First Class Honours<br>
         </p>
         <p class = "light">
-          330+ million <a href = "https://giphy.com/alicehodgedesign"> Instagram GIF</a> views<br><br>
+          350+ million <a href = "https://giphy.com/alicehodgedesign"> Instagram GIF</a> views<br><br>
           <a href = "https://www.creative-conscience.org.uk/shortlisted-entries/"> Creative Conscience</a> Award Shortlist
         </p>
       </div>
@@ -83,8 +79,9 @@
 
   </div>
 
-  <div id = "header-logo-container"></div>
-  <a routerLink = "/work" id = "header-logo"><img src = "../../assets/header/logo-dark.gif"></a>
+  <div id = "white-bar">
+    <a routerLink = "/work" id = "header-logo"><img src = "../../assets/header/logo-dark.gif"></a>
+  </div>
 
   <!-- Burger Menu -->
   <div id = "burger-container">
@@ -97,31 +94,24 @@
     </div>
     <div id = "canvas">
       <div class = "content">
-        <div class = "titles">
 
-          <div id = "burger-intro-div">
-            <a routerLink = "/intro" id = "burger-intro-text"> intro </a>
-            <img src = "../../assets/burger-menu/scribbles/intro-scribble.svg" id = "burger-intro-scribble">
-          </div>
-
-          <div id = "burger-work-div">
-            <a routerLink = "/work" id = "burger-work-text"> work </a>
-            <img src = "../../assets/burger-menu/scribbles/work-scribble.svg" id = "burger-work-scribble">
-          </div>
-
-          <div id = "burger-play-div">
-            <a routerLink = "/play" id = "burger-play-text"> play </a>
-            <img src = "../../assets/burger-menu/scribbles/play-scribble.svg" id = "burger-play-scribble">
-          </div>
-
-          <div id = "burger-me-div">
-            <label for = "check" id = "burger-me-text"> me </label>
-            <img src = "../../assets/burger-menu/scribbles/me-scribble.svg" id = "burger-me-scribble">
-          </div>
+        <div class = "scribble" id = "scribble1">
+          <a routerLink = "/intro" id = "burger-intro-text"> intro </a>
+        </div>
+        <div class = "scribble" id = "scribble2">
+          <a routerLink = "/work" id = "burger-work-text"> work </a>
+        </div>
+        <div class = "scribble" id = "scribble3">
+          <a routerLink = "/play" id = "burger-play-text"> play </a>
+        </div>
+        <div class = "scribble" id = "scribble4">
+          <label for = "check" id = "burger-me-text"> me </label>
+        </div>
+        <div class = "scribble" id = "scribble5">
           <a href = "mailto: alicelhodge@icloud.com" id = "email">alicelhodge@icloud.com</a>
         </div>
 
-        <div class = "socials">
+        <div id = "socials">
           <a href = "https://www.instagram.com/alicehodgedesign/"><img src = "../../assets/burger-menu/social-icons/instagram.svg"
             onmouseover = "this.src = '../../assets/burger-menu/social-icons/instagram_white.svg';"
             onmouseout = "this.src = '../../assets/burger-menu/social-icons/instagram.svg';" id = "instagram"></a>

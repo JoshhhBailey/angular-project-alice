@@ -54,13 +54,13 @@
 
         <a routerLink = "/work/freeriderco" id = "right-image1">
           <img src = "../../assets/work-page/freeriderco.jpg"
-          onmouseover = "this.src = '../../assets/work-page/freeriderco.gif';"
+          onmouseover = "this.src = '../../assets/work-page/freeriderco-hover.jpg';"
           onmouseout = "this.src = '../../assets/work-page/freeriderco.jpg';">
         </a>
 
         <a routerLink = "/work/all-different-all-normal" id = "right-image2">
           <img src = "../../assets/work-page/all-different-all-normal.jpg"
-          onmouseover = "this.src = '../../assets/work-page/all-different-all-normal.gif';"
+          onmouseover = "this.src = '../../assets/work-page/all-different-all-normal-hover.jpg';"
           onmouseout = "this.src = '../../assets/work-page/all-different-all-normal.jpg';">
         </a>
 
@@ -92,32 +92,24 @@
     </div>
     <div id = "canvas">
       <div class = "content">
-        <div class = "titles">
 
-          <div id = "burger-intro-div">
-            <label for = "check" id = "burger-intro-text"> intro </label>
-            <img src = "../../assets/burger-menu/scribbles/intro-scribble.svg" id = "burger-intro-scribble">
-          </div>
-
-          <div id = "burger-work-div">
-            <a routerLink = "/work" id = "burger-work-text"> work </a>
-            <img src = "../../assets/burger-menu/scribbles/work-scribble.svg" id = "burger-work-scribble">
-          </div>
-
-          <div id = "burger-play-div">
-            <a routerLink = "/play" id = "burger-play-text"> play </a>
-            <img src = "../../assets/burger-menu/scribbles/play-scribble.svg" id = "burger-play-scribble">
-          </div>
-
-          <div id = "burger-me-div">
-            <a routerLink = "/me" id = "burger-me-text"> me </a>
-            <img src = "../../assets/burger-menu/scribbles/me-scribble.svg" id = "burger-me-scribble">
-          </div>
+        <div class = "scribble" id = "scribble1">
+          <label for = "check" id = "burger-intro-text"> intro </label>
+        </div>
+        <div class = "scribble" id = "scribble2">
+          <a routerLink = "/work" id = "burger-work-text"> work </a>
+        </div>
+        <div class = "scribble" id = "scribble3">
+          <a routerLink = "/play" id = "burger-play-text"> play </a>
+        </div>
+        <div class = "scribble" id = "scribble4">
+          <a routerLink = "/me" id = "burger-me-text"> me </a>
+        </div>
+        <div class = "scribble" id = "scribble5">
           <a href = "mailto: alicelhodge@icloud.com" id = "email">alicelhodge@icloud.com</a>
-          <img src = "../../assets/burger-menu/scribbles/email-line-wiggle.svg" id = "email-line">
         </div>
 
-        <div class = "socials">
+        <div id = "socials">
           <a href = "https://www.instagram.com/alicehodgedesign/"><img src = "../../assets/burger-menu/social-icons/instagram.svg"
             onmouseover = "this.src = '../../assets/burger-menu/social-icons/instagram_white.svg';"
             onmouseout = "this.src = '../../assets/burger-menu/social-icons/instagram.svg';" id = "instagram"></a>
