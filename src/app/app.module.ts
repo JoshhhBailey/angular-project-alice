@@ -2,8 +2,6 @@ import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 
-import { SlickCarouselModule } from 'ngx-slick-carousel'
-
 import { AppComponent } from './app.component';
 import { IntroComponent } from './intro/intro.component';
 import { WorkComponent } from './work/work.component';
@@ -39,8 +37,7 @@ import { BbcRadioOneComponent } from './project-pages/bbc-radio-one/bbc-radio-on
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    SlickCarouselModule
+    AppRoutingModule
   ],
   providers: [
     Title
