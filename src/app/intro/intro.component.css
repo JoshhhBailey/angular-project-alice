@@ -335,10 +335,6 @@
 #content-grid {
   position: absolute;
   top: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  gap: 0;
 }
 
 .bold {
@@ -352,21 +348,19 @@
   left: 10%;
 }
 
-#left {
-  position: relative;
-  margin-right: 0;
+#left, #right {
+  float: left;
+  width: 50%;
+}
+
+#carousel-video {
+  width: 350px;
 }
 
 #left img {
   width: 75%;
   height: 75%;
   margin-left: 3.5vw;
-}
-
-#right {
-  position: relative;
-  margin-left: 5vw;
-  margin-right: 0;
 }
 
 #right img {
@@ -393,10 +387,6 @@
   text-shadow: -1px -1px 0 #474747, 1px -1px 0 #474747, -1px 1px 0 #474747, 1px 1px 0 #474747;
 }
 
-#left-text {
-  margin-top: 7vw;
-}
-
 #right-text {
   margin-top: 2vw;
   margin-bottom: 0;
@@ -407,7 +397,7 @@
   text-decoration: none;
 }
 
-#left-heading, #profile, #brands, #left-text {
+#left-heading, #profile, #brands, #left-text, #carousel-video {
   margin-left: 5.25vw;
 }
 
@@ -429,19 +419,7 @@
   height: 5vw;
 }
 
-
-
-@media screen and (max-width: 2560px) {
-  #carousel-container {
-    top: 84%;
-  }
-}
-
 @media screen and (max-width: 1024px) {
-  #content-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
   #left-heading, #right-heading {
     font-size: 7vw;
     text-align: center;
@@ -449,26 +427,26 @@
   }
   #profile, #brands, #right-text, #linked-text {
     text-align: center;
-    margin-top: 1vw;
     margin-left: 0;
-    font-size: 4vw;
+  }
+  #carousel-video {
+    display: block;
+    margin: auto;
+    width: 600px;
   }
   #right-align {
     left: 0%;
   }
-  #left {
-    margin-right: 40px;
-    margin-left: 40px;
+  #left, #right {
+    float: none;
+    width: 100vw;
   }
   #right {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-bottom: 5vw;
   }
   #left-text {
     text-align: center;
     margin-left: 0;
-    font-size: 4vw;
-    margin-top: 20vw;
   }
   #left img, #right-image1 > img, #right-image2 > img {
     display: block;
@@ -480,13 +458,6 @@
     width: 80%;
     height: 80%;
   }
-  #carousel-container {
-    top: 39.5%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    width: 75%;
-    margin: 0;
-  }
   #hello-text {
     font-size: 100px;
   }
@@ -496,9 +467,6 @@
   #arrow {
     width: 6vw;
     height: 6vw;
-  }
-  #carousel-container {
-    top: 39.25%;
   }
   #hello-text {
     font-size: 13vw;
@@ -545,7 +513,6 @@
     margin-left: 1.425vw;
     margin-right: 1.425vw;
   }
-
   #burger-menu {
     width: 6.5vw;
     height: 6.5vw;
@@ -560,12 +527,12 @@
     height: 0.65vw;
     width: 6.5vw;
   }
+  #carousel-video {
+    width: 80vw;
+  }
 }
 
 @media screen and (max-width: 425px) {
-  #carousel-container {
-    top: 38.5%;
-  }
   #check {
     left: calc(96.5% - 6.5vw);
   }

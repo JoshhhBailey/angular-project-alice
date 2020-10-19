@@ -28,7 +28,7 @@
 
   <div id = "content-grid" #work>
 
-    <figure id = "left">
+    <div id = "left">
       <p id = "left-heading">
         A little bit about me...
       </p>
@@ -44,11 +44,15 @@
         Brands I've worked for:
       </p>
 
+      <video id = "carousel-video" loop autoplay>
+        <source src = "../../assets/carousel/carousel.mp4" type = "video/mp4">
+      </video>
+
       <p id = "left-text" class = "bold">Want to <a routerLink = "/me" id = "linked-text" class = "bold">find out more</a>?</p>
 
-    </figure>
+    </div>
 
-    <figure id = "right">
+    <div id = "right">
       <div id = "right-align">
         <p id = "right-heading">Featured Projects</p>
 
@@ -67,11 +71,6 @@
         <p id = "right-text" class = "bold"><a routerLink = "/work" id = "linked-text" class = "bold">View</a> more projects</p>
 
       </div>
-    </figure>
-
-    <!-- Carousel -->
-    <div id = "carousel-container">
-      <app-carousel></app-carousel>
     </div>
     
     <!-- Footer -->

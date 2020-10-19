@@ -20,11 +20,11 @@
 
   <div id = "content-grid">
 
-    <figure>
+    <div id = "left">
         <img src = "../../assets/film-frames/me-film-frame.png" id = "filmframe">
-    </figure>
+    </div>
 
-    <figure id = "right">
+    <div id = "right">
 
       <p id = "heading">A bit more about me...</p>
 
@@ -64,17 +64,16 @@
       <p id = "brands" class = "bold">
         Brands I've worked for:
       </p>
+
+      <video id = "carousel-video" loop autoplay>
+        <source src = "../../assets/carousel/carousel.mp4" type = "video/mp4">
+      </video>
       
-    </figure>
+    </div>
 
     <!-- Footer -->
     <div id = "footer-container">
       <app-footer></app-footer>
-    </div>
-
-    <!-- Carousel -->
-    <div id = "carousel-container">
-      <app-carousel></app-carousel>
     </div>
 
   </div>

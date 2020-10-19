@@ -65,22 +65,19 @@
 #content-grid {
   position: absolute;
   top: 75px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  gap: 0;
   width: 100%;
 }
 
 .light {
   font-family: "GT Walsheim Light", sans-serif;
-  font-size: 1vw;
+  font-size: 20px;
+  line-height: 30px;
   color: #474747;
 }
 
 .bold {
   font-family: "GT Walsheim", sans-serif;
-  font-size: 1.25vw;
+  font-size: 25px;
   color: #474747;
 }
 
@@ -93,8 +90,9 @@
   margin-right: auto;
 }
 
-#right {
-  position: relative;
+#left, #right {
+  float: left;
+  width: 50%;
 }
 
 #right a {
@@ -111,13 +109,13 @@
   margin-bottom: 0;
   margin-top: 5vw;
   font-family: Gastromond, sans-serif;
-  font-size: 3vw;
+  font-size: 65px;
   color: white !important;
   text-shadow: -1px -1px 0 #474747, 1px -1px 0 #474747, -1px 1px 0 #474747, 1px 1px 0 #474747;
 }
 
 #profile {
-  font-size: 1.5vw !important;
+  font-size: 30px !important;
 }
 
 #experience, #education {
@@ -129,19 +127,8 @@
   margin-left: 40px;
 }
 
-#experience-title, #education-title {
-  margin-bottom: 0;
-}
-
-#education-text-1 {
-  line-height: 1.35vw;
-}
-
-#carousel-container {
-  position: absolute;
-  top: 70%;
-  left: calc(50% + 75px);
-  width: 35%;
+#carousel-video {
+  width: 650px;
 }
 
 
@@ -339,41 +326,50 @@
 
 
 
-@media screen and (max-width: 1024px) {
-  #content-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.75fr;
+@media screen and (max-width: 1550px) {
+  #left, #right {
+    float: none;
+    display: block;
+    margin: auto;
+    outline: red solid 2px;
   }
-  #heading {
-    font-size: 7vw;
-  }
-  #profile {
-    font-size: 4vw !important;
-  }
-  #brands {
-    margin-top: 4vw;
-  }
-  .bold {
-    font-size: 2.75vw;
-  }
-  .light {
-    font-size: 2.25vw;
-  }
-  #education-text-1 {
-    line-height: 3.03vw;
+  #left {
+    width: 1000px;
   }
   #right {
-    margin-right: 0;
-    margin-left: 80px;
+    width: 760px;
+    margin-bottom: 5vw;
   }
-  #carousel-container {
-    top: 97%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    width: 78%;
+  #profile, #heading, #experience, #education, #brands, #carousel-video {
+    text-align: center;
   }
-  #footer-container {
-    height: 20vw;
+  #carousel-video {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #left {
+    width: 96vw;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  #right {
+    width: 90vw;
+  }
+  #heading {
+    font-size: 7.75vw;
+  }
+  #experience, #education {
+    display: block;
+    margin-top: 50px;
+  }
+  #education {
+    margin-left: 0;
+  }
+  #brands {
+    margin-top: 50px;
   }
 }
 
@@ -386,15 +382,6 @@
   }
   #content-grid {
     top: 10vw;
-  }
-  #right {
-    margin-left: 60px;
-  }
-  #carousel-container {
-    width: 76%;
-  }
-  #footer-container {
-    height: 20vw;
   }
   #header-logo {
     top: 1.25vw;
@@ -411,82 +398,18 @@
   }
 }
 
-@media screen and (max-width: 565px) {
-  #education {
-    margin-left: 20px;
-  }
-}
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 460px) {
   #heading {
-    font-size: 6.45vw;
+    font-size: 30px;
   }
   #profile {
-    font-size: 3.5vw !important;
-  }
-}
-
-@media screen and (max-width: 475px) {
-  .bold {
-    font-size: 2.5vw;
-  }
-  .light {
-    font-size: 2vw;
-  }
-  #education-text-1 {
-    line-height: 2.7vw;
+    font-size: 25px !important;
   }
 }
 
 @media screen and (max-width: 425px) {
-  figure {
-    margin: 0;
-  }
   #email {
     font-size: 3.125vw !important;
-  }
-  #right {
-    display: block;
-    margin: 5%;
-  }
-  #carousel-container {
-    width: 75%;
-    top: 98%;
-  }
-  #experience, #education {
-    display: inline;
-  }
-  .bold {
-    font-size: 5.5vw;
-  }
-  .light {
-    font-size: 4.5vw;
-  }
-  #heading {
-    position: absolute;
-    top: -25%;
-    font-size: 7.5vw;
-  }
-  #profile {
-    position: absolute;
-    top: -14%;
-    font-size: 4vw !important;
-  }
-  #education-title {
-    margin-top: 0;
-  }
-  #education-text-1 {
-    line-height: 5.5vw;
-  }
-  #experience-title {
-    margin-top: 0;
-  }
-  #experience-text {
-    margin-bottom: 0;
-  }
-  #brands {
-    margin-top: 0;
-    margin-bottom: 0;
   }
   #header-logo {
     top: 1.75vw;
