@@ -105,6 +105,7 @@
     width: 100%;
     text-align: center;
     margin-top: 5vw;
+    pointer-events: none;
 }
 
 #misc-images img, #misc-images video {
