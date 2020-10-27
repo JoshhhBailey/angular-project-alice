@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Title } from '@angular/platform-browser';
+import { Title, Meta } from '@angular/platform-browser';
 
 import * as $ from 'jquery';
 
@@ -10,10 +10,17 @@ import * as $ from 'jquery';
 })
 export class IntroComponent implements OnInit {
 
-  constructor(private titleService: Title) { }
+  constructor(private titleService: Title, private meta: Meta) { }
 
   ngOnInit(): void {
     this.titleService.setTitle("Alice Hodge Design - Intro");
+    this.meta.addTags([
+      { name: 'og:url', content: '/intro' },
+      { name: 'og:title', content: 'Alice Hodge Design - Intro' },
+      { name: 'og:description', content: "Hello, I’m Alice. I'm a Designer, Illustrator and Animator, specialising in creating gifs and branding." },
+      { name: 'og:image', content: 'https://i.imgur.com/XaMlaYV.png' },
+      { name: 'twitter:card', content: 'summary' }
+    ]);
 
     // Burger Menu
     $("#burger-intro-text").hover(

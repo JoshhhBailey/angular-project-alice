@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Title } from '@angular/platform-browser';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-work',
@@ -8,10 +8,17 @@ import { Title } from '@angular/platform-browser';
 })
 export class WorkComponent implements OnInit {
 
-  constructor(private titleService: Title) { }
+  constructor(private titleService: Title, private meta: Meta) { }
 
   ngOnInit(): void {
     this.titleService.setTitle("Alice Hodge Design - Work");
+    this.meta.addTags([
+      { name: 'og:url', content: '/work' },
+      { name: 'og:title', content: 'Alice Hodge Design - Work' },
+      { name: 'og:description', content: 'A collection of my latest design projects, surrounding branding identity, animation and collaborative briefs.' },
+      { name: 'og:image', content: 'https://i.imgur.com/vcahDrG.jpeg' },
+      { name: 'twitter:card', content: 'summary' }
+    ]);
 
     // Header
     $("#header-intro").hover(

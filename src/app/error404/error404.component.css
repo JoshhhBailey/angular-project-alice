@@ -1,0 +1,94 @@
+#viewport {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+
+/* LOGO */
+#header-logo {
+    position: relative;
+    top: 1.25vw;
+    left: 4vw;
+}
+  
+#header-logo > img {
+    width: 175px;
+}
+
+
+/* FONTS */
+.light {
+    font-family: "GT Walsheim Light", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #474747;
+}
+  
+.bold {
+    font-family: "GT Walsheim", sans-serif;
+    font-size: 25px;
+    color: #474747;
+}
+
+#linked-text {
+    color: #e98279;
+    text-decoration: none;
+}
+
+
+
+/* CONTENT */
+#content {
+    position: absolute;
+    top: calc(75px + 2vw);
+    width: 100%;
+    height: calc(100% - 75px - 2vw);
+}
+
+.text-container {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 45%;
+    margin-top: 2.5vw;
+}
+
+
+
+/* FOOTER */
+#footer-container {
+    position: relative;
+    top: calc(100% - 7.5vw - 75px);
+}
+
+@media screen and (max-width: 1024px) {
+    .text-container {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #header-logo {
+        top: 1.25vw;
+        left: 4vw;
+    }
+    #header-logo > img {
+        width: 22.5%;
+    }
+    #content {
+        top: 12vw;
+    }
+    #header-logo {
+        top: 1.75vw;
+        left: 4.75vw;
+    }
+    #white-bar {
+        position: fixed;
+        height: 10vw;
+        width: 100%;
+        background-color: white;
+    }
+}

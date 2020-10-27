@@ -15,6 +15,7 @@ import { ItsYourTimeComponent } from './project-pages/its-your-time/its-your-tim
 import { FreeridercoComponent } from './project-pages/freeriderco/freeriderco.component';
 import { EeComponent } from './project-pages/ee/ee.component';
 import { BbcRadioOneComponent } from './project-pages/bbc-radio-one/bbc-radio-one.component';
+import { Error404Component } from './error404/error404.component';
 
 
 @NgModule({
@@ -31,10 +32,11 @@ import { BbcRadioOneComponent } from './project-pages/bbc-radio-one/bbc-radio-on
     ItsYourTimeComponent,
     FreeridercoComponent,
     EeComponent,
-    BbcRadioOneComponent
+    BbcRadioOneComponent,
+    Error404Component
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule
   ],
   providers: [

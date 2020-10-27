@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Title } from '@angular/platform-browser';
+import { Title, Meta } from '@angular/platform-browser';
 
 import * as $ from 'jquery';
 
@@ -10,10 +10,17 @@ import * as $ from 'jquery';
 })
 export class PlayComponent implements OnInit {
 
-  constructor(private titleService: Title) { }
+  constructor(private titleService: Title, private meta: Meta) { }
 
   ngOnInit(): void {
     this.titleService.setTitle("Alice Hodge Design - Play");
+    this.meta.addTags([
+      { name: 'og:url', content: '/play' },
+      { name: 'og:title', content: 'Alice Hodge Design - Play' },
+      { name: 'og:description', content: 'Personal experiments into motion graphics and illustration, for developing and improving upon my skills as a designer.' },
+      { name: 'og:image', content: 'https://i.imgur.com/s0I4f73.jpeg' },
+      { name: 'twitter:card', content: 'summary' }
+    ]);
 
     // Header
     $("#header-intro").hover(
