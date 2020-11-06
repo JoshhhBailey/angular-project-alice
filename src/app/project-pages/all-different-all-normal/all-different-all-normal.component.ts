@@ -12,13 +12,11 @@ export class AllDifferentAllNormalComponent implements OnInit {
 
   ngOnInit(): void {
     this.titleService.setTitle("Work - All Different. All Normal.");
-    this.meta.addTags([
-      { name: 'og:url', content: '/work/all-different-all-normal' },
-      { name: 'og:title', content: 'Work - All Different. All Normal.' },
-      { name: 'og:description', content: 'An integrated campaign aiming to increase the attendance rate of cervical screenings.' },
-      { name: 'og:image', content: 'https://i.imgur.com/gZlyQ9u.jpg' },
-      { name: 'twitter:card', content: 'summary' }
-    ]);
+    this.meta.updateTag({ property: 'og:url', content: 'https://www.alicehodgedesign.com/work/all-different-all-normal' });
+    this.meta.updateTag({ property: 'og:title', content: "Work - All Different. All Normal." });
+    this.meta.updateTag({ property: 'og:description', content: "An integrated campaign aiming to increase the attendance rate of cervical screenings." });
+    this.meta.updateTag({ property: 'og:image', content: 'https://i.imgur.com/gZlyQ9u.jpg' });
+    this.meta.updateTag({ property: 'twitter:card', content: 'summary' });
   }
 
 }

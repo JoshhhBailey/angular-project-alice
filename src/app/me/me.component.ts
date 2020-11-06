@@ -12,13 +12,11 @@ export class MeComponent implements OnInit {
 
   ngOnInit(): void {
     this.titleService.setTitle("Alice Hodge Design - Me");
-    this.meta.addTags([
-      { name: 'og:url', content: '/me' },
-      { name: 'og:title', content: 'Alice Hodge Design - Me' },
-      { name: 'og:description', content: "Hello, I’m Alice. I'm a Designer, Illustrator and Animator, specialising in creating gifs and branding." },
-      { name: 'og:image', content: 'https://i.imgur.com/lLuOenb.jpg' },
-      { name: 'twitter:card', content: 'summary' }
-    ]);
+    this.meta.updateTag({ property: 'og:url', content: 'https://www.alicehodgedesign.com/me' });
+    this.meta.updateTag({ property: 'og:title', content: 'Alice Hodge Design - Me' });
+    this.meta.updateTag({ property: 'og:description', content: "Hello, I’m Alice. I'm a Designer, Illustrator and Animator, specialising in creating gifs and branding." });
+    this.meta.updateTag({ property: 'og:image', content: 'https://i.imgur.com/lLuOenb.jpg' });
+    this.meta.updateTag({ property: 'twitter:card', content: 'summary' });
 
     // Header
     $("#header-intro").hover(

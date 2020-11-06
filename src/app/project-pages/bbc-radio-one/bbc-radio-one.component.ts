@@ -12,13 +12,11 @@ export class BbcRadioOneComponent implements OnInit {
 
   ngOnInit(): void {
     this.titleService.setTitle("Work - BBC Radio 1");
-    this.meta.addTags([
-      { name: 'og:url', content: '/work/bbc-radio-1' },
-      { name: 'og:title', content: 'Work - BBC Radio 1' },
-      { name: 'og:description', content: 'A stop motion animation illustrating the expectation vs. reality of dealing with a hangover.' },
-      { name: 'og:image', content: 'https://imgur.com/UqzJxW8.jpg' },
-      { name: 'twitter:card', content: 'summary' }
-    ]);
+    this.meta.updateTag({ property: 'og:url', content: 'https://www.alicehodgedesign.com/work/bbc-radio-1' });
+    this.meta.updateTag({ property: 'og:title', content: "Work - BBC Radio 1" });
+    this.meta.updateTag({ property: 'og:description', content: "A stop motion animation illustrating the expectation vs. reality of dealing with a hangover." });
+    this.meta.updateTag({ property: 'og:image', content: 'https://imgur.com/UqzJxW8.jpg' });
+    this.meta.updateTag({ property: 'twitter:card', content: 'summary' });
   }
 
 }

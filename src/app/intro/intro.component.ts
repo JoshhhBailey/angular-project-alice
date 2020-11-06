@@ -14,13 +14,11 @@ export class IntroComponent implements OnInit {
 
   ngOnInit(): void {
     this.titleService.setTitle("Alice Hodge Design - Intro");
-    this.meta.addTags([
-      { name: 'og:url', content: '/intro' },
-      { name: 'og:title', content: 'Alice Hodge Design - Intro' },
-      { name: 'og:description', content: "Hello, I’m Alice. I'm a Designer, Illustrator and Animator, specialising in creating gifs and branding." },
-      { name: 'og:image', content: 'https://i.imgur.com/XaMlaYV.png' },
-      { name: 'twitter:card', content: 'summary' }
-    ]);
+    this.meta.updateTag({ property: 'og:url', content: 'https://www.alicehodgedesign.com/intro' });
+    this.meta.updateTag({ property: 'og:title', content: 'Alice Hodge Design - Intro' });
+    this.meta.updateTag({ property: 'og:description', content: "Hello, I’m Alice. I'm a Designer, Illustrator and Animator, specialising in creating gifs and branding." });
+    this.meta.updateTag({ property: 'og:image', content: 'https://i.imgur.com/XaMlaYV.png' });
+    this.meta.updateTag({ property: 'twitter:card', content: 'summary' });
 
     // Burger Menu
     $("#burger-intro-text").hover(

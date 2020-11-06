@@ -12,13 +12,11 @@ export class FreeridercoComponent implements OnInit {
 
   ngOnInit(): void {
     this.titleService.setTitle("Work - Freerider Co.");
-    this.meta.addTags([
-      { name: 'og:url', content: '/work/freeriderco' },
-      { name: 'og:title', content: 'Work - Freerider Co.' },
-      { name: 'og:description', content: 'Creating engaging social media animations and online advertisements for a maternity lifestyle brand.' },
-      { name: 'og:image', content: 'https://i.imgur.com/dQvXu7H.jpg' },
-      { name: 'twitter:card', content: 'summary' }
-    ]);
+    this.meta.updateTag({ property: 'og:url', content: 'https://www.alicehodgedesign.com/work/freeriderco' });
+    this.meta.updateTag({ property: 'og:title', content: "Work - Freerider Co." });
+    this.meta.updateTag({ property: 'og:description', content: "Creating engaging social media animations and online advertisements for a maternity lifestyle brand." });
+    this.meta.updateTag({ property: 'og:image', content: 'https://i.imgur.com/dQvXu7H.jpg' });
+    this.meta.updateTag({ property: 'twitter:card', content: 'summary' });
   }
 
 }

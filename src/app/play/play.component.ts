@@ -14,13 +14,11 @@ export class PlayComponent implements OnInit {
 
   ngOnInit(): void {
     this.titleService.setTitle("Alice Hodge Design - Play");
-    this.meta.addTags([
-      { name: 'og:url', content: '/play' },
-      { name: 'og:title', content: 'Alice Hodge Design - Play' },
-      { name: 'og:description', content: 'Personal experiments into motion graphics and illustration, for developing and improving upon my skills as a designer.' },
-      { name: 'og:image', content: 'https://i.imgur.com/s0I4f73.jpeg' },
-      { name: 'twitter:card', content: 'summary' }
-    ]);
+    this.meta.updateTag({ property: 'og:url', content: 'https://www.alicehodgedesign.com/play' });
+    this.meta.updateTag({ property: 'og:title', content: 'Alice Hodge Design - Play' });
+    this.meta.updateTag({ property: 'og:description', content: "Personal experiments into motion graphics and illustration, for developing and improving upon my skills as a designer." });
+    this.meta.updateTag({ property: 'og:image', content: 'https://i.imgur.com/s0I4f73.jpeg' });
+    this.meta.updateTag({ property: 'twitter:card', content: 'summary' });
 
     // Header
     $("#header-intro").hover(

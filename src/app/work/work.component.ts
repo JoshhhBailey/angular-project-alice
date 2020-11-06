@@ -12,13 +12,11 @@ export class WorkComponent implements OnInit {
 
   ngOnInit(): void {
     this.titleService.setTitle("Alice Hodge Design - Work");
-    this.meta.addTags([
-      { name: 'og:url', content: '/work' },
-      { name: 'og:title', content: 'Alice Hodge Design - Work' },
-      { name: 'og:description', content: 'A collection of my latest design projects, surrounding branding identity, animation and collaborative briefs.' },
-      { name: 'og:image', content: 'https://i.imgur.com/vcahDrG.jpeg' },
-      { name: 'twitter:card', content: 'summary' }
-    ]);
+    this.meta.updateTag({ property: 'og:url', content: 'https://www.alicehodgedesign.com/work' });
+    this.meta.updateTag({ property: 'og:title', content: 'Alice Hodge Design - Work' });
+    this.meta.updateTag({ property: 'og:description', content: "A collection of my latest design projects, surrounding branding identity, animation and collaborative briefs." });
+    this.meta.updateTag({ property: 'og:image', content: 'https://i.imgur.com/vcahDrG.jpeg' });
+    this.meta.updateTag({ property: 'twitter:card', content: 'summary' });
 
     // Header
     $("#header-intro").hover(

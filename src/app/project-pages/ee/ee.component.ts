@@ -12,13 +12,11 @@ export class EeComponent implements OnInit {
 
   ngOnInit(): void {
     this.titleService.setTitle("Work - EE Future Mobile");
-    this.meta.addTags([
-      { name: 'og:url', content: '/work/ee' },
-      { name: 'og:title', content: 'Work - EE Future Mobile' },
-      { name: 'og:description', content: 'Storyboarding and asset design for an EE branded animation, via working for The Sideshow Agency.' },
-      { name: 'og:image', content: 'https://i.imgur.com/SrdIcaw.jpg' },
-      { name: 'twitter:card', content: 'summary' }
-    ]);
+    this.meta.updateTag({ property: 'og:url', content: 'https://www.alicehodgedesign.com/work/ee' });
+    this.meta.updateTag({ property: 'og:title', content: "Work - EE Future Mobile" });
+    this.meta.updateTag({ property: 'og:description', content: "Storyboarding and asset design for an EE branded animation, via working for The Sideshow Agency." });
+    this.meta.updateTag({ property: 'og:image', content: 'https://i.imgur.com/SrdIcaw.jpg' });
+    this.meta.updateTag({ property: 'twitter:card', content: 'summary' });
   }
 
 }

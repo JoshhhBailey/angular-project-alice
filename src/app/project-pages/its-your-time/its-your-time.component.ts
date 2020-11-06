@@ -12,13 +12,11 @@ export class ItsYourTimeComponent implements OnInit {
 
   ngOnInit(): void {
     this.titleService.setTitle("Work - It's YOUR time");
-    this.meta.addTags([
-      { name: 'og:url', content: '/work/its-your-time' },
-      { name: 'og:title', content: "Work - It's YOUR time" },
-      { name: 'og:description', content: 'A project celebrating periods, using them to your advantage and tackling the stigma surrounding them.' },
-      { name: 'og:image', content: 'https://imgur.com/jp9OrWB.jpg' },
-      { name: 'twitter:card', content: 'summary' }
-    ]);
+    this.meta.updateTag({ property: 'og:url', content: 'https://www.alicehodgedesign.com/work/its-your-time' });
+    this.meta.updateTag({ property: 'og:title', content: "Work - It's YOUR time" });
+    this.meta.updateTag({ property: 'og:description', content: "A project celebrating periods, using them to your advantage and tackling the stigma surrounding them." });
+    this.meta.updateTag({ property: 'og:image', content: 'https://imgur.com/jp9OrWB.jpg' });
+    this.meta.updateTag({ property: 'twitter:card', content: 'summary' });
   }
 
 }
