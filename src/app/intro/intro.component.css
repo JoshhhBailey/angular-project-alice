@@ -30,7 +30,7 @@
   width: max-content;
   text-align: center;
   font-size: 125px;
-  font-family: "GT Walsheim", sans-serif;
+  font-family: "Gopher Bold", sans-serif;
   color: #e98279;
   pointer-events: none;
 }
@@ -271,7 +271,7 @@
   transform: translate(0, -50%);
   text-decoration: none;
   color: #f2e2d2;
-  font-family: "GT Walsheim", sans-serif;
+  font-family: "Classico Bold", sans-serif;
   font-size: 85px;
   width: max-content;
   display: block;
@@ -282,6 +282,7 @@
 }
 #email {
   font-size: 22px !important;
+  font-family: "Gopher Medium", sans-serif !important;
   margin-top: 22px;
 }
 
@@ -338,7 +339,7 @@
 }
 
 .bold {
-  font-family: "GT Walsheim", sans-serif;
+  font-family: "Avenir Medium", sans-serif;
   font-size: 20px;
   color: #474747;
 }
@@ -382,10 +383,9 @@
 #left-heading, #right-heading {
   margin-top: 4vw;
   margin-bottom: 0;
-  font-family: Gastromond, sans-serif;
+  font-family: "Classico Bold", sans-serif;
   font-size: 2.75vw;
-  color: white !important;
-  text-shadow: -1px -1px 0 #474747, 1px -1px 0 #474747, -1px 1px 0 #474747, 1px 1px 0 #474747;
+  color: #2e2e2e !important;
 }
 
 #right-text {

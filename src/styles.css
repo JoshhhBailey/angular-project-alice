@@ -43,6 +43,36 @@ html {
   src: url(assets/fonts/gastromond/Gastromond.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: Gopher Bold;
+  src: url(assets/fonts/gopher/Gopher-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: Gopher Medium;
+  src: url(assets/fonts/gopher/Gopher-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Classico Bold;
+  src: url(assets/fonts/classico/Classico-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: Classico;
+  src: url(assets/fonts/classico/Classico.otf) format("opentype");
+}
+
+@font-face {
+  font-family: Avenir Medium;
+  src: url(assets/fonts/avenir/Avenir-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Avenir Book;
+  src: url(assets/fonts/avenir/AvenirLTStd-Book.otf) format("opentype");
+}
+
 /* Remove black video gradient */
 video::-webkit-media-controls-panel {
   background-image: linear-gradient(transparent, transparent) !important;

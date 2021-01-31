@@ -23,7 +23,7 @@
 #header-text a {
   float: right;
   text-decoration: none;
-  font-family: "GT Walsheim", sans-serif;
+  font-family: "Avenir Medium", sans-serif;
   font-size: 17px;
   margin: 8px 15px;
   color: grey;
@@ -184,7 +184,7 @@
   transform: translate(0, -50%);
   text-decoration: none;
   color: #f2e2d2;
-  font-family: "GT Walsheim", sans-serif;
+  font-family: "Classico Bold", sans-serif;
   font-size: 11vw;
   width: max-content;
   display: block;
@@ -195,6 +195,7 @@
 }
 #email {
   font-size: 2.85vw !important;
+  font-family: "Gopher Medium", sans-serif !important;
   margin-top: 2.85vw;
 }
 
@@ -250,7 +251,7 @@
   top: 75px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   gap: 1vw;
   width: 100%;
 }
@@ -262,16 +263,28 @@
 }
 
 /* Grid Positions */
-#freeriderco {
+#soyandmelt {
   margin-left: 4vw;
   margin-right: 0.5vw;
   margin-top: 2vw;
   margin-bottom: 1vw;
 }
-#alldifferent {
+#freeriderco-clothing {
   margin-left: 0.5vw;
   margin-right: 4vw;
   margin-top: 2vw;
+  margin-bottom: 1vw;
+}
+#freeriderco {
+  margin-left: 4vw;
+  margin-right: 0.5vw;
+  margin-top: 0;
+  margin-bottom: 1vw;
+}
+#alldifferent {
+  margin-left: 0.5vw;
+  margin-right: 4vw;
+  margin-top: 0;
   margin-bottom: 1vw;
 }
 #ee {
@@ -324,7 +337,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
-  #freeriderco, #alldifferent, #ee, #itsyourtime, #pending, #bbcradio1 {
+  #freeriderco, #alldifferent, #ee, #itsyourtime, #pending, #bbcradio1, #freeriderco-clothing, #soyandmelt {
     margin-left: 4vw;
     margin-right: 4vw;
   }
@@ -347,7 +360,7 @@
 }
 
 @media screen and (max-width: 425px) {
-  #freeriderco, #alldifferent, #ee, #itsyourtime, #pending, #bbcradio1 {
+  #freeriderco, #alldifferent, #ee, #itsyourtime, #pending, #bbcradio1, #freerdierco-clothing, #soyandmelt {
     margin-left: 5%;
     margin-right: 5%;
   }

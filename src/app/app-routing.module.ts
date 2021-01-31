@@ -11,6 +11,8 @@ import { FreeridercoComponent } from './project-pages/freeriderco/freeriderco.co
 import { EeComponent } from './project-pages/ee/ee.component';
 import { BbcRadioOneComponent } from './project-pages/bbc-radio-one/bbc-radio-one.component'
 import { Error404Component } from './error404/error404.component'
+import { FreeridercoClothingComponent } from './project-pages/freeriderco-clothing/freeriderco-clothing.component';
+import { SoyAndMeltComponent } from './project-pages/soy-and-melt/soy-and-melt.component';
 
 const routes: Routes = [
   { path: 'intro', component: IntroComponent },
@@ -23,6 +25,8 @@ const routes: Routes = [
   { path: 'work/freeriderco', component: FreeridercoComponent },
   { path: 'work/ee', component: EeComponent },
   { path: 'work/bbc-radio-1', component: BbcRadioOneComponent },
+  { path: 'work/freeriderco-clothing', component: FreeridercoClothingComponent },
+  { path: 'work/soy-and-melt', component: SoyAndMeltComponent },
 
   { path: '404', component: Error404Component},
   { path: '', redirectTo: '/intro', pathMatch: 'full'},

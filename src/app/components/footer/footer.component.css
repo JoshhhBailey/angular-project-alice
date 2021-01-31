@@ -33,7 +33,7 @@
 #footer-linkedin {
     left: 57.5%;
 }
-#footer-vimeo {
+#footer-pinterest {
     left: 72.5%;
 }
 #footer-giphy {
@@ -100,7 +100,7 @@
     #footer-linkedin {
         left: calc(60% - 2.25vw);
     }
-    #footer-vimeo {
+    #footer-pinterest {
         left: calc(80% - 2.25vw);
     }
     #footer-giphy {
@@ -115,7 +115,7 @@
     #footer-linkedin {
         left: calc(50% - 3vw);
     }
-    #footer-vimeo {
+    #footer-pinterest {
         left: calc(75% - 3vw);
     }
     #footer-giphy {

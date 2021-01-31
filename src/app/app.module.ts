@@ -16,6 +16,8 @@ import { FreeridercoComponent } from './project-pages/freeriderco/freeriderco.co
 import { EeComponent } from './project-pages/ee/ee.component';
 import { BbcRadioOneComponent } from './project-pages/bbc-radio-one/bbc-radio-one.component';
 import { Error404Component } from './error404/error404.component';
+import { SoyAndMeltComponent } from './project-pages/soy-and-melt/soy-and-melt.component';
+import { FreeridercoClothingComponent } from './project-pages/freeriderco-clothing/freeriderco-clothing.component';
 
 
 @NgModule({
@@ -33,7 +35,9 @@ import { Error404Component } from './error404/error404.component';
     FreeridercoComponent,
     EeComponent,
     BbcRadioOneComponent,
-    Error404Component
+    Error404Component,
+    SoyAndMeltComponent,
+    FreeridercoClothingComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

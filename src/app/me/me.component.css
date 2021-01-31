@@ -23,7 +23,7 @@
 #header-text a {
   float: right;
   text-decoration: none;
-  font-family: "GT Walsheim", sans-serif;
+  font-family: "Avenir Medium", sans-serif;
   font-size: 17px;
   margin: 8px 15px;
   color: grey;
@@ -69,14 +69,20 @@
 }
 
 .light {
-  font-family: "GT Walsheim Light", sans-serif;
+  font-family: "Avenir Book", sans-serif;
   font-size: 20px;
   line-height: 30px;
   color: #474747;
 }
 
-.bold {
-  font-family: "GT Walsheim", sans-serif;
+.font1 {
+  font-family: Classico, sans-serif;
+  font-size: 25px;
+  color: #474747;
+}
+
+.font2 {
+  font-family: "Avenir Medium", sans-serif;
   font-size: 25px;
   color: #474747;
 }
@@ -96,7 +102,7 @@
 
 #right a {
   text-decoration: none;
-  font-family: "GT Walsheim Light", sans-serif;
+  font-family: "Avenir Book", sans-serif;
   color: #474747;
 }
 
@@ -107,10 +113,9 @@
 #heading {
   margin-bottom: 0;
   margin-top: 5vw;
-  font-family: Gastromond, sans-serif;
+  font-family: "Classico Bold", sans-serif;
   font-size: 65px;
-  color: white !important;
-  text-shadow: -1px -1px 0 #474747, 1px -1px 0 #474747, -1px 1px 0 #474747, 1px 1px 0 #474747;
+  color: #2e2e2e !important;
 }
 
 #profile {
@@ -266,7 +271,7 @@
   transform: translate(0, -50%);
   text-decoration: none;
   color: #f2e2d2;
-  font-family: "GT Walsheim", sans-serif;
+  font-family: "Classico Bold", sans-serif;
   font-size: 11vw;
   width: max-content;
   display: block;
@@ -277,6 +282,7 @@
 }
 #email {
   font-size: 2.85vw !important;
+  font-family: "Gopher Medium", sans-serif !important;
   margin-top: 2.85vw;
 }
 

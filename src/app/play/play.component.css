@@ -23,7 +23,7 @@
 #header-text a {
   float: right;
   text-decoration: none;
-  font-family: "GT Walsheim", sans-serif;
+  font-family: "Avenir Medium", sans-serif;
   font-size: 17px;
   margin: 8px 15px;
   color: grey;
@@ -211,7 +211,7 @@
   transform: translate(0, -50%);
   text-decoration: none;
   color: #f2e2d2;
-  font-family: "GT Walsheim", sans-serif;
+  font-family: "Classico Bold", sans-serif;
   font-size: 11vw;
   width: max-content;
   display: block;
@@ -222,6 +222,7 @@
 }
 #email {
   font-size: 2.85vw !important;
+  font-family: "Gopher Medium", sans-serif !important;
   margin-top: 2.85vw;
 }
 

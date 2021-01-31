@@ -22,20 +22,20 @@
 
 /* FONTS */
 .light {
-    font-family: "GT Walsheim Light", sans-serif;
+    font-family: "Avenir Book", sans-serif;
     font-size: 20px;
     line-height: 30px;
     color: #474747;
 }
   
 .bold {
-    font-family: "GT Walsheim", sans-serif;
+    font-family: "Avenir Medium", sans-serif;
     font-size: 25px;
     color: #474747;
 }
 
 #project-title {
-    font-family: "GT Walsheim", sans-serif;
+    font-family: "Classico Bold", sans-serif;
     font-size: 35px;
     color: #474747;
 }
